@@ -23,8 +23,8 @@ Currently under development... (Expecting feedback. Not verified design, yet)
 * Extra I2S Inpt header for external ADC(i.e. Phono) input source
 * 8 channel RCA-pin Differential or Unbalanced Audio Output
 * Balanced Output header for XLR output Connection
-* 4 Rotary Pots for AUX-ADC
-* 4 steps + 1 control Rotary switched Voltage Source for Input source selection
+* 4 + 1(Master) Rotary Pots for AUX-ADC
+* 4 steps + 1 mute level control Rotary switched Voltage Source for Input source selection
 * LED source position indicator output header 
 * I2C(0x70) connected USBi Interface with Bus-switch
 * 2 LED inidicators conntolled by MP6 and MP7
