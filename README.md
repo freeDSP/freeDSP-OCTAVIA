@@ -9,7 +9,7 @@ Currently under development... (Expecting feedback. Not verified design, yet)
 * RCA-pin Analog Input
 * Coaxial S/PDIF Input
 * Optical S/PDIF Input
-* Oprical S/PDIF Output
+* Optical S/PDIF Output
 * Amanero Combo384 USB-Audio Interface Slot
 * DSD mute protection for Amanero Combo384
 * Raspberry-Pi 40P Slot for I2S Audio Input and Optinal I2C Connection to DSP
@@ -33,6 +33,9 @@ Currently under development... (Expecting feedback. Not verified design, yet)
 * Optional Quad DAC Streo implementation capability 
 ----
 ## LINKS:<br />
+Wiki Page
+https://github.com/freeDSP/freeDSP-OCTAVIA/wiki
+
 Project Web-page:<br />
  n/a
 
