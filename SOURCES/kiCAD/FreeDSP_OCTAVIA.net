@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /Users/HILO/Documents/KICAD_DATA/FreeDSP-OCTAVIA/FreeDSP_OCTAVIA/FreeDSP_OCTAVIA.sch)
-    (date "Monday, 13 March 2023 at 23:42:39")
+    (source /Users/HILO/Documents/KICAD_DATA/FreeDSP-OCTAVIA/FreeDSP_OCTAVIA/SOURCES/kiCAD/FreeDSP_OCTAVIA.sch)
+    (date "Sunday, 26 March 2023 at 14:55:20")
     (tool "Eeschema (5.1.9-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -57,7 +57,7 @@
       (value Conn_02x20_Odd_Even)
       (footprint Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical)
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib Connector_Generic) (part Conn_02x20_Odd_Even) (description "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 59AD464A))
@@ -1030,7 +1030,7 @@
       (value Combo384)
       (footprint MyLibrary:Combo384)
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib MW-ADAU1466BB-rescue) (part Combo384-Combo384) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 6517C675))
@@ -2048,7 +2048,7 @@
       (value IDC_2x5)
       (footprint Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal)
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib fdsp_pinhead) (part CONN_02X05) (description ""))
       (sheetpath (names "/ADC_IO Part/") (tstamps /5D902CF8/))
       (tstamp 6625D869))
@@ -2177,12 +2177,12 @@
       (sheetpath (names "/ADC_IO Part/") (tstamps /5D902CF8/))
       (tstamp 670E4F6F))
     (comp (ref JP2)
-      (value Jumper_NO)
-      (footprint Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm)
+      (value Jumper_NC)
+      (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
       (datasheet ~)
       (fields
         (field (name JLPCB#) NOP))
-      (libsource (lib Device) (part Jumper_NO_Small) (description "Jumper, normally open, small symbol"))
+      (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names "/ADC_IO Part/") (tstamps /5D902CF8/))
       (tstamp 670E4F79))
     (comp (ref R87)
@@ -2198,7 +2198,7 @@
       (footprint MyJacks:RJ-2410N)
       (datasheet " ~")
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib Connector) (part Conn_Coaxial) (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"))
       (sheetpath (names "/ADC_IO Part/") (tstamps /5D902CF8/))
       (tstamp 67D35B50))
@@ -2860,7 +2860,7 @@
       (footprint MyJacks:MJ-519)
       (datasheet " ~")
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib VH_to_SPEAKON) (part Conn_Coaxial_x2) (description "double coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"))
       (sheetpath (names "/ADC_IO Part/DAC/") (tstamps /5D902CF8/65D81CA2/))
       (tstamp 65DBAE20))
@@ -2932,7 +2932,7 @@
       (footprint MyJacks:MJ-519)
       (datasheet " ~")
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib VH_to_SPEAKON) (part Conn_Coaxial_x2) (description "double coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"))
       (sheetpath (names "/ADC_IO Part/DAC/") (tstamps /5D902CF8/65D81CA2/))
       (tstamp 65DC6BAF))
@@ -2959,7 +2959,7 @@
       (footprint MyJacks:MJ-519)
       (datasheet " ~")
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib VH_to_SPEAKON) (part Conn_Coaxial_x2) (description "double coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"))
       (sheetpath (names "/ADC_IO Part/DAC/") (tstamps /5D902CF8/65D81CA2/))
       (tstamp 65DDD7F6))
@@ -4085,7 +4085,7 @@
       (footprint MyJacks:MJ-519)
       (datasheet " ~")
       (fields
-        (field (name JLPCB#) NOP))
+        (field (name JLPCB#) HAND))
       (libsource (lib VH_to_SPEAKON) (part Conn_Coaxial_x2) (description "double coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"))
       (sheetpath (names "/ADC_IO Part/DAC/") (tstamps /5D902CF8/65D81CA2/))
       (tstamp 65D99AA6))
@@ -4787,6 +4787,20 @@
       (pins
         (pin (num 1) (name K) (type passive))
         (pin (num 2) (name A) (type passive))))
+    (libpart (lib Device) (part Jumper_NC_Small)
+      (description "Jumper, normally closed, small symbol")
+      (docs ~)
+      (footprints
+        (fp SolderJumper*Bridged*)
+        (fp Jumper*)
+        (fp TestPoint*2Pads*)
+        (fp TestPoint*Bridge*))
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) Jumper_NC_Small))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib Device) (part Jumper_NO_Small)
       (description "Jumper, normally open, small symbol")
       (docs ~)
@@ -5637,7 +5651,7 @@
     (library (logical My_Library)
       (uri /Volumes/iMacHDD/Users/HILO/Documents/KICAD_DATA/MyCompo/MyLibrary/My_Library.lib))
     (library (logical PE-65612NL)
-      (uri /Volumes/iMacHDD/Users/HILO/Documents/KICAD_DATA/MyCompo/MyLibrary/PE-65612NL.lib))
+      (uri /Users/HILO/Documents/KICAD_DATA/MyCompo/MyLibrary/PE-65612NL.lib))
     (library (logical RasPiLogo)
       (uri /Volumes/iMacHDD/Users/HILO/Documents/KICAD_DATA/MyCompo/MyLibrary/RasPiLogo.lib))
     (library (logical Regulator_Linear)
