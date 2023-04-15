@@ -2188,7 +2188,7 @@ L fdsp_digital:25LC_EEPROM U13
 U 1 1 65AACBB3
 P 8650 7500
 F 0 "U13" H 8925 7750 50  0000 C CNN
-F 1 "24AA1024" H 8375 7250 50  0000 C CNN
+F 1 "25AA1024" H 8375 7250 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 8300 7450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf" H 8625 7900 50  0001 C CNN
 F 4 "C157455" H 8650 7500 50  0001 C CNN "JLPCB#"
@@ -4090,8 +4090,8 @@ Wire Notes Line
 	10700 7125 10700 6825
 Wire Notes Line
 	10700 6825 10150 6825
-Text Notes 9000 8575 0    50   ~ 0
-NOTE:\nEEPROM page-size should be 8 (8x128k, 8x32k, etc..)\n    BR25G1MF-3GE2(ROHM)\n    CAT25M01VI-GT3(OnSemi)\n    M95M01-DWMN3TP/K(STM)\n    S-25CM01A0I-J8T1U4(ablic)\n\nRemove U13 when use a J6 DIP package EEPROM.\nRemove R43 when you install the SW4 for selectable dual EEPROMs.
+Text Notes 9000 8850 0    50   ~ 0
+NOTE:\nRemove U13 when use a J6 DIP package EEPROM.\nRemove R43 when you install the SW4 for selectable dual EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM with following lists…\n    25AA1024-I/SM(Microchip, Evaluated)\n    BR25G1MF-3GE2(ROHM)\n    CAT25M01VI-GT3(OnSemi)\n    S-25CM01A0I-J8T1U4(ablic)\n    M95M01-DWMN3TP/K(STM)\n
 $Comp
 L Device:R R?
 U 1 1 64DFCF6D
