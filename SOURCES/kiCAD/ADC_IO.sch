@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
-Date "2023-03-11"
-Rev "0.2"
+Date "2023-04-15"
+Rev "0.21"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -2188,7 +2188,7 @@ L fdsp_digital:25LC_EEPROM U13
 U 1 1 65AACBB3
 P 8650 7500
 F 0 "U13" H 8925 7750 50  0000 C CNN
-F 1 "25LC_1024" H 8375 7250 50  0000 C CNN
+F 1 "24AA1024" H 8375 7250 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 8300 7450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf" H 8625 7900 50  0001 C CNN
 F 4 "C157455" H 8650 7500 50  0001 C CNN "JLPCB#"
@@ -4080,18 +4080,18 @@ Wire Notes Line
 	8925 8475 8925 8175
 Wire Notes Line
 	8925 8175 8400 8175
-Text Notes 10075 8475 0    79   ~ 16
+Text Notes 10125 7100 0    79   ~ 16
 OPTIONAL\nSOCKET
 Wire Notes Line
-	10075 8200 10075 8500
+	10125 6825 10125 7125
 Wire Notes Line
-	10100 8500 10650 8500
+	10150 7125 10700 7125
 Wire Notes Line
-	10650 8500 10650 8200
+	10700 7125 10700 6825
 Wire Notes Line
-	10650 8200 10100 8200
-Text Notes 8825 8025 0    50   ~ 0
-NOTE:\nRemove U13 when use the J6 DIP package EEPROMs.
+	10700 6825 10150 6825
+Text Notes 9000 8575 0    50   ~ 0
+NOTE:\nEEPROM page-size should be 8 (8x128k, 8x32k, etc..)\n    BR25G1MF-3GE2(ROHM)\n    CAT25M01VI-GT3(OnSemi)\n    M95M01-DWMN3TP/K(STM)\n    S-25CM01A0I-J8T1U4(ablic)\n\nRemove U13 when use a J6 DIP package EEPROM.\nRemove R43 when you install the SW4 for selectable dual EEPROMs.
 $Comp
 L Device:R R?
 U 1 1 64DFCF6D
