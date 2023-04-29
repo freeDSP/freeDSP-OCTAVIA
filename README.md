@@ -3,7 +3,8 @@
 
 ![Image of FreeDSP OCTAVIA](https://github.com/freeDSP/freeDSP-OCTAVIA/blob/main/SOURCES/IMAGES/FreeDSP_OCTAVIA_TopVIewRender.jpg?raw=true)
 
-Currently under development... (Expecting feedback. Not verified design, yet) 
+version 0.1 board ready to use, but requires some workarounds.
+https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 
 ----
 ## Features:
