@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
-Date "2023-04-15"
-Rev "0.21"
+Date "2023-05-13"
+Rev "0.25"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -21,10 +21,10 @@ AR Path="/5D9089EA" Ref="J?"  Part="1"
 AR Path="/5D67FDC6/5D9089EA" Ref="J?"  Part="1" 
 AR Path="/5D902CF8/5D9089EA" Ref="J5"  Part="1" 
 F 0 "J5" H 1355 2088 50  0000 C CNN
-F 1 "Conn_Coaxial_x2" H 1355 1997 50  0000 C CNN
+F 1 "MJ-519" H 1355 1997 50  0000 C CNN
 F 2 "MyCompo:MJ-519" H 1425 1650 50  0001 C CNN
 F 3 " ~" H 1425 1650 50  0001 C CNN
-F 4 "NOP" H 1425 1750 50  0001 C CNN "JLPCB#"
+F 4 "HAND" H 1425 1750 50  0001 C CNN "JLPCB#"
 	1    1425 1750
 	-1   0    0    -1  
 $EndComp
@@ -39,7 +39,7 @@ F 0 "IC2" H 6350 1625 50  0000 C CNN
 F 1 "PCM1808QPWRQ1" H 6350 725 50  0000 C CNN
 F 2 "Myfootprints:PCM1808QPWRQ1" H 6350 625 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm1808-q1.pdf" H 6350 525 50  0001 C CNN
-F 4 "Automotive 99dB SNR Stereo ADC With Single-Ended Inputs" H 6350 425 50  0001 C CNN "Description"
+F 4 "99dB SNR is only for 48kHz Sampling" H 6350 425 50  0001 C CNN "Description"
 F 5 "RS" H 6350 325 50  0001 C CNN "Supplier_Name"
 F 6 "" H 6350 225 50  0001 C CNN "RS Part Number"
 F 7 "Texas Instruments" H 6350 125 50  0001 C CNN "Manufacturer_Name"
@@ -123,6 +123,7 @@ F 1 "2.2uF" V 3375 1125 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3325 1425 50  0001 C CNN
 F 3 "" H 3325 1425 50  0001 C CNN
 F 4 "HAND" H 3325 1425 50  0001 C CNN "JLPCB#"
+F 5 "Audio Grade Cap Recommended" H 3325 1425 50  0001 C CNN "Description"
 	1    3325 1425
 	0    1    -1   0   
 $EndComp
@@ -138,6 +139,7 @@ F 1 "2.2uF" V 3125 1500 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3325 1625 50  0001 C CNN
 F 3 "" H 3325 1625 50  0001 C CNN
 F 4 "HAND" H 3325 1625 50  0001 C CNN "JLPCB#"
+F 5 "Audio Grade Cap Recommended" H 3325 1625 50  0001 C CNN "Description"
 	1    3325 1625
 	0    1    -1   0   
 $EndComp
@@ -711,7 +713,7 @@ Text GLabel 7050 6000 2    50   Output ~ 0
 BCK_OUT1
 Text GLabel 7050 5900 2    50   Output ~ 0
 LRK_OUT1
-Text GLabel 3425 5500 0    50   Input ~ 0
+Text GLabel 3600 5500 0    50   Input ~ 0
 BCK_IN0
 Text GLabel 7050 5700 2    50   Output ~ 0
 DAT_OUT0
@@ -719,27 +721,27 @@ Text GLabel 7050 5600 2    50   Output ~ 0
 BCK_OUT0
 Text GLabel 7050 5500 2    50   Output ~ 0
 LRK_OUT0
-Text GLabel 3425 5600 0    50   Input ~ 0
+Text GLabel 3600 5600 0    50   Input ~ 0
 LRK_IN0
-Text GLabel 3425 5700 0    50   Input ~ 0
+Text GLabel 3600 5700 0    50   Input ~ 0
 DAT_IN0
-Text GLabel 3450 5900 0    50   Input ~ 0
+Text GLabel 3625 5900 0    50   Input ~ 0
 BCK_IN1
-Text GLabel 3450 6000 0    50   Input ~ 0
+Text GLabel 3625 6000 0    50   Input ~ 0
 LRK_IN1
-Text GLabel 3450 6100 0    50   Input ~ 0
+Text GLabel 3625 6100 0    50   Input ~ 0
 DAT_IN1
-Text GLabel 3450 6300 0    50   Input ~ 0
+Text GLabel 3625 6300 0    50   Input ~ 0
 BCK_IN2
-Text GLabel 3450 6400 0    50   Input ~ 0
+Text GLabel 3625 6400 0    50   Input ~ 0
 LRK_IN2
-Text GLabel 3450 6500 0    50   Input ~ 0
+Text GLabel 3625 6500 0    50   Input ~ 0
 DAT_IN2
-Text GLabel 3450 6700 0    50   Input ~ 0
+Text GLabel 3625 6700 0    50   Input ~ 0
 BCK_IN3
-Text GLabel 3450 6800 0    50   Input ~ 0
+Text GLabel 3625 6800 0    50   Input ~ 0
 LRK_IN3
-Text GLabel 3450 6900 0    50   Input ~ 0
+Text GLabel 3625 6900 0    50   Input ~ 0
 DAT_IN3
 $Comp
 L power:+3.3V #PWR?
@@ -989,6 +991,7 @@ F 1 "Conn_01x08" H 1680 5851 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1600 5900 50  0001 C CNN
 F 3 "~" H 1600 5900 50  0001 C CNN
 F 4 "NOP" H 1600 5900 50  0001 C CNN "JLPCB#"
+F 5 "for Optional I2S-1 Input" H 1600 5900 50  0001 C CNN "Description"
 	1    1600 5900
 	-1   0    0    -1  
 $EndComp
@@ -1103,6 +1106,7 @@ F 1 "Conn_01x08" H 14100 5875 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 14100 5475 50  0001 C CNN
 F 3 "~" H 14100 5475 50  0001 C CNN
 F 4 "NOP" H 14100 5475 50  0001 C CNN "JLPCB#"
+F 5 "for Optinal Extension of POTs" H 14100 5475 50  0001 C CNN "Description"
 	1    14100 5475
 	-1   0    0    1   
 $EndComp
@@ -1175,9 +1179,10 @@ AR Path="/5DCAD6C3" Ref="SW?"  Part="1"
 AR Path="/5D902CF8/5DCAD6C3" Ref="SW7"  Part="1" 
 F 0 "SW7" V 13800 7350 50  0000 R CNN
 F 1 "DSP_RES" V 13725 7375 50  0000 R CNN
-F 2 "OPL_Switch:SW2-5.0-6.0X3.0X4.3MM" H 13750 7600 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 13750 7600 50  0001 C CNN
 F 3 "" H 13750 7600 50  0001 C CNN
 F 4 "HAND" H 13750 7400 50  0001 C CNN "JLPCB#"
+F 5 "for manual reset button for DSP" H 13750 7400 50  0001 C CNN "Description"
 	1    13750 7400
 	0    1    -1   0   
 $EndComp
@@ -1300,29 +1305,29 @@ Wire Wire Line
 Wire Wire Line
 	6200 4100 6550 4100
 Wire Wire Line
-	3425 5500 4000 5500
+	3600 5500 4000 5500
 Wire Wire Line
-	3425 5600 4000 5600
+	3600 5600 4000 5600
 Wire Wire Line
-	3425 5700 4000 5700
+	3600 5700 4000 5700
 Wire Wire Line
-	3450 5900 4000 5900
+	3625 5900 4000 5900
 Wire Wire Line
-	3450 6000 4000 6000
+	3625 6000 4000 6000
 Wire Wire Line
-	4000 6100 3450 6100
+	4000 6100 3625 6100
 Wire Wire Line
-	4000 6300 3450 6300
+	4000 6300 3625 6300
 Wire Wire Line
-	3450 6400 4000 6400
+	3625 6400 4000 6400
 Wire Wire Line
-	3450 6500 4000 6500
+	3625 6500 4000 6500
 Wire Wire Line
-	4000 6700 3450 6700
+	4000 6700 3625 6700
 Wire Wire Line
-	4000 6800 3450 6800
+	4000 6800 3625 6800
 Wire Wire Line
-	4000 6900 3450 6900
+	4000 6900 3625 6900
 Wire Wire Line
 	6200 5500 6325 5500
 Wire Wire Line
@@ -1933,6 +1938,7 @@ F 1 "Jumper_NO" H 2925 7850 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2825 7800 50  0001 C CNN
 F 3 "~" H 2825 7800 50  0001 C CNN
 F 4 "NOP" H 2825 7800 50  0001 C CNN "JLPCB#"
+F 5 "Prevent Selfboot if shorted" H 2825 7800 50  0001 C CNN "Description"
 	1    2825 7800
 	1    0    0    -1  
 $EndComp
@@ -2335,6 +2341,7 @@ F 1 "IDC_2x5" H 7150 9750 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" H 7150 10000 60  0001 C CNN
 F 3 "" H 7175 8850 60  0000 C CNN
 F 4 "HAND" H 7175 10050 50  0001 C CNN "JLPCB#"
+F 5 "for USBi" H 7175 10050 50  0001 C CNN "Description"
 	1    7175 10050
 	1    0    0    -1  
 $EndComp
@@ -2711,6 +2718,7 @@ F 1 "Jumper_NC" H 4550 1825 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4500 1675 50  0001 C CNN
 F 3 "~" H 4500 1675 50  0001 C CNN
 F 4 "NOP" H 4500 1675 50  0001 C CNN "JLPCB#"
+F 5 "Cut for 96kHz A/D Convertion" H 4500 1675 50  0001 C CNN "Description"
 	1    4500 1675
 	1    0    0    -1  
 $EndComp
@@ -2786,6 +2794,7 @@ F 1 "Conn_Coaxial" H 1175 10650 50  0000 C CNN
 F 2 "MyJacks:RJ-2410N" H 1250 10475 50  0001 C CNN
 F 3 " ~" H 1250 10475 50  0001 C CNN
 F 4 "HAND" H 1250 10475 50  0001 C CNN "JLPCB#"
+F 5 "RCA-pin Input Connector" H 1250 10475 50  0001 C CNN "Description"
 	1    1250 10475
 	-1   0    0    -1  
 $EndComp
@@ -2957,10 +2966,10 @@ AR Path="/5D67FDC6/686BEDBF" Ref="R?"  Part="1"
 AR Path="/686BEDBF" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/686BEDBF" Ref="R76"  Part="1" 
 F 0 "R76" V 3525 10750 50  0000 L CNN
-F 1 "3.3k" V 3450 10725 50  0000 L CNN
+F 1 "330R" V 3450 10700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 10800 50  0001 C CNN
 F 3 "~" H 3450 10800 50  0001 C CNN
-F 4 "C22978" H 3450 10800 50  0001 C CNN "JLPCB#"
+F 4 "C17630" H 3450 10800 50  0001 C CNN "JLPCB#"
 	1    3450 10800
 	0    -1   1    0   
 $EndComp
@@ -3009,7 +3018,7 @@ F 0 "U10" H 2850 9775 50  0000 C CNN
 F 1 "74LVC1G86" H 3300 9775 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3025 9625 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3025 9625 50  0001 C CNN
-F 4 "C402161" H 3025 9625 50  0001 C CNN "JLPCB#"
+F 4 "C73458" H 3025 9625 50  0001 C CNN "JLPCB#"
 	1    3025 9625
 	1    0    0    -1  
 $EndComp
@@ -3159,101 +3168,103 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 691C142F
-P 13625 8975
+P 13650 9300
 AR Path="/691C142F" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/691C142F" Ref="R98"  Part="1" 
-F 0 "R98" V 13550 8925 50  0000 L CNN
-F 1 "1k" V 13625 8925 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 13555 8975 50  0001 C CNN
-F 3 "~" H 13625 8975 50  0001 C CNN
-F 4 "C17513" H 13625 8975 50  0001 C CNN "JLPCB#"
-	1    13625 8975
+F 0 "R98" V 13575 9250 50  0000 L CNN
+F 1 "1k" V 13650 9250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 13580 9300 50  0001 C CNN
+F 3 "~" H 13650 9300 50  0001 C CNN
+F 4 "C17513" H 13650 9300 50  0001 C CNN "JLPCB#"
+	1    13650 9300
 	1    0    0    -1  
 $EndComp
 $Comp
 L fdsp_device:LED_Small D18
 U 1 1 691C1439
-P 13625 8725
-F 0 "D18" V 13650 8575 50  0000 C CNN
-F 1 "LED_RED" V 13575 8400 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 13625 8725 60  0001 C CNN
-F 3 "" V 13625 8725 60  0000 C CNN
-F 4 "C2286" H 13625 8725 50  0001 C CNN "JLPCB#"
-	1    13625 8725
+P 13650 8850
+F 0 "D18" V 13675 8700 50  0000 C CNN
+F 1 "LED_RED" V 13575 8675 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 13650 8850 60  0001 C CNN
+F 3 "" V 13650 8850 60  0000 C CNN
+F 4 "C2286" H 13650 8850 50  0001 C CNN "JLPCB#"
+F 5 "Remove this if you use extension header" H 13650 8850 50  0001 C CNN "Description"
+	1    13650 8850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 694212DC
-P 13625 8625
+P 13650 8675
 AR Path="/694212DC" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/694212DC" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 13625 8475 50  0001 C CNN
-F 1 "+3.3V" H 13625 8765 50  0000 C CNN
-F 2 "" H 13625 8625 50  0000 C CNN
-F 3 "" H 13625 8625 50  0000 C CNN
-	1    13625 8625
+F 0 "#PWR0121" H 13650 8525 50  0001 C CNN
+F 1 "+3.3V" H 13650 8815 50  0000 C CNN
+F 2 "" H 13650 8675 50  0000 C CNN
+F 3 "" H 13650 8675 50  0000 C CNN
+	1    13650 8675
 	1    0    0    -1  
 $EndComp
-Text GLabel 12625 9225 0    50   Input ~ 0
+Text GLabel 12650 9475 0    50   Input ~ 0
 DSP_MP6
-Text GLabel 12625 9325 0    50   Input ~ 0
+Text GLabel 12650 9675 0    50   Input ~ 0
 DSP_MP7
 $Comp
 L Device:R R?
 U 1 1 696DD839
-P 12925 8975
+P 12950 9300
 AR Path="/696DD839" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/696DD839" Ref="R96"  Part="1" 
-F 0 "R96" V 12850 8925 50  0000 L CNN
-F 1 "1k" V 12925 8925 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12855 8975 50  0001 C CNN
-F 3 "~" H 12925 8975 50  0001 C CNN
-F 4 "C17513" H 12925 8975 50  0001 C CNN "JLPCB#"
-	1    12925 8975
+F 0 "R96" V 12875 9250 50  0000 L CNN
+F 1 "1k" V 12950 9250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12880 9300 50  0001 C CNN
+F 3 "~" H 12950 9300 50  0001 C CNN
+F 4 "C17513" H 12950 9300 50  0001 C CNN "JLPCB#"
+	1    12950 9300
 	1    0    0    -1  
 $EndComp
 $Comp
 L fdsp_device:LED_Small D17
 U 1 1 696DD843
-P 12925 8725
-F 0 "D17" V 12950 8575 50  0000 C CNN
-F 1 "LED_GRN" V 12875 8400 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 12925 8725 60  0001 C CNN
-F 3 "" V 12925 8725 60  0000 C CNN
-F 4 "C72043" H 12925 8725 50  0001 C CNN "JLPCB#"
-	1    12925 8725
+P 12950 8850
+F 0 "D17" V 12975 8700 50  0000 C CNN
+F 1 "LED_GRN" V 12875 8675 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 12950 8850 60  0001 C CNN
+F 3 "" V 12950 8850 60  0000 C CNN
+F 4 "C72043" H 12950 8850 50  0001 C CNN "JLPCB#"
+F 5 "Remove this if you use extension header" H 12950 8850 50  0001 C CNN "Description"
+	1    12950 8850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 696DD84D
-P 12925 8625
+P 12950 8675
 AR Path="/696DD84D" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/696DD84D" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 12925 8475 50  0001 C CNN
-F 1 "+3.3V" H 12925 8765 50  0000 C CNN
-F 2 "" H 12925 8625 50  0000 C CNN
-F 3 "" H 12925 8625 50  0000 C CNN
-	1    12925 8625
+F 0 "#PWR0119" H 12950 8525 50  0001 C CNN
+F 1 "+3.3V" H 12950 8815 50  0000 C CNN
+F 2 "" H 12950 8675 50  0000 C CNN
+F 3 "" H 12950 8675 50  0000 C CNN
+	1    12950 8675
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12625 9225 12925 9225
+	12650 9475 12950 9475
 Wire Wire Line
-	12925 9225 12925 9125
+	12950 9475 12950 9450
 Wire Wire Line
-	12625 9325 13625 9325
+	12650 9675 13650 9675
 Wire Wire Line
-	13625 9325 13625 9125
-Text Notes 12150 8800 0    79   ~ 16
+	13650 9675 13650 9450
+Text Notes 12100 9150 0    79   ~ 16
 Signal LED
-Text Notes 14100 8750 0    79   ~ 16
+Text Notes 13725 9175 0    79   ~ 16
 CLIP LED
-Text Notes 12300 8900 0    50   ~ 0
+Text Notes 12350 9250 0    50   ~ 0
 (-20dB)
-Text Notes 14225 8850 0    50   ~ 0
-(-1dB)
+Text Notes 13850 9275 0    50   ~ 0
+(-0.5dB)
 $Comp
 L fdsp_device:POT RV1
 U 1 1 6A09FA17
@@ -3273,7 +3284,7 @@ P 8950 5075
 AR Path="/6A1CD426" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/6A1CD426" Ref="R94"  Part="1" 
 F 0 "R94" V 8850 5025 50  0000 L CNN
-F 1 "100" V 8950 5000 50  0000 L CNN
+F 1 "100R" V 8950 5000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8880 5075 50  0001 C CNN
 F 3 "~" H 8950 5075 50  0001 C CNN
 F 4 "C17408" H 8950 5075 50  0001 C CNN "JLPCB#"
@@ -3381,7 +3392,7 @@ P 10525 5050
 AR Path="/6A5BBD75" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/6A5BBD75" Ref="R92"  Part="1" 
 F 0 "R92" V 10600 5000 50  0000 L CNN
-F 1 "100" V 10525 4975 50  0000 L CNN
+F 1 "100R" V 10525 4950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10455 5050 50  0001 C CNN
 F 3 "~" H 10525 5050 50  0001 C CNN
 F 4 "C17408" H 10525 5050 50  0001 C CNN "JLPCB#"
@@ -3931,6 +3942,7 @@ F 1 "8P_DIP_SOCKET" H 10475 7825 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10350 7600 50  0001 C CNN
 F 3 "~" H 10350 7600 50  0001 C CNN
 F 4 "NOP" H 10350 7600 50  0001 C CNN "JLPCB#"
+F 5 "Just for the Altanative choice of EEPROM package" H 10350 7600 50  0001 C CNN "Description"
 	1    10350 7600
 	1    0    0    -1  
 $EndComp
@@ -4090,8 +4102,6 @@ Wire Notes Line
 	10700 7125 10700 6825
 Wire Notes Line
 	10700 6825 10150 6825
-Text Notes 9000 8850 0    50   ~ 0
-NOTE:\nRemove U13 when use a J6 DIP package EEPROM.\nRemove R43 when you install the SW4 for selectable dual EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM with following lists…\n    25AA1024-I/SM(Microchip, Evaluated)\n    BR25G1MF-3GE2(ROHM)\n    CAT25M01VI-GT3(OnSemi)\n    S-25CM01A0I-J8T1U4(ablic)\n    M95M01-DWMN3TP/K(STM)\n
 $Comp
 L Device:R R?
 U 1 1 64DFCF6D
@@ -4151,8 +4161,8 @@ P 13750 6900
 AR Path="/5D60B524/640D11CF" Ref="D?"  Part="1" 
 AR Path="/640D11CF" Ref="D?"  Part="1" 
 AR Path="/5D902CF8/640D11CF" Ref="D21"  Part="1" 
-F 0 "D21" H 13750 6750 50  0000 L CNN
-F 1 "1N4148W" H 13625 6825 50  0000 L CNN
+F 0 "D21" H 13675 6800 50  0000 L CNN
+F 1 "1N4148W" H 13575 7000 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 13750 6900 50  0001 C CNN
 F 3 "~" H 13750 6900 50  0001 C CNN
 F 4 "C81598 " H 13750 6900 50  0001 C CNN "JLPCB#"
@@ -4163,8 +4173,6 @@ Wire Wire Line
 	14025 6650 13750 6650
 Wire Wire Line
 	13750 6650 13750 6750
-Wire Wire Line
-	13750 7050 13750 7125
 $Comp
 L Device:C_Small C?
 U 1 1 643CBC31
@@ -4503,20 +4511,20 @@ $EndComp
 Wire Wire Line
 	9025 9650 9150 9650
 Wire Wire Line
-	8625 9650 8425 9650
+	8625 9650 8475 9650
 Wire Wire Line
-	8425 9650 8425 9625
+	8475 9650 8475 9625
 $Comp
 L power:+3.3V #PWR?
 U 1 1 65882330
-P 8425 9625
+P 8475 9625
 AR Path="/65882330" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/65882330" Ref="#PWR0207"  Part="1" 
-F 0 "#PWR0207" H 8425 9475 50  0001 C CNN
-F 1 "+3.3V" H 8425 9765 50  0000 C CNN
-F 2 "" H 8425 9625 50  0000 C CNN
-F 3 "" H 8425 9625 50  0000 C CNN
-	1    8425 9625
+F 0 "#PWR0207" H 8475 9475 50  0001 C CNN
+F 1 "+3.3V" H 8475 9765 50  0000 C CNN
+F 2 "" H 8475 9625 50  0000 C CNN
+F 3 "" H 8475 9625 50  0000 C CNN
+	1    8475 9625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4588,9 +4596,7 @@ Wire Wire Line
 	7575 10250 7625 10250
 Wire Wire Line
 	7425 10250 7575 10250
-Wire Wire Line
-	7950 9950 8825 9950
-Text GLabel 7900 9775 2    50   Output ~ 0
+Text GLabel 7875 9775 2    50   Output ~ 0
 ~DSP-RESET
 Wire Wire Line
 	7425 10050 7525 10050
@@ -4613,27 +4619,87 @@ F 4 "C17477" H 7700 9775 50  0001 C CNN "JLPCB#"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7900 9775 7850 9775
+	7875 9775 7850 9775
+Text Notes 2950 6475 0    79   ~ 0
+USB
+Text Notes 2975 6875 0    79   ~ 0
+RPI
+Text Notes 2950 6050 0    79   ~ 0
+EXT
+Text Notes 2950 5675 0    79   ~ 0
+RCA
+Wire Wire Line
+	13300 6600 13300 6825
+Wire Wire Line
+	13750 7050 13750 7125
+Wire Wire Line
+	7950 9950 8825 9950
 $Comp
-L Device:R R?
-U 1 1 641FC873
-P 13600 6650
-AR Path="/641FC873" Ref="R?"  Part="1" 
-AR Path="/5D902CF8/641FC873" Ref="R49"  Part="1" 
-F 0 "R49" V 13675 6600 50  0000 L CNN
-F 1 "3.3k" V 13600 6575 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 13530 6650 50  0001 C CNN
-F 3 "~" H 13600 6650 50  0001 C CNN
-F 4 "C22978" H 13600 6650 50  0001 C CNN "JLPCB#"
-	1    13600 6650
-	0    -1   -1   0   
+L Connector_Generic:Conn_01x02 J9
+U 1 1 67525B7E
+P 12600 8875
+F 0 "J9" H 12650 8575 50  0000 R CNN
+F 1 "Conn_01x02" H 12850 8650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12600 8875 50  0001 C CNN
+F 3 "~" H 12600 8875 50  0001 C CNN
+F 4 "HAND" H 12600 8875 50  0001 C CNN "JLPCB#"
+F 5 "for the Extended LED Connection" H 12600 8875 50  0001 C CNN "Description"
+	1    12600 8875
+	-1   0    0    1   
 $EndComp
-Connection ~ 13750 6650
 Wire Wire Line
-	13450 6650 13300 6650
+	12950 8950 12950 8975
 Wire Wire Line
-	13300 6650 13300 6600
+	13650 8950 13650 9000
+Text Notes 9100 9000 0    50   ~ 0
+NOTE:\nRemove U13 when use a J6 DIP package instead of SOIC package EEPROM.\nRemove R43 when you install the SW4 for selectable dual EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM which contained in the following lists, but you need to change the writting parameters…\n\n    25AA1024-I/SM (Microchip, Total=1048576, PageSize=256, N=3)\n    25AA512-I/SN (Microchip, Total=524288, PageSize=128, N=2)\n    M95M01-DWMN3TP/K (STM, Total=262144, PageSize=64, N=2)\n    BR25G1MF-3GE2 (ROHM)\n    CAT25M01VI-GT3 (OnSemi)\n    S-25CM01A0I-J8T1U4 (ablic)\n
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 67B4E3B1
+P 14200 8900
+F 0 "J10" H 14250 8550 50  0000 R CNN
+F 1 "Conn_01x02" H 14350 8650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14200 8900 50  0001 C CNN
+F 3 "~" H 14200 8900 50  0001 C CNN
+F 4 "HAND" H 14200 8900 50  0001 C CNN "JLPCB#"
+F 5 "for the Extended LED Connection" H 14200 8900 50  0001 C CNN "Description"
+	1    14200 8900
+	1    0    0    1   
+$EndComp
 Wire Wire Line
-	13300 6825 13300 6650
-Connection ~ 13300 6650
+	12950 8675 12950 8725
+Wire Wire Line
+	13650 8675 13650 8700
+Wire Wire Line
+	12800 8775 12800 8725
+Wire Wire Line
+	12800 8725 12950 8725
+Connection ~ 12950 8725
+Wire Wire Line
+	12950 8725 12950 8750
+Wire Wire Line
+	12800 8875 12800 8975
+Wire Wire Line
+	12800 8975 12950 8975
+Connection ~ 12950 8975
+Wire Wire Line
+	14000 8800 14000 8700
+Wire Wire Line
+	14000 8700 13650 8700
+Connection ~ 13650 8700
+Wire Wire Line
+	13650 8700 13650 8750
+Wire Wire Line
+	14000 8900 14000 9000
+Wire Wire Line
+	14000 9000 13650 9000
+Connection ~ 13650 9000
+Wire Wire Line
+	13650 9000 13650 9150
+Wire Wire Line
+	12950 8975 12950 9150
+Text Notes 14275 8950 0    63   ~ 0
+ANODE\nCATHODE
+Text Notes 12525 8925 2    63   ~ 0
+ANODE\nCATHODE
 $EndSCHEMATC
