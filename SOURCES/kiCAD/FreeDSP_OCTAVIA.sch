@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
-Date "2023-05-13"
+Date "2023-05-21"
 Rev "0.25"
 Comp ""
 Comment1 ""
@@ -594,7 +594,7 @@ Wire Wire Line
 Text Notes 5625 3925 0    50   ~ 0
 Power-OFF Delay \nTiming CR (40 Sec)
 Text Notes 4650 6100 0    50   ~ 0
-Power-ON Delay \nTiming CR (.1 Sec)
+Power-ON Delay \nTiming CR (5 Sec)
 Wire Notes Line
 	5775 5475 5300 5975
 Wire Notes Line
@@ -1586,7 +1586,7 @@ Wire Notes Line
 Text Notes 11700 2025 0    50   ~ 0
 (DSP Power)
 Text Notes 11800 3225 0    50   ~ 0
-(ADC/DAC Power)
+(ADC/DAC/Line-Driver Power)
 $Comp
 L Device:D_ALT D?
 U 1 1 603ED57A
@@ -1891,7 +1891,7 @@ Wire Wire Line
 	5750 4175 7075 4175
 Connection ~ 5750 4175
 Text Notes 11800 3975 0    50   ~ 0
-(ADC/DAC Power)
+(ADC/DAC/Line-Driver Power)
 $Comp
 L Device:C_Small C?
 U 1 1 64279A3B
@@ -2451,7 +2451,7 @@ F 4 "C28323" H 3500 1375 50  0001 C CNN "JLPCB#"
 $EndComp
 Connection ~ 3275 1250
 Text Notes 900  1525 0    79   ~ 16
-DC12V WALL\nADOPTOR
+DC9V WALL\nADAPTOR
 Wire Wire Line
 	3275 1150 3275 1250
 Wire Wire Line
@@ -2994,7 +2994,7 @@ F 3 "" H 9875 8250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MW-ADAU1466BB-rescue:Combo384-Combo384 A1
+L Combo384:Combo384 A1
 U 1 1 6517C675
 P 9175 8125
 AR Path="/6517C675" Ref="A1"  Part="1" 
@@ -4424,4 +4424,6 @@ Wire Wire Line
 	2350 6875 2350 7250
 Text Notes 1850 7400 0    63   ~ 0
 SDA\nSCL\nVCC\nGND
+Text Notes 7100 2350 0    50   ~ 0
+Muting   = +12V\nUnMuting = -4.5V
 $EndSCHEMATC

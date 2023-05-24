@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 3
 Title "FreeDSP OCTAVIA DAC part"
-Date "2023-05-13"
-Rev "0.25"
+Date "2023-05-25"
+Rev "0.26"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -918,15 +918,6 @@ F 3 "" H 14800 4275 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14800 2775 14125 2775
-Connection ~ 14125 2775
-Wire Wire Line
-	14125 2775 14125 3125
-Wire Wire Line
-	14800 2975 14225 2975
-Wire Wire Line
-	14225 2975 14225 3425
-Wire Wire Line
 	14825 4150 14225 4150
 Wire Wire Line
 	14825 4050 13125 4050
@@ -958,8 +949,6 @@ Wire Wire Line
 	14025 2600 14025 2575
 Wire Wire Line
 	14025 2575 14125 2575
-Wire Wire Line
-	14125 2575 14125 2775
 $Comp
 L fdsp_power:GNDA #PWR0154
 U 1 1 65A842EB
@@ -1546,11 +1535,6 @@ F 3 "" H 14600 8150 60  0000 C CNN
 	1    14600 8150
 	1    0    0    -1  
 $EndComp
-Connection ~ 14175 6650
-Wire Wire Line
-	14175 6650 14175 7000
-Wire Wire Line
-	14275 6850 14275 7300
 Wire Wire Line
 	12875 8025 14275 8025
 Wire Wire Line
@@ -1592,8 +1576,6 @@ Wire Wire Line
 Wire Wire Line
 	14075 6450 14175 6450
 Connection ~ 14175 6450
-Wire Wire Line
-	14175 6450 14175 6650
 $Comp
 L fdsp_power:GNDA #PWR0175
 U 1 1 65D48E9D
@@ -2155,15 +2137,6 @@ $EndComp
 Wire Wire Line
 	7450 8250 7450 8275
 Wire Wire Line
-	7475 6775 7000 6775
-Connection ~ 7000 6775
-Wire Wire Line
-	7000 6775 7000 7125
-Wire Wire Line
-	7475 6975 7100 6975
-Wire Wire Line
-	7100 6975 7100 7425
-Wire Wire Line
 	6000 8050 6000 7325
 Wire Wire Line
 	6000 7325 5700 7325
@@ -2197,8 +2170,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 6575 7000 6575
 Connection ~ 7000 6575
-Wire Wire Line
-	7000 6575 7000 6775
 $Comp
 L fdsp_power:GNDA #PWR0179
 U 1 1 6605504A
@@ -2571,8 +2542,6 @@ F 3 "" H 6200 3075 60  0000 C CNN
 	1    6200 3075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6300 2650 6300 2850
 Connection ~ 6300 2650
 Wire Wire Line
 	6200 2650 6300 2650
@@ -2623,15 +2592,6 @@ Wire Wire Line
 Connection ~ 6400 4225
 Wire Wire Line
 	5000 4225 6400 4225
-Wire Wire Line
-	6400 3050 6400 3500
-Wire Wire Line
-	6650 3050 6400 3050
-Wire Wire Line
-	6300 2850 6300 3200
-Connection ~ 6300 2850
-Wire Wire Line
-	6650 2850 6300 2850
 Wire Wire Line
 	6625 4325 6625 4350
 $Comp
@@ -4394,13 +4354,13 @@ DAC2_L
 Text Label 11475 6525 0    50   ~ 0
 DAC2_R
 Text Notes 6950 3100 0    63   ~ 0
-OUT-0\n(LEFT)\nOUT-1\n(RIGHT)
+OUT-0\n(RIGHT)\nOUT-1\n(LEFT)
 Text Notes 15100 3175 0    63   ~ 0
-OUT-32\n(LEFT)\nOUT-33\n(RIGHT)\n(SUM-LEFT)
+OUT-32\n(RIGHT)\nOUT-33\n(LEFT)\n(SUM-LEFT)
 Text Notes 14925 6975 0    63   ~ 0
-OUT-40\n(LEFT)\nOUT-41\n(RIGHT)
+OUT-40\n(RIGHT)\nOUT-41\n(LEFT)
 Text Notes 7775 7200 0    63   ~ 0
-OUT-16\n(LEFT)\nOUT-17\n(RIGHT)\n(SUM-RIGHT)
+OUT-16\n(RIGHT)\nOUT-17\n(LEFT)\n(SUM-RIGHT)
 Wire Wire Line
 	6400 4225 6675 4225
 Wire Wire Line
@@ -4473,10 +4433,6 @@ Wire Wire Line
 Wire Wire Line
 	14600 7825 14600 8125
 Connection ~ 14600 8125
-Wire Wire Line
-	14175 6650 14625 6650
-Wire Wire Line
-	14275 6850 14625 6850
 Wire Wire Line
 	14550 7625 14550 5950
 Wire Wire Line
@@ -5281,4 +5237,56 @@ F 3 "" H 3075 3500 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	3075 3425 3075 3500
+Text Notes 775  3400 0    50   ~ 0
+H=UnMute\nL=SoftMute
+Text Notes 8400 3350 0    50   ~ 0
+H=UnMute\nL=SoftMute
+Text Notes 8625 7200 0    50   ~ 0
+H=UnMute\nL=SoftMute
+Text Notes 975  7325 0    50   ~ 0
+H=UnMute\nL=SoftMute
+Wire Wire Line
+	6300 2650 6300 3050
+Wire Wire Line
+	6650 2850 6400 2850
+Wire Wire Line
+	6400 2850 6400 3500
+Wire Wire Line
+	6650 3050 6300 3050
+Connection ~ 6300 3050
+Wire Wire Line
+	6300 3050 6300 3200
+Wire Wire Line
+	14125 2575 14125 2975
+Wire Wire Line
+	14800 2775 14225 2775
+Wire Wire Line
+	14225 2775 14225 3425
+Wire Wire Line
+	14800 2975 14125 2975
+Connection ~ 14125 2975
+Wire Wire Line
+	14125 2975 14125 3125
+Wire Wire Line
+	14175 6450 14175 6850
+Wire Wire Line
+	14625 6650 14275 6650
+Wire Wire Line
+	14275 6650 14275 7300
+Wire Wire Line
+	14625 6850 14175 6850
+Connection ~ 14175 6850
+Wire Wire Line
+	14175 6850 14175 7000
+Wire Wire Line
+	7000 6575 7000 6975
+Wire Wire Line
+	7475 6775 7100 6775
+Wire Wire Line
+	7100 6775 7100 7425
+Wire Wire Line
+	7475 6975 7000 6975
+Connection ~ 7000 6975
+Wire Wire Line
+	7000 6975 7000 7125
 $EndSCHEMATC

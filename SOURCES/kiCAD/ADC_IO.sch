@@ -265,7 +265,7 @@ F 3 "" H 3925 1825 50  0001 C CNN
 $EndComp
 Text Notes 3675 925  2    79   ~ 0
 (MasterMode) OPEN=96kHz, SHORT=48kHz
-Text Notes 1275 1850 2    79   ~ 0
+Text Notes 1025 1850 2    79   ~ 0
 AUDIO\nINPUT
 $Comp
 L MW-ADAU1466BB-rescue:R-CS5368TDM-rescue-RasPiAudioHat-rescue R?
@@ -4702,4 +4702,8 @@ Text Notes 14275 8950 0    63   ~ 0
 ANODE\nCATHODE
 Text Notes 12525 8925 2    63   ~ 0
 ANODE\nCATHODE
+Text Notes 1125 1700 0    50   ~ 0
+RIGHT
+Text Notes 1175 1875 0    50   ~ 0
+LEFT
 $EndSCHEMATC
