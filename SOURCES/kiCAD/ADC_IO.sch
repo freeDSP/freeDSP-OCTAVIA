@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
-Date "2023-05-13"
-Rev "0.25"
+Date "2023-07-22"
+Rev "0.3"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -22,7 +22,7 @@ AR Path="/5D67FDC6/5D9089EA" Ref="J?"  Part="1"
 AR Path="/5D902CF8/5D9089EA" Ref="J5"  Part="1" 
 F 0 "J5" H 1355 2088 50  0000 C CNN
 F 1 "MJ-519" H 1355 1997 50  0000 C CNN
-F 2 "MyCompo:MJ-519" H 1425 1650 50  0001 C CNN
+F 2 "MyJacks:MJ-519" H 1425 1650 50  0001 C CNN
 F 3 " ~" H 1425 1650 50  0001 C CNN
 F 4 "HAND" H 1425 1750 50  0001 C CNN "JLPCB#"
 	1    1425 1750
@@ -1357,8 +1357,8 @@ L dk_Ferrite-Beads-and-Chips:BLM18AG601SN1D FB4
 U 1 1 65A567C0
 P 3600 3600
 F 0 "FB4" H 3575 3800 60  0000 C CNN
-F 1 "GZ1608D601TF" H 3600 3450 60  0000 C CNN
-F 2 "digikey-footprints:0603" H 3800 3800 60  0001 L CNN
+F 1 "GZ2012D601TF " H 3600 3450 60  0000 C CNN
+F 2 "digikey-footprints:0805" H 3800 3800 60  0001 L CNN
 F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 3800 3900 60  0001 L CNN
 F 4 "490-1014-1-ND" H 3800 4000 60  0001 L CNN "Digi-Key_PN"
 F 5 "BLM18AG601SN1D" H 3800 4100 60  0001 L CNN "MPN"
@@ -1366,10 +1366,10 @@ F 6 "Filters" H 3800 4200 60  0001 L CNN "Category"
 F 7 "Ferrite Beads and Chips" H 3800 4300 60  0001 L CNN "Family"
 F 8 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 3800 4400 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/murata-electronics-north-america/BLM18AG601SN1D/490-1014-1-ND/584462" H 3800 4500 60  0001 L CNN "DK_Detail_Page"
-F 10 "FERRITE BEAD 600 OHM 0603 1LN" H 3800 4600 60  0001 L CNN "Description"
+F 10 "FERRITE BEAD 600 OHM" H 3800 4600 60  0001 L CNN "Description"
 F 11 "Murata Electronics North America" H 3800 4700 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3800 4800 60  0001 L CNN "Status"
-F 13 "C1002" H 3600 3600 50  0001 C CNN "JLPCB#"
+F 13 "C1017" H 3600 3600 50  0001 C CNN "JLPCB#"
 	1    3600 3600
 	1    0    0    -1  
 $EndComp
@@ -1794,8 +1794,8 @@ L dk_Ferrite-Beads-and-Chips:BLM18AG601SN1D FB3
 U 1 1 64617052
 P 2075 6650
 F 0 "FB3" V 2100 6800 60  0000 C CNN
-F 1 "GZ1608D601TF" V 2200 7075 60  0000 C CNN
-F 2 "digikey-footprints:0603" H 2275 6850 60  0001 L CNN
+F 1 "GZ2012D601TF " V 2200 7075 60  0000 C CNN
+F 2 "digikey-footprints:0805" H 2275 6850 60  0001 L CNN
 F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 2275 6950 60  0001 L CNN
 F 4 "490-1014-1-ND" H 2275 7050 60  0001 L CNN "Digi-Key_PN"
 F 5 "BLM18AG601SN1D" H 2275 7150 60  0001 L CNN "MPN"
@@ -1803,10 +1803,10 @@ F 6 "Filters" H 2275 7250 60  0001 L CNN "Category"
 F 7 "Ferrite Beads and Chips" H 2275 7350 60  0001 L CNN "Family"
 F 8 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 2275 7450 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/murata-electronics-north-america/BLM18AG601SN1D/490-1014-1-ND/584462" H 2275 7550 60  0001 L CNN "DK_Detail_Page"
-F 10 "FERRITE BEAD 600 OHM 0603 1LN" H 2275 7650 60  0001 L CNN "Description"
+F 10 "FERRITE BEAD 600 OHM" H 2275 7650 60  0001 L CNN "Description"
 F 11 "Murata Electronics North America" H 2275 7750 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 2275 7850 60  0001 L CNN "Status"
-F 13 "C1002" H 2075 6650 50  0001 C CNN "JLPCB#"
+F 13 "C1017" H 2075 6650 50  0001 C CNN "JLPCB#"
 	1    2075 6650
 	0    1    1    0   
 $EndComp
@@ -2804,7 +2804,7 @@ U 1 1 67D3BBAC
 P 1550 10475
 F 0 "T1" H 1950 10775 50  0000 C CNN
 F 1 "PE-65612NL" H 1950 10675 50  0000 C CNN
-F 2 "PE65612NL" H 2200 10575 50  0001 L CNN
+F 2 "MyLibrary:PE65612NL" H 2200 10575 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/PE-65612NL.pdf" H 2200 10475 50  0001 L CNN
 F 4 "Audio Transformers / Signal Transformers THT Digital Audio 2500uH 1-Port" H 2200 10375 50  0001 L CNN "Description"
 F 5 "6.6" H 2200 10275 50  0001 L CNN "Height"
