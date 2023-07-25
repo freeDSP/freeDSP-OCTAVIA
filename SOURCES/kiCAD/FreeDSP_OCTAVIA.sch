@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
-Date "2023-07-22"
-Rev "0.3"
+Date "2023-07-25"
+Rev "0.31"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -3341,9 +3341,7 @@ $EndComp
 Wire Wire Line
 	4200 10500 4175 10500
 Wire Wire Line
-	4200 10600 3725 10600
-Wire Wire Line
-	3650 10700 4200 10700
+	3650 10700 3725 10700
 Wire Wire Line
 	4200 10800 3650 10800
 Wire Wire Line
@@ -3979,17 +3977,10 @@ Wire Wire Line
 Connection ~ 4175 10500
 Wire Wire Line
 	3750 10500 3725 10500
-Wire Wire Line
-	3725 10500 3725 10600
-Connection ~ 3725 10600
-Wire Wire Line
-	3725 10600 3650 10600
 Text GLabel 3775 11075 2    50   Output ~ 0
 ~SEL_USB
 Wire Wire Line
 	3725 11075 3775 11075
-Wire Wire Line
-	3725 10600 3725 11075
 Text GLabel 9975 9375 0    50   Input ~ 0
 ~SEL_USB
 $Comp
@@ -4468,4 +4459,17 @@ Wire Wire Line
 Wire Wire Line
 	15625 2475 15325 2475
 Connection ~ 15325 2475
+Wire Wire Line
+	3650 10600 4200 10600
+Wire Wire Line
+	3725 10500 3725 10700
+Connection ~ 3725 10700
+Wire Wire Line
+	3725 10700 4200 10700
+Wire Wire Line
+	3725 11075 3725 10700
+Text Notes 4675 11150 0    50   ~ 0
+* USB Position has Changed
+Text Notes 3750 10700 0    50   ~ 0
+*
 $EndSCHEMATC
