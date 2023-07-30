@@ -17,7 +17,9 @@ https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 * Optical S/PDIF Output
 * Amanero Combo384 USB-Audio Interface Slot
 * DSD mute protection for Amanero Combo384
-* Raspberry-Pi 40P Slot for I2S Audio Input and Optional I2C Connection to DSP
+* Optional Raspberry-Pi 40P Slot for I2S Audio Input  
+(Raspberry-pi is optional, It is not necessary if you have a USBi for DSP programming)   
+* Optional Raspberry-Pi I2C Connection to DSP
 * On-board power supply for Raspberry Pi with shutdown control
 * Restart/Shutdown button for Raspberry-Pi
 * Independent Power switch for Raspberry-Pi
@@ -35,7 +37,8 @@ https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 * 2 LED indicators controlled by MP6 and MP7
 * DSP Reset button
 * Optional simple Unblanced RCA-pin output implementation capability
-* Optional Quad DAC Stereo implementation capability 
+* Optional Quad DAC Stereo implementation capability
+
 ----
 ## LINKS:<br />
 Wiki Page
