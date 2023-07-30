@@ -15,7 +15,7 @@ https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 * Coaxial S/PDIF Input
 * Optical S/PDIF Input
 * Optical S/PDIF Output
-* Amanero Combo384 USB-Audio Interface Slot
+* Optional Amanero Combo384 USB-Audio Interface Slot
 * DSD mute protection for Amanero Combo384
 * Optional Raspberry-Pi 40P Slot for I2S Audio Input  
 (Raspberry-pi is optional, It is not necessary if you have a USBi for DSP programming)   
