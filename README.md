@@ -44,8 +44,8 @@ https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 Wiki Page
 https://github.com/freeDSP/freeDSP-OCTAVIA/wiki
 
-Project Web-page:<br />
- n/a
+Project Web-page:(Yandex Machine Translation)<br/>
+ [n/a](https://translated.turbopages.org/proxy_u/ja-en.en.2f3cc3a8-64cf81e8-fca18b73-74722d776562/https/cyberpithilo.web.fc2.com/audio/FreeDSP_OCTAVIA/octavia_main.html)https://translated.turbopages.org/proxy_u/ja-en.en.2f3cc3a8-64cf81e8-fca18b73-74722d776562/https/cyberpithilo.web.fc2.com/audio/FreeDSP_OCTAVIA/octavia_main.html
 
 Discussion Forum:<br /> 
  https://www.diyaudio.com/community/threads/freedsp-octavia.393804/
