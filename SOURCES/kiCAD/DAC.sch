@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 3 3
 Title "FreeDSP OCTAVIA DAC part"
 Date "2023-07-22"
-Rev "0.3"
+Rev "0.32"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -211,7 +211,7 @@ F 1 "10nF(C0G)" V 10900 2975 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11025 2875 50  0001 C CNN
 F 3 "~" H 11025 2875 50  0001 C CNN
 F 4 "C342877" H 11025 2875 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11025 2875 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11025 2875 50  0001 C CNN "Description"
 	1    11025 2875
 	1    0    0    1   
 $EndComp
@@ -233,7 +233,7 @@ F 1 "10nF(C0G)" V 11300 3000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11175 2875 50  0001 C CNN
 F 3 "~" H 11175 2875 50  0001 C CNN
 F 4 "C342877" H 11175 2875 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11175 2875 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11175 2875 50  0001 C CNN "Description"
 	1    11175 2875
 	1    0    0    1   
 $EndComp
@@ -425,7 +425,7 @@ F 1 "10nF(C0G)" V 3425 6900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3550 6900 50  0001 C CNN
 F 3 "~" H 3550 6900 50  0001 C CNN
 F 4 "C342877" H 3550 6900 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3550 6900 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3550 6900 50  0001 C CNN "Description"
 	1    3550 6900
 	1    0    0    1   
 $EndComp
@@ -447,7 +447,7 @@ F 1 "10nF(C0G)" V 3825 6925 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3700 6900 50  0001 C CNN
 F 3 "~" H 3700 6900 50  0001 C CNN
 F 4 "C342877" H 3700 6900 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3700 6900 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3700 6900 50  0001 C CNN "Description"
 	1    3700 6900
 	1    0    0    1   
 $EndComp
@@ -482,7 +482,7 @@ F 1 "10nF(C0G)" V 11025 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11150 6775 50  0001 C CNN
 F 3 "~" H 11150 6775 50  0001 C CNN
 F 4 "C342877" H 11150 6775 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11150 6775 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11150 6775 50  0001 C CNN "Description"
 	1    11150 6775
 	1    0    0    1   
 $EndComp
@@ -502,7 +502,7 @@ F 1 "10nF(C0G)" V 11425 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11300 6775 50  0001 C CNN
 F 3 "~" H 11300 6775 50  0001 C CNN
 F 4 "C342877" H 11300 6775 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11300 6775 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11300 6775 50  0001 C CNN "Description"
 	1    11300 6775
 	1    0    0    1   
 $EndComp
@@ -1577,7 +1577,7 @@ P 5700 3975
 AR Path="/656EA003" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/656EA003" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/656EA003" Ref="R168"  Part="1" 
-F 0 "R168" V 5625 3925 50  0000 L CNN
+F 0 "R168" V 5625 3875 50  0000 L CNN
 F 1 "10k" V 5700 3900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5630 3975 50  0001 C CNN
 F 3 "~" H 5700 3975 50  0001 C CNN
@@ -1647,8 +1647,8 @@ $Comp
 L Device:Q_NPN_BEC Q18
 U 1 1 65507B78
 P 6050 3975
-F 0 "Q18" H 5700 4075 50  0000 L CNN
-F 1 "2SC3326" H 5575 4150 50  0000 L CNN
+F 0 "Q18" H 5975 4125 50  0000 L CNN
+F 1 "2SC3326" H 5775 3775 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 4075 50  0001 C CNN
 F 3 "~" H 6050 3975 50  0001 C CNN
 F 4 "C27829" H 6050 3975 50  0001 C CNN "JLPCB#"
@@ -2721,7 +2721,7 @@ F 1 "10nF(C0G)" V 3475 3025 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3350 3075 50  0001 C CNN
 F 3 "~" H 3350 3075 50  0001 C CNN
 F 4 "C342877" H 3350 3075 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3350 3075 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3350 3075 50  0001 C CNN "Description"
 	1    3350 3075
 	1    0    0    1   
 $EndComp
@@ -3984,8 +3984,8 @@ F 0 "C144" H 12075 6725 50  0000 C CNN
 F 1 "470pF(C0G)" H 12050 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12275 6700 50  0001 C CNN
 F 3 "~" H 12275 6700 50  0001 C CNN
-F 4 "C363520" H 12275 6700 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12275 6700 50  0001 C CNN "Description"
+F 4 "C525291" H 12275 6700 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12275 6700 50  0001 C CNN "Description"
 	1    12275 6700
 	1    0    0    1   
 $EndComp
@@ -4083,8 +4083,8 @@ F 0 "C146" H 12150 7875 50  0000 C CNN
 F 1 "470pF(C0G)" H 12100 7950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12350 7850 50  0001 C CNN
 F 3 "~" H 12350 7850 50  0001 C CNN
-F 4 "C363520" H 12350 7850 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12350 7850 50  0001 C CNN "Description"
+F 4 "C525291" H 12350 7850 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12350 7850 50  0001 C CNN "Description"
 	1    12350 7850
 	1    0    0    1   
 $EndComp
@@ -4247,8 +4247,8 @@ F 0 "C150" V 11875 2800 50  0000 C CNN
 F 1 "470pF(C0G)" V 11800 2725 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12000 2800 50  0001 C CNN
 F 3 "~" H 12000 2800 50  0001 C CNN
-F 4 "C363520" H 12000 2800 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12000 2800 50  0001 C CNN "Description"
+F 4 "C525291" H 12000 2800 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12000 2800 50  0001 C CNN "Description"
 	1    12000 2800
 	1    0    0    1   
 $EndComp
@@ -4323,8 +4323,8 @@ F 0 "C151" V 11900 4050 50  0000 C CNN
 F 1 "470pF(C0G)" V 11800 4050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12075 4050 50  0001 C CNN
 F 3 "~" H 12075 4050 50  0001 C CNN
-F 4 "C363520" H 12075 4050 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12075 4050 50  0001 C CNN "Description"
+F 4 "C525291" H 12075 4050 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12075 4050 50  0001 C CNN "Description"
 	1    12075 4050
 	1    0    0    1   
 $EndComp
@@ -4646,7 +4646,7 @@ F 1 "10nF(C0G)" V 3100 3025 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3200 3075 50  0001 C CNN
 F 3 "~" H 3200 3075 50  0001 C CNN
 F 4 "C342877" H 3200 3075 50  0001 C CNN "JLPCB#"
-F 5 "se Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3200 3075 50  0001 C CNN "Description"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3200 3075 50  0001 C CNN "Description"
 	1    3200 3075
 	1    0    0    1   
 $EndComp
@@ -5017,8 +5017,8 @@ F 0 "C158" V 4075 4125 50  0000 C CNN
 F 1 "470pF(C0G)" V 4000 4150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4175 4125 50  0001 C CNN
 F 3 "~" H 4175 4125 50  0001 C CNN
-F 4 "C363520" H 4175 4125 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 4125 50  0001 C CNN "Description"
+F 4 "C525291" H 4175 4125 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 4125 50  0001 C CNN "Description"
 	1    4175 4125
 	1    0    0    1   
 $EndComp
@@ -5043,8 +5043,8 @@ F 0 "C157" H 4050 2900 50  0000 C CNN
 F 1 "470pF(C0G)" V 3850 2925 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4175 2950 50  0001 C CNN
 F 3 "~" H 4175 2950 50  0001 C CNN
-F 4 "C363520" H 4175 2950 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 2950 50  0001 C CNN "Description"
+F 4 "C525291" H 4175 2950 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 2950 50  0001 C CNN "Description"
 	1    4175 2950
 	1    0    0    1   
 $EndComp
@@ -5094,8 +5094,8 @@ F 0 "C160" V 4450 6850 50  0000 C CNN
 F 1 "470pF(C0G)" V 4350 6850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4625 6850 50  0001 C CNN
 F 3 "~" H 4625 6850 50  0001 C CNN
-F 4 "C363520" H 4625 6850 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4625 6850 50  0001 C CNN "Description"
+F 4 "C525291" H 4625 6850 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4625 6850 50  0001 C CNN "Description"
 	1    4625 6850
 	1    0    0    1   
 $EndComp
@@ -5110,8 +5110,8 @@ F 0 "C161" H 4550 8250 50  0000 C CNN
 F 1 "470pF(C0G)" H 4550 8350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4675 8150 50  0001 C CNN
 F 3 "~" H 4675 8150 50  0001 C CNN
-F 4 "C363520" H 4675 8150 50  0001 C CNN "JLPCB#"
-F 5 "use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4675 8150 50  0001 C CNN "Description"
+F 4 "C525291" H 4675 8150 50  0001 C CNN "JLPCB#"
+F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4675 8150 50  0001 C CNN "Description"
 	1    4675 8150
 	1    0    0    1   
 $EndComp

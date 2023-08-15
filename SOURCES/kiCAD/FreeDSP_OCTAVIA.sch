@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
 Date "2023-07-25"
-Rev "0.31"
+Rev "0.32"
 Comp ""
 Comment1 ""
 Comment2 ""
