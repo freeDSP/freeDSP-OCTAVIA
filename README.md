@@ -49,5 +49,9 @@ Discussion Forum:<br />
 Project Web-page:(Yandex Machine Translation)<br/>
  [Yandex Machine Translation](https://translated.turbopages.org/proxy_u/ja-en.en.1f823d34-64db980e-910d74e0-74722d776562/https/cyberpithilo.web.fc2.com/audio/FreeDSP_OCTAVIA/octavia_main.html)
 
+Project Web-page:(Google Machine Translation)<br/>
+[Google Machine Translation](https://cyberpithilo-web-fc2-com.translate.goog/audio/FreeDSP_OCTAVIA/octavia_main.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  <BR/>
+
+
 Project Web-page:(Original Japanese Page)<br/>
  [https://cyberpithilo.web.fc2.com/audio/FreeDSP_OCTAVIA/octavia_main.html](https://cyberpithilo.web.fc2.com/audio/FreeDSP_OCTAVIA/octavia_main.html)
