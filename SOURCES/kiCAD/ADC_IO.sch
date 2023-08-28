@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
 Date "2023-08-14"
-Rev "0.32"
+Rev "0.33"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -25,6 +25,7 @@ F 1 "MJ-519" H 1355 1997 50  0000 C CNN
 F 2 "MyJacks:MJ-519" H 1425 1650 50  0001 C CNN
 F 3 " ~" H 1425 1650 50  0001 C CNN
 F 4 "HAND" H 1425 1750 50  0001 C CNN "JLPCB#"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 1425 1750 50  0001 C CNN "Description"
 	1    1425 1750
 	-1   0    0    -1  
 $EndComp
@@ -39,7 +40,7 @@ F 0 "IC2" H 6350 1625 50  0000 C CNN
 F 1 "PCM1808QPWRQ1" H 6350 725 50  0000 C CNN
 F 2 "Myfootprints:PCM1808QPWRQ1" H 6350 625 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm1808-q1.pdf" H 6350 525 50  0001 C CNN
-F 4 "99dB SNR is only for 48kHz Sampling" H 6350 425 50  0001 C CNN "Description"
+F 4 "ADC 99dB SNR is only available @48kHz Sampling" H 6350 425 50  0001 C CNN "Description"
 F 5 "RS" H 6350 325 50  0001 C CNN "Supplier_Name"
 F 6 "" H 6350 225 50  0001 C CNN "RS Part Number"
 F 7 "Texas Instruments" H 6350 125 50  0001 C CNN "Manufacturer_Name"
@@ -182,9 +183,9 @@ AR Path="/5D67FDC6/5E14DC78" Ref="C?"  Part="1"
 AR Path="/5D902CF8/5E14DC78" Ref="C31"  Part="1" 
 F 0 "C31" H 6050 1075 50  0000 L CNN
 F 1 "0.1uF" V 6150 1175 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6050 1275 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6050 1275 50  0001 C CNN
 F 3 "" H 6050 1275 50  0001 C CNN
-F 4 "C49678" H 6050 1275 50  0001 C CNN "JLPCB#"
+F 4 "C14663" H 6050 1275 50  0001 C CNN "JLPCB#"
 	1    6050 1275
 	1    0    0    1   
 $EndComp
@@ -643,6 +644,7 @@ F 1 "PLT133-T10W" H 5048 10780 60  0000 R CNN
 F 2 "MyLibrary:PLT133-T10W" H 5048 10674 60  0001 R CNN
 F 3 "" H 5325 10625 60  0000 C CNN
 F 4 "HAND" H 5325 10625 50  0001 C CNN "JLPCB#"
+F 5 "Optical S/PDIF TX (max. 16Mbps)" H 5325 10625 50  0001 C CNN "Description"
 	1    5325 10625
 	-1   0    0    -1  
 $EndComp
@@ -781,6 +783,7 @@ F 1 "4700pF" V 2225 7025 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2275 7200 50  0001 C CNN
 F 3 "~" H 2275 7200 50  0001 C CNN
 F 4 "C1744" H 2275 7200 50  0001 C CNN "JLPCB#"
+F 5 "PLL Loop FIlter Snabber Cap" H 2275 7200 50  0001 C CNN "Description"
 	1    2275 7200
 	-1   0    0    1   
 $EndComp
@@ -839,6 +842,7 @@ F 1 "PLR135-T10" H 1800 9675 60  0000 R CNN
 F 2 "MyLibrary:PLR135-T10" H 1223 9774 60  0001 R CNN
 F 3 "" H 1500 9725 60  0000 C CNN
 F 4 "HAND" H 1500 9725 50  0001 C CNN "JLPCB#"
+F 5 "Optical S/PDIF RX (max. 16Mbps)" H 1500 9725 50  0001 C CNN "Description"
 	1    1500 9725
 	1    0    0    -1  
 $EndComp
@@ -1231,6 +1235,7 @@ F 1 "ADAU1452" H 5100 9175 60  0000 C CNN
 F 2 "Myfootprints:LFCSP-72-1EP_10x10mm_P0.5mm_EP5.3x5.3mmL_HandSolder" H 5100 7900 60  0001 C CNN
 F 3 "" H 5100 7900 60  0000 C CNN
 F 4 "C654402" H 5100 6300 50  0001 C CNN "JLPCB#"
+F 5 "SigmaDSP " H 5100 6300 50  0001 C CNN "Description"
 	1    5100 6300
 	1    0    0    -1  
 $EndComp
@@ -1823,6 +1828,7 @@ F 1 "1nF" V 2025 7050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2075 7200 50  0001 C CNN
 F 3 "~" H 2075 7200 50  0001 C CNN
 F 4 "C46653" H 2075 7200 50  0001 C CNN "JLPCB#"
+F 5 "PLL Loop FIlter Snabber Cap" H 2075 7200 50  0001 C CNN "Description"
 	1    2075 7200
 	-1   0    0    1   
 $EndComp
@@ -1837,6 +1843,7 @@ F 1 "150pF" V 2525 7050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2575 7200 50  0001 C CNN
 F 3 "~" H 2575 7200 50  0001 C CNN
 F 4 "C1716" H 2575 7200 50  0001 C CNN "JLPCB#"
+F 5 "PLL Loop FIlter Cap (C0G will better)" H 2575 7200 50  0001 C CNN "Description"
 	1    2575 7200
 	-1   0    0    1   
 $EndComp
@@ -1976,7 +1983,7 @@ F 0 "Y1" H 1550 8525 50  0000 C CNN
 F 1 "OT322524.576MJBA4S" H 1550 8275 50  0000 C CNN
 F 2 "Crystals:Crystal_SMD_TXC_7M-4pin_3.2x2.5mm_HandSoldering" H 1525 7725 50  0001 C CNN
 F 3 "http://www.kyocera.co.jp/prdct/electro/pdf/clock_k_j.pdf" H 1525 7625 50  0001 C CNN
-F 4 "50MHz TCXO 1.6 to 3.63 Volts" H 1525 7525 50  0001 C CNN "Description"
+F 4 "24.576MHz or 22.5792MHz TCXO 1.6 to 3.63 Volts" H 1525 7525 50  0001 C CNN "Description"
 F 5 "RS" H 1525 7425 50  0001 C CNN "Supplier_Name"
 F 6 "" H 1525 7325 50  0001 C CNN "RS Part Number"
 F 7 "AVX Corp/Kyocera Corp" H 1525 7225 50  0001 C CNN "Manufacturer_Name"
@@ -2198,6 +2205,7 @@ F 1 "25AA1024" H 8375 7250 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 8300 7450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf" H 8625 7900 50  0001 C CNN
 F 4 "C157455" H 8650 7500 50  0001 C CNN "JLPCB#"
+F 5 "Might be substitute with 256Mbit/512Mbit SPI EEPROM" H 8650 7500 50  0001 C CNN "Description"
 	1    8650 7500
 	-1   0    0    -1  
 $EndComp
@@ -2341,7 +2349,7 @@ F 1 "IDC_2x5" H 7150 9750 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" H 7150 10000 60  0001 C CNN
 F 3 "" H 7175 8850 60  0000 C CNN
 F 4 "HAND" H 7175 10050 50  0001 C CNN "JLPCB#"
-F 5 "for USBi" H 7175 10050 50  0001 C CNN "Description"
+F 5 "10pin IDC header for USBi" H 7175 10050 50  0001 C CNN "Description"
 	1    7175 10050
 	1    0    0    -1  
 $EndComp
@@ -2383,6 +2391,7 @@ F 1 "LED_YELLOW" H 7875 10100 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 7725 10250 60  0001 C CNN
 F 3 "" V 7725 10250 60  0000 C CNN
 F 4 "C72038" H 7725 10250 50  0001 C CNN "JLPCB#"
+F 5 "Indicator for USBi is Active" H 7725 10250 50  0001 C CNN "Description"
 	1    7725 10250
 	1    0    0    -1  
 $EndComp
@@ -2794,7 +2803,7 @@ F 1 "Conn_Coaxial" H 1175 10650 50  0000 C CNN
 F 2 "MyJacks:RJ-2410N" H 1250 10475 50  0001 C CNN
 F 3 " ~" H 1250 10475 50  0001 C CNN
 F 4 "HAND" H 1250 10475 50  0001 C CNN "JLPCB#"
-F 5 "RCA-pin Input Connector" H 1250 10475 50  0001 C CNN "Description"
+F 5 "RCA-pin Input Connector(Yellow)CUI RCJ-044" H 1250 10475 50  0001 C CNN "Description"
 	1    1250 10475
 	-1   0    0    -1  
 $EndComp
@@ -2806,7 +2815,7 @@ F 0 "T1" H 1950 10775 50  0000 C CNN
 F 1 "PE-65612NL" H 1950 10675 50  0000 C CNN
 F 2 "MyLibrary:PE65612NL" H 2200 10575 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/PE-65612NL.pdf" H 2200 10475 50  0001 L CNN
-F 4 "Audio Transformers / Signal Transformers THT Digital Audio 2500uH 1-Port" H 2200 10375 50  0001 L CNN "Description"
+F 4 "S/PDIF Transformer THT Digital-Audio 2500uH 1-Port" H 2200 10375 50  0001 L CNN "Description"
 F 5 "6.6" H 2200 10275 50  0001 L CNN "Height"
 F 6 "Pulse" H 2200 10175 50  0001 L CNN "Manufacturer_Name"
 F 7 "PE-65612NL" H 2200 10075 50  0001 L CNN "Manufacturer_Part_Number"
@@ -2930,6 +2939,7 @@ F 1 "NOP" V 2900 10225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3000 10325 50  0001 C CNN
 F 3 "~" H 3000 10325 50  0001 C CNN
 F 4 "NOP" H 3000 10325 50  0001 C CNN "JLPCB#"
+F 5 "Prepared for just in case" H 3000 10325 50  0001 C CNN "Description"
 	1    3000 10325
 	0    -1   1    0   
 $EndComp
@@ -2952,6 +2962,7 @@ F 1 "74LVC1G04" H 3750 10600 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3500 10475 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3500 10475 50  0001 C CNN
 F 4 "C434067" H 3500 10475 50  0001 C CNN "JLPCB#"
+F 5 "for Coax S/PDIF Input Amp" H 3500 10475 50  0001 C CNN "Description"
 	1    3500 10475
 	1    0    0    -1  
 $EndComp
@@ -3019,23 +3030,24 @@ F 1 "74LVC1G86" H 3300 9775 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3025 9625 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3025 9625 50  0001 C CNN
 F 4 "C73458" H 3025 9625 50  0001 C CNN "JLPCB#"
+F 5 "EXOR for Maerge S/PDIF Signals" H 3025 9625 50  0001 C CNN "Description"
 	1    3025 9625
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 68A3A234
-P 4225 10475
+P 4250 9800
 AR Path="/5D67FDC6/68A3A234" Ref="R?"  Part="1" 
 AR Path="/68A3A234" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/68A3A234" Ref="R83"  Part="1" 
-F 0 "R83" V 4300 10400 50  0000 L CNN
-F 1 "1k" V 4225 10425 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4155 10475 50  0001 C CNN
-F 3 "~" H 4225 10475 50  0001 C CNN
-F 4 "C21190" H 4225 10475 50  0001 C CNN "JLPCB#"
-	1    4225 10475
-	0    1    -1   0   
+F 0 "R83" V 4325 9725 50  0000 L CNN
+F 1 "1k" V 4250 9750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 9800 50  0001 C CNN
+F 3 "~" H 4250 9800 50  0001 C CNN
+F 4 "C21190" H 4250 9800 50  0001 C CNN "JLPCB#"
+	1    4250 9800
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2675 9975 2675 9675
@@ -3183,7 +3195,7 @@ F 1 "LED_RED" V 13575 8675 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 13650 8850 60  0001 C CNN
 F 3 "" V 13650 8850 60  0000 C CNN
 F 4 "C2286" H 13650 8850 50  0001 C CNN "JLPCB#"
-F 5 "Remove this if you use extension header" H 13650 8850 50  0001 C CNN "Description"
+F 5 "Remove this if you use LED extension header" H 13650 8850 50  0001 C CNN "Description"
 	1    13650 8850
 	0    -1   -1   0   
 $EndComp
@@ -3227,7 +3239,7 @@ F 1 "LED_GRN" V 12875 8675 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 12950 8850 60  0001 C CNN
 F 3 "" V 12950 8850 60  0000 C CNN
 F 4 "C72043" H 12950 8850 50  0001 C CNN "JLPCB#"
-F 5 "Remove this if you use extension header" H 12950 8850 50  0001 C CNN "Description"
+F 5 "Remove this if you use LED extension header" H 12950 8850 50  0001 C CNN "Description"
 	1    12950 8850
 	0    -1   -1   0   
 $EndComp
@@ -3689,6 +3701,7 @@ F 1 "74LVC1G04" H 3650 8425 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3400 8300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3400 8300 50  0001 C CNN
 F 4 "C434067" H 3400 8300 50  0001 C CNN "JLPCB#"
+F 5 "for Coax S/PDIF Input Amp" H 3400 8300 50  0001 C CNN "Description"
 	1    3400 8300
 	-1   0    0    -1  
 $EndComp
@@ -3937,7 +3950,7 @@ F 1 "8P_DIP_SOCKET" H 10475 7825 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10350 7600 50  0001 C CNN
 F 3 "~" H 10350 7600 50  0001 C CNN
 F 4 "NOP" H 10350 7600 50  0001 C CNN "JLPCB#"
-F 5 "Just for the Altanative choice of EEPROM package" H 10350 7600 50  0001 C CNN "Description"
+F 5 "Just Prepared for the Altanative choice of EEPROM package" H 10350 7600 50  0001 C CNN "Description"
 	1    10350 7600
 	1    0    0    -1  
 $EndComp
@@ -4307,6 +4320,7 @@ F 1 "SW_NOP_DPDT" H 8725 6350 50  0000 C CNN
 F 2 "Buttons_Switches_ThroughHole:SW_CuK_JS202011AQN_DPDT_Angled" H 9325 6575 50  0001 C CNN
 F 3 "~" H 9325 6575 50  0001 C CNN
 F 4 "NOP" H 9325 6375 50  0001 C CNN "JLPCB#"
+F 5 "Optional Program EEPROM A/B Select switch" H 9325 6375 50  0001 C CNN "Description"
 	1    9325 6375
 	1    0    0    1   
 $EndComp
@@ -4762,8 +4776,6 @@ Wire Wire Line
 	4400 10475 4400 10550
 Wire Wire Line
 	3975 10475 4050 10475
-Wire Wire Line
-	4050 9975 4050 10250
 Connection ~ 4050 10475
 Wire Wire Line
 	4050 10475 4075 10475
@@ -4774,8 +4786,8 @@ P 4050 9800
 AR Path="/5D60B524/652CCFB7" Ref="D?"  Part="1" 
 AR Path="/652CCFB7" Ref="D?"  Part="1" 
 AR Path="/5D902CF8/652CCFB7" Ref="D24"  Part="1" 
-F 0 "D24" H 4050 9700 50  0000 C CNN
-F 1 "SS2040FL" H 4050 9900 50  0000 C CNN
+F 0 "D24" H 4050 9625 50  0000 C CNN
+F 1 "SS2040FL" H 4000 9700 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 4050 9625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 4050 9800 50  0001 C CNN
 F 4 "C8598" H 4050 9800 50  0001 C CNN "JLPCB#"
@@ -4805,28 +4817,18 @@ Wire Wire Line
 $Comp
 L Diode:BAT43W-V D?
 U 1 1 654BDB82
-P 4225 10250
+P 4225 10475
 AR Path="/5D60B524/654BDB82" Ref="D?"  Part="1" 
 AR Path="/654BDB82" Ref="D?"  Part="1" 
 AR Path="/5D902CF8/654BDB82" Ref="D25"  Part="1" 
-F 0 "D25" H 4250 10425 50  0000 C CNN
-F 1 "SS2040FL" H 4275 10350 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 4225 10075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 4225 10250 50  0001 C CNN
-F 4 "C8598" H 4225 10250 50  0001 C CNN "JLPCB#"
-	1    4225 10250
+F 0 "D25" H 4250 10650 50  0000 C CNN
+F 1 "SS2040FL" H 4275 10575 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4225 10300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 4225 10475 50  0001 C CNN
+F 4 "C8598" H 4225 10475 50  0001 C CNN "JLPCB#"
+	1    4225 10475
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4075 10250 4050 10250
-Connection ~ 4050 10250
-Wire Wire Line
-	4050 10250 4050 10475
-Wire Wire Line
-	4400 10475 4400 10250
-Wire Wire Line
-	4400 10250 4375 10250
-Connection ~ 4400 10475
 $Comp
 L Device:C_Small C?
 U 1 1 655C08D5
@@ -4880,4 +4882,17 @@ Text Notes 1175 7825 0    50   ~ 0
 (x512 fs of 48kHz)
 Text Notes 7925 6475 0    50   ~ 0
 (Optional  Dual ROM A/B Switch)
+Wire Wire Line
+	4050 9975 4050 10475
+Wire Wire Line
+	4250 9625 4050 9625
+Wire Wire Line
+	4250 9625 4250 9650
+Connection ~ 4050 9625
+Wire Wire Line
+	4250 9950 4250 9975
+Wire Wire Line
+	4250 9975 4050 9975
+Text Notes 13550 7750 0    50   ~ 0
+C&K PTS645VL39-2 LFS
 $EndSCHEMATC

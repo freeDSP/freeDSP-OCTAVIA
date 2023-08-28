@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 3
 Title "FreeDSP OCTAVIA DAC part"
-Date "2023-07-22"
-Rev "0.32"
+Date "2023-08-27"
+Rev "0.33"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -38,6 +38,7 @@ F 1 "PCM5102A" H 10375 3475 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 10025 3675 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 10025 3675 50  0001 C CNN
 F 4 "C107671" H 10075 2925 50  0001 C CNN "JLPCB#"
+F 5 "32bit Audio DAC" H 10075 2925 50  0001 C CNN "Description"
 	1    10075 2925
 	1    0    0    -1  
 $EndComp
@@ -173,10 +174,10 @@ AR Path="/65DBADEC" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65DBADEC" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DBADEC" Ref="R122"  Part="1" 
 F 0 "R122" V 10775 2425 50  0000 L CNN
-F 1 "220R" V 10850 2425 50  0000 L CNN
+F 1 "470R" V 10850 2425 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10780 2525 50  0001 C CNN
 F 3 "~" H 10850 2525 50  0001 C CNN
-F 4 "C22962" H 10850 2525 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 10850 2525 50  0001 C CNN "JLPCB#"
 	1    10850 2525
 	0    1    1    0   
 $EndComp
@@ -188,10 +189,10 @@ AR Path="/65DBADF2" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65DBADF2" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DBADF2" Ref="R123"  Part="1" 
 F 0 "R123" V 10950 2500 50  0000 L CNN
-F 1 "220R" V 10850 2525 50  0000 L CNN
+F 1 "470R" V 10850 2525 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10780 2625 50  0001 C CNN
 F 3 "~" H 10850 2625 50  0001 C CNN
-F 4 "C22962" H 10850 2625 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 10850 2625 50  0001 C CNN "JLPCB#"
 	1    10850 2625
 	0    1    1    0   
 $EndComp
@@ -207,11 +208,11 @@ AR Path="/65DBADFA" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65DBADFA" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DBADFA" Ref="C96"  Part="1" 
 F 0 "C96" V 11075 3000 50  0000 C CNN
-F 1 "10nF(C0G)" V 10900 2975 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 10900 2975 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11025 2875 50  0001 C CNN
 F 3 "~" H 11025 2875 50  0001 C CNN
-F 4 "C342877" H 11025 2875 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11025 2875 50  0001 C CNN "Description"
+F 4 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11025 2875 50  0001 C CNN "Description"
+F 5 "C880299" H 11025 2875 50  0001 C CNN "JLPCB#"
 	1    11025 2875
 	1    0    0    1   
 $EndComp
@@ -229,11 +230,11 @@ AR Path="/65DBAE06" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65DBAE06" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DBAE06" Ref="C98"  Part="1" 
 F 0 "C98" V 11225 3000 50  0000 C CNN
-F 1 "10nF(C0G)" V 11300 3000 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 11300 3000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11175 2875 50  0001 C CNN
 F 3 "~" H 11175 2875 50  0001 C CNN
-F 4 "C342877" H 11175 2875 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11175 2875 50  0001 C CNN "Description"
+F 4 "C880299" H 11175 2875 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11175 2875 50  0001 C CNN "Description"
 	1    11175 2875
 	1    0    0    1   
 $EndComp
@@ -252,6 +253,7 @@ F 1 "MJ-519" H 14850 2950 50  0000 L CNN
 F 2 "MyJacks:MJ-519" H 14900 2550 50  0001 C CNN
 F 3 " ~" H 14900 2550 50  0001 C CNN
 F 4 "HAND" H 14900 2650 50  0001 C CNN "JLPCB#"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 14900 2650 50  0001 C CNN "Description"
 	1    14900 2650
 	1    0    0    -1  
 $EndComp
@@ -387,10 +389,10 @@ AR Path="/65DC6B7B" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65DC6B7B" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DC6B7B" Ref="R128"  Part="1" 
 F 0 "R128" V 3250 6675 50  0000 L CNN
-F 1 "220R" V 3300 6450 50  0000 L CNN
+F 1 "470R" V 3300 6450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 6550 50  0001 C CNN
 F 3 "~" H 3300 6550 50  0001 C CNN
-F 4 "C22962" H 3300 6550 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 3300 6550 50  0001 C CNN "JLPCB#"
 	1    3300 6550
 	0    1    1    0   
 $EndComp
@@ -402,10 +404,10 @@ AR Path="/65DC6B81" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65DC6B81" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DC6B81" Ref="R129"  Part="1" 
 F 0 "R129" V 3250 6775 50  0000 L CNN
-F 1 "220R" V 3300 6550 50  0000 L CNN
+F 1 "470R" V 3300 6550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 6650 50  0001 C CNN
 F 3 "~" H 3300 6650 50  0001 C CNN
-F 4 "C22962" H 3300 6650 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 3300 6650 50  0001 C CNN "JLPCB#"
 	1    3300 6650
 	0    1    1    0   
 $EndComp
@@ -421,11 +423,11 @@ AR Path="/65DC6B89" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65DC6B89" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DC6B89" Ref="C115"  Part="1" 
 F 0 "C115" V 3600 7025 50  0000 C CNN
-F 1 "10nF(C0G)" V 3425 6900 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 3425 6900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3550 6900 50  0001 C CNN
 F 3 "~" H 3550 6900 50  0001 C CNN
-F 4 "C342877" H 3550 6900 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3550 6900 50  0001 C CNN "Description"
+F 4 "C880299" H 3550 6900 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3550 6900 50  0001 C CNN "Description"
 	1    3550 6900
 	1    0    0    1   
 $EndComp
@@ -443,11 +445,11 @@ AR Path="/65DC6B95" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65DC6B95" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DC6B95" Ref="C117"  Part="1" 
 F 0 "C117" V 3750 7025 50  0000 C CNN
-F 1 "10nF(C0G)" V 3825 6925 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 3825 6925 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3700 6900 50  0001 C CNN
 F 3 "~" H 3700 6900 50  0001 C CNN
-F 4 "C342877" H 3700 6900 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3700 6900 50  0001 C CNN "Description"
+F 4 "C880299" H 3700 6900 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3700 6900 50  0001 C CNN "Description"
 	1    3700 6900
 	1    0    0    1   
 $EndComp
@@ -463,10 +465,11 @@ L VH_to_SPEAKON:Conn_Coaxial_x2 J16
 U 1 1 65DC6BAF
 P 7750 6800
 F 0 "J16" H 7700 7025 50  0000 L CNN
-F 1 "MJ-519" H 7700 7100 50  0000 L CNN
+F 1 "MJ-519" H 7525 7150 50  0000 L CNN
 F 2 "MyJacks:MJ-519" H 7750 6700 50  0001 C CNN
 F 3 " ~" H 7750 6700 50  0001 C CNN
 F 4 "HAND" H 7750 6800 50  0001 C CNN "JLPCB#"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 7750 6800 50  0001 C CNN "Description"
 	1    7750 6800
 	1    0    0    -1  
 $EndComp
@@ -478,11 +481,11 @@ AR Path="/65DDD7D0" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65DDD7D0" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DDD7D0" Ref="C114"  Part="1" 
 F 0 "C114" V 11100 6925 50  0000 C CNN
-F 1 "10nF(C0G)" V 11025 6800 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 11025 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11150 6775 50  0001 C CNN
 F 3 "~" H 11150 6775 50  0001 C CNN
-F 4 "C342877" H 11150 6775 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11150 6775 50  0001 C CNN "Description"
+F 4 "C880299" H 11150 6775 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11150 6775 50  0001 C CNN "Description"
 	1    11150 6775
 	1    0    0    1   
 $EndComp
@@ -498,11 +501,11 @@ AR Path="/65DDD7DC" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65DDD7DC" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DDD7DC" Ref="C116"  Part="1" 
 F 0 "C116" V 11350 6950 50  0000 C CNN
-F 1 "10nF(C0G)" V 11425 6800 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 11425 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11300 6775 50  0001 C CNN
 F 3 "~" H 11300 6775 50  0001 C CNN
-F 4 "C342877" H 11300 6775 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11300 6775 50  0001 C CNN "Description"
+F 4 "C880299" H 11300 6775 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 11300 6775 50  0001 C CNN "Description"
 	1    11300 6775
 	1    0    0    1   
 $EndComp
@@ -519,6 +522,7 @@ F 1 "MJ-519" H 15050 6975 50  0000 L CNN
 F 2 "MyJacks:MJ-519" H 15100 6575 50  0001 C CNN
 F 3 " ~" H 15100 6575 50  0001 C CNN
 F 4 "HAND" H 15100 6675 50  0001 C CNN "JLPCB#"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 15100 6675 50  0001 C CNN "Description"
 	1    15100 6675
 	1    0    0    -1  
 $EndComp
@@ -543,6 +547,7 @@ F 1 "OPA1632DR" H 12775 2625 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 12500 2700 50  0001 C CNN
 F 3 "" H 12600 2600 50  0001 C CNN
 F 4 "C86715" H 12600 2450 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 12600 2450 50  0001 C CNN "Description"
 	1    12600 2450
 	1    0    0    -1  
 $EndComp
@@ -641,6 +646,7 @@ F 1 "OPA1632DR" H 12775 3900 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 12500 3975 50  0001 C CNN
 F 3 "" H 12600 3875 50  0001 C CNN
 F 4 "C86715" H 12600 3725 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 12600 3725 50  0001 C CNN "Description"
 	1    12600 3725
 	1    0    0    -1  
 $EndComp
@@ -784,7 +790,7 @@ F 1 "2SC3326" H 13650 2825 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14125 2750 50  0001 C CNN
 F 3 "~" H 13925 2650 50  0001 C CNN
 F 4 "C27829" H 13925 2650 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 13925 2650 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 13925 2650 50  0001 C CNN "Description"
 	1    13925 2650
 	1    0    0    -1  
 $EndComp
@@ -797,7 +803,7 @@ F 1 "2SC3326" H 13650 4125 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14125 4050 50  0001 C CNN
 F 3 "~" H 13925 3950 50  0001 C CNN
 F 4 "C27829" H 13925 3950 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 13925 3950 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 13925 3950 50  0001 C CNN "Description"
 	1    13925 3950
 	1    0    0    -1  
 $EndComp
@@ -810,7 +816,7 @@ F 1 "2SC3326" H 13650 3300 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14125 3575 50  0001 C CNN
 F 3 "~" H 13925 3475 50  0001 C CNN
 F 4 "C27829" H 13925 3475 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 13925 3475 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 13925 3475 50  0001 C CNN "Description"
 	1    13925 3475
 	1    0    0    1   
 $EndComp
@@ -887,6 +893,7 @@ F 1 "OPA1632DR" H 12975 6700 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 12750 6725 50  0001 C CNN
 F 3 "" H 12850 6625 50  0001 C CNN
 F 4 "C86715" H 12850 6475 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 12850 6475 50  0001 C CNN "Description"
 	1    12850 6475
 	1    0    0    -1  
 $EndComp
@@ -1017,6 +1024,7 @@ F 1 "OPA1632DR" H 12975 7825 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 12750 7850 50  0001 C CNN
 F 3 "" H 12850 7750 50  0001 C CNN
 F 4 "C86715" H 12850 7600 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 12850 7600 50  0001 C CNN "Description"
 	1    12850 7600
 	1    0    0    -1  
 $EndComp
@@ -1145,7 +1153,7 @@ F 1 "2SC3326" H 13825 6775 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 6725 50  0001 C CNN
 F 3 "~" H 14100 6625 50  0001 C CNN
 F 4 "C27829" H 14100 6625 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 14100 6625 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 14100 6625 50  0001 C CNN "Description"
 	1    14100 6625
 	1    0    0    -1  
 $EndComp
@@ -1160,7 +1168,7 @@ F 1 "2SC3326" H 13800 7625 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 7875 50  0001 C CNN
 F 3 "~" H 14100 7775 50  0001 C CNN
 F 4 "C27829" H 14100 7775 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 14100 7775 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 14100 7775 50  0001 C CNN "Description"
 	1    14100 7775
 	1    0    0    -1  
 $EndComp
@@ -1173,7 +1181,7 @@ F 1 "2SC3326" H 13850 7175 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 7425 50  0001 C CNN
 F 3 "~" H 14100 7325 50  0001 C CNN
 F 4 "C27829" H 14100 7325 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 14100 7325 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 14100 7325 50  0001 C CNN "Description"
 	1    14100 7325
 	1    0    0    1   
 $EndComp
@@ -1219,6 +1227,7 @@ F 1 "OPA1632DR" H 5350 6825 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 5125 6850 50  0001 C CNN
 F 3 "" H 5225 6750 50  0001 C CNN
 F 4 "C86715" H 5225 6600 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 5225 6600 50  0001 C CNN "Description"
 	1    5225 6600
 	1    0    0    -1  
 $EndComp
@@ -1313,6 +1322,7 @@ F 1 "OPA1632DR" H 5375 8050 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 5125 8075 50  0001 C CNN
 F 3 "" H 5225 7975 50  0001 C CNN
 F 4 "C86715" H 5225 7825 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 5225 7825 50  0001 C CNN "Description"
 	1    5225 7825
 	1    0    0    -1  
 $EndComp
@@ -1439,7 +1449,7 @@ F 1 "2SC3326" H 6025 6650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6675 6925 50  0001 C CNN
 F 3 "~" H 6475 6825 50  0001 C CNN
 F 4 "C27829" H 6475 6825 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6475 6825 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6475 6825 50  0001 C CNN "Description"
 	1    6475 6825
 	1    0    0    -1  
 $EndComp
@@ -1454,7 +1464,7 @@ F 1 "2SC3326" H 6000 8250 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6675 8175 50  0001 C CNN
 F 3 "~" H 6475 8075 50  0001 C CNN
 F 4 "C27829" H 6475 8075 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6475 8075 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6475 8075 50  0001 C CNN "Description"
 	1    6475 8075
 	1    0    0    -1  
 $EndComp
@@ -1467,7 +1477,7 @@ F 1 "2SC3326" H 6225 7400 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6675 7650 50  0001 C CNN
 F 3 "~" H 6475 7550 50  0001 C CNN
 F 4 "C27829" H 6475 7550 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6475 7550 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6475 7550 50  0001 C CNN "Description"
 	1    6475 7550
 	1    0    0    1   
 $EndComp
@@ -1543,7 +1553,7 @@ F 1 "2SC3326" H 13650 2050 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14125 2300 50  0001 C CNN
 F 3 "~" H 13925 2200 50  0001 C CNN
 F 4 "C27829" H 13925 2200 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 13925 2200 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 13925 2200 50  0001 C CNN "Description"
 	1    13925 2200
 	1    0    0    1   
 $EndComp
@@ -1639,7 +1649,7 @@ F 1 "2SC3326" H 5800 3375 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 3625 50  0001 C CNN
 F 3 "~" H 6050 3525 50  0001 C CNN
 F 4 "C27829" H 6050 3525 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6050 3525 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6050 3525 50  0001 C CNN "Description"
 	1    6050 3525
 	1    0    0    1   
 $EndComp
@@ -1652,7 +1662,7 @@ F 1 "2SC3326" H 5775 3775 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 4075 50  0001 C CNN
 F 3 "~" H 6050 3975 50  0001 C CNN
 F 4 "C27829" H 6050 3975 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6050 3975 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6050 3975 50  0001 C CNN "Description"
 	1    6050 3975
 	1    0    0    -1  
 $EndComp
@@ -1669,7 +1679,7 @@ F 1 "2SC3326" H 5775 2225 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 2500 50  0001 C CNN
 F 3 "~" H 6050 2400 50  0001 C CNN
 F 4 "C27829" H 6050 2400 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6050 2400 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6050 2400 50  0001 C CNN "Description"
 	1    6050 2400
 	1    0    0    1   
 $EndComp
@@ -1682,7 +1692,7 @@ F 1 "2SC3326" H 5600 2725 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 3000 50  0001 C CNN
 F 3 "~" H 6050 2900 50  0001 C CNN
 F 4 "C27829" H 6050 2900 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6050 2900 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6050 2900 50  0001 C CNN "Description"
 	1    6050 2900
 	1    0    0    -1  
 $EndComp
@@ -1855,6 +1865,7 @@ F 1 "OPA1632DR" H 4925 4000 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 4650 4075 50  0001 C CNN
 F 3 "" H 4750 3975 50  0001 C CNN
 F 4 "C86715" H 4750 3825 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 4750 3825 50  0001 C CNN "Description"
 	1    4750 3825
 	1    0    0    -1  
 $EndComp
@@ -2002,10 +2013,10 @@ AR Path="/65DDD7C8" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65DDD7C8" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DDD7C8" Ref="R127"  Part="1" 
 F 0 "R127" V 10850 6650 50  0000 L CNN
-F 1 "220R" V 10900 6425 50  0000 L CNN
+F 1 "470R" V 10900 6425 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10830 6525 50  0001 C CNN
 F 3 "~" H 10900 6525 50  0001 C CNN
-F 4 "C22962" H 10900 6525 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 10900 6525 50  0001 C CNN "JLPCB#"
 	1    10900 6525
 	0    1    1    0   
 $EndComp
@@ -2017,10 +2028,10 @@ AR Path="/65DDD7C2" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65DDD7C2" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65DDD7C2" Ref="R126"  Part="1" 
 F 0 "R126" V 10850 6550 50  0000 L CNN
-F 1 "220R" V 10900 6325 50  0000 L CNN
+F 1 "470R" V 10900 6325 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10830 6425 50  0001 C CNN
 F 3 "~" H 10900 6425 50  0001 C CNN
-F 4 "C22962" H 10900 6425 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 10900 6425 50  0001 C CNN "JLPCB#"
 	1    10900 6425
 	0    1    1    0   
 $EndComp
@@ -2326,6 +2337,7 @@ F 1 "PCM5102A" H 10475 7375 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 10125 7575 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 10125 7575 50  0001 C CNN
 F 4 "C107671" H 10175 6825 50  0001 C CNN "JLPCB#"
+F 5 "32bit Audio DAC" H 10175 6825 50  0001 C CNN "Description"
 	1    10175 6825
 	1    0    0    -1  
 $EndComp
@@ -2514,6 +2526,7 @@ F 1 "PCM5102A" H 2825 7500 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2475 7700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 2475 7700 50  0001 C CNN
 F 4 "C107671" H 2525 6950 50  0001 C CNN "JLPCB#"
+F 5 "32bit Audio DAC" H 2525 6950 50  0001 C CNN "Description"
 	1    2525 6950
 	1    0    0    -1  
 $EndComp
@@ -2697,11 +2710,12 @@ $Comp
 L VH_to_SPEAKON:Conn_Coaxial_x2 J17
 U 1 1 65D99AA6
 P 7375 2875
-F 0 "J17" H 7300 3250 50  0000 L CNN
-F 1 "MJ-519" H 7250 3175 50  0000 L CNN
+F 0 "J17" H 7300 3125 50  0000 L CNN
+F 1 "MJ-519" H 7250 3275 50  0000 L CNN
 F 2 "MyJacks:MJ-519" H 7375 2775 50  0001 C CNN
 F 3 " ~" H 7375 2775 50  0001 C CNN
 F 4 "HAND" H 7375 2875 50  0001 C CNN "JLPCB#"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 7375 2875 50  0001 C CNN "Description"
 	1    7375 2875
 	1    0    0    -1  
 $EndComp
@@ -2717,11 +2731,11 @@ AR Path="/65D91D80" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65D91D80" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65D91D80" Ref="C99"  Part="1" 
 F 0 "C99" V 3400 3200 50  0000 C CNN
-F 1 "10nF(C0G)" V 3475 3025 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 3475 3025 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3350 3075 50  0001 C CNN
 F 3 "~" H 3350 3075 50  0001 C CNN
-F 4 "C342877" H 3350 3075 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3350 3075 50  0001 C CNN "Description"
+F 4 "C880299" H 3350 3075 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3350 3075 50  0001 C CNN "Description"
 	1    3350 3075
 	1    0    0    1   
 $EndComp
@@ -2739,10 +2753,10 @@ AR Path="/65D8B870" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65D8B870" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65D8B870" Ref="R125"  Part="1" 
 F 0 "R125" V 2925 2850 50  0000 L CNN
-F 1 "220R" V 2975 2625 50  0000 L CNN
+F 1 "470R" V 2975 2625 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2905 2725 50  0001 C CNN
 F 3 "~" H 2975 2725 50  0001 C CNN
-F 4 "C22962" H 2975 2725 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 2975 2725 50  0001 C CNN "JLPCB#"
 	1    2975 2725
 	0    1    1    0   
 $EndComp
@@ -2754,10 +2768,10 @@ AR Path="/65D8A90F" Ref="R?"  Part="1"
 AR Path="/5D902CF8/65D8A90F" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65D8A90F" Ref="R124"  Part="1" 
 F 0 "R124" V 2925 2750 50  0000 L CNN
-F 1 "220R" V 2975 2525 50  0000 L CNN
+F 1 "470R" V 2975 2525 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2905 2625 50  0001 C CNN
 F 3 "~" H 2975 2625 50  0001 C CNN
-F 4 "C22962" H 2975 2625 50  0001 C CNN "JLPCB#"
+F 4 "C23179" H 2975 2625 50  0001 C CNN "JLPCB#"
 	1    2975 2625
 	0    1    1    0   
 $EndComp
@@ -3059,6 +3073,7 @@ F 1 "PCM5102A" H 2600 3575 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2250 3775 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 2250 3775 50  0001 C CNN
 F 4 "C107671" H 2300 3025 50  0001 C CNN "JLPCB#"
+F 5 "32bit Audio DAC" H 2300 3025 50  0001 C CNN "Description"
 	1    2300 3025
 	1    0    0    -1  
 $EndComp
@@ -3795,7 +3810,7 @@ F 1 "2SC3326" H 13800 6000 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 6250 50  0001 C CNN
 F 3 "~" H 14100 6150 50  0001 C CNN
 F 4 "C27829" H 14100 6150 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 14100 6150 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 14100 6150 50  0001 C CNN "Description"
 	1    14100 6150
 	1    0    0    1   
 $EndComp
@@ -3823,7 +3838,7 @@ F 1 "2SC3326" H 6200 6200 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6675 6475 50  0001 C CNN
 F 3 "~" H 6475 6375 50  0001 C CNN
 F 4 "C27829" H 6475 6375 50  0001 C CNN "JLPCB#"
-F 5 "alt. 2SC4213 or 2SD2704" H 6475 6375 50  0001 C CNN "Description"
+F 5 "alt. 2SC4213 or 2SD2704 (Audio Muting)" H 6475 6375 50  0001 C CNN "Description"
 	1    6475 6375
 	1    0    0    1   
 $EndComp
@@ -3985,7 +4000,7 @@ F 1 "470pF(C0G)" H 12050 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12275 6700 50  0001 C CNN
 F 3 "~" H 12275 6700 50  0001 C CNN
 F 4 "C525291" H 12275 6700 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12275 6700 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12275 6700 50  0001 C CNN "Description"
 	1    12275 6700
 	1    0    0    1   
 $EndComp
@@ -4025,7 +4040,7 @@ F 1 "NOP" V 12375 6225 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12550 6250 50  0001 C CNN
 F 3 "~" H 12550 6250 50  0001 C CNN
 F 4 "NOP" H 12550 6250 50  0001 C CNN "JLPCB#"
-F 5 "" H 12550 6250 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 12550 6250 50  0001 C CNN "Description"
 	1    12550 6250
 	1    0    0    1   
 $EndComp
@@ -4062,7 +4077,7 @@ F 1 "NOP" V 12325 7375 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12425 7375 50  0001 C CNN
 F 3 "~" H 12425 7375 50  0001 C CNN
 F 4 "NOP" H 12425 7375 50  0001 C CNN "JLPCB#"
-F 5 "" H 12425 7375 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 12425 7375 50  0001 C CNN "Description"
 	1    12425 7375
 	1    0    0    1   
 $EndComp
@@ -4084,7 +4099,7 @@ F 1 "470pF(C0G)" H 12100 7950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12350 7850 50  0001 C CNN
 F 3 "~" H 12350 7850 50  0001 C CNN
 F 4 "C525291" H 12350 7850 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12350 7850 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12350 7850 50  0001 C CNN "Description"
 	1    12350 7850
 	1    0    0    1   
 $EndComp
@@ -4248,7 +4263,7 @@ F 1 "470pF(C0G)" V 11800 2725 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12000 2800 50  0001 C CNN
 F 3 "~" H 12000 2800 50  0001 C CNN
 F 4 "C525291" H 12000 2800 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12000 2800 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12000 2800 50  0001 C CNN "Description"
 	1    12000 2800
 	1    0    0    1   
 $EndComp
@@ -4283,7 +4298,7 @@ F 1 "NOP" V 12125 2125 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12300 2150 50  0001 C CNN
 F 3 "~" H 12300 2150 50  0001 C CNN
 F 4 "NOP" H 12300 2150 50  0001 C CNN "JLPCB#"
-F 5 "" H 12300 2150 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 12300 2150 50  0001 C CNN "Description"
 	1    12300 2150
 	1    0    0    1   
 $EndComp
@@ -4299,7 +4314,7 @@ F 1 "NOP" V 12000 3400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12175 3425 50  0001 C CNN
 F 3 "~" H 12175 3425 50  0001 C CNN
 F 4 "NOP" H 12175 3425 50  0001 C CNN "JLPCB#"
-F 5 "" H 12175 3425 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 12175 3425 50  0001 C CNN "Description"
 	1    12175 3425
 	1    0    0    1   
 $EndComp
@@ -4324,7 +4339,7 @@ F 1 "470pF(C0G)" V 11800 4050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12075 4050 50  0001 C CNN
 F 3 "~" H 12075 4050 50  0001 C CNN
 F 4 "C525291" H 12075 4050 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12075 4050 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 12075 4050 50  0001 C CNN "Description"
 	1    12075 4050
 	1    0    0    1   
 $EndComp
@@ -4642,11 +4657,11 @@ AR Path="/65D8DF2E" Ref="C?"  Part="1"
 AR Path="/5D902CF8/65D8DF2E" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/65D8DF2E" Ref="C97"  Part="1" 
 F 0 "C97" V 3250 3200 50  0000 C CNN
-F 1 "10nF(C0G)" V 3100 3025 50  0000 C CNN
+F 1 "4.7nF(C0G)" V 3100 3025 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3200 3075 50  0001 C CNN
 F 3 "~" H 3200 3075 50  0001 C CNN
-F 4 "C342877" H 3200 3075 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3200 3075 50  0001 C CNN "Description"
+F 4 "C880299" H 3200 3075 50  0001 C CNN "JLPCB#"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 3200 3075 50  0001 C CNN "Description"
 	1    3200 3075
 	1    0    0    1   
 $EndComp
@@ -4673,7 +4688,7 @@ F 1 "NOP" V 4175 2350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4350 2375 50  0001 C CNN
 F 3 "~" H 4350 2375 50  0001 C CNN
 F 4 "NOP" H 4350 2375 50  0001 C CNN "JLPCB#"
-F 5 "" H 4350 2375 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 4350 2375 50  0001 C CNN "Description"
 	1    4350 2375
 	1    0    0    1   
 $EndComp
@@ -4686,6 +4701,7 @@ F 1 "OPA1632DR" H 4925 2850 50  0000 C CNN
 F 2 "Myfootprints:SOIC127P600X175-8N" H 4650 2925 50  0001 C CNN
 F 3 "" H 4750 2825 50  0001 C CNN
 F 4 "C86715" H 4750 2675 50  0001 C CNN "JLPCB#"
+F 5 "for Balanced/Differential Output driver" H 4750 2675 50  0001 C CNN "Description"
 	1    4750 2675
 	1    0    0    -1  
 $EndComp
@@ -4721,7 +4737,7 @@ F 1 "NOP" V 4175 3525 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4350 3550 50  0001 C CNN
 F 3 "~" H 4350 3550 50  0001 C CNN
 F 4 "NOP" H 4350 3550 50  0001 C CNN "JLPCB#"
-F 5 "" H 4350 3550 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 4350 3550 50  0001 C CNN "Description"
 	1    4350 3550
 	1    0    0    1   
 $EndComp
@@ -4998,7 +5014,7 @@ F 1 "NOP" V 4625 6325 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4800 6350 50  0001 C CNN
 F 3 "~" H 4800 6350 50  0001 C CNN
 F 4 "NOP" H 4800 6350 50  0001 C CNN "JLPCB#"
-F 5 "" H 4800 6350 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 4800 6350 50  0001 C CNN "Description"
 	1    4800 6350
 	1    0    0    1   
 $EndComp
@@ -5018,7 +5034,7 @@ F 1 "470pF(C0G)" V 4000 4150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4175 4125 50  0001 C CNN
 F 3 "~" H 4175 4125 50  0001 C CNN
 F 4 "C525291" H 4175 4125 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 4125 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 4125 50  0001 C CNN "Description"
 	1    4175 4125
 	1    0    0    1   
 $EndComp
@@ -5044,7 +5060,7 @@ F 1 "470pF(C0G)" V 3850 2925 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4175 2950 50  0001 C CNN
 F 3 "~" H 4175 2950 50  0001 C CNN
 F 4 "C525291" H 4175 2950 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 2950 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4175 2950 50  0001 C CNN "Description"
 	1    4175 2950
 	1    0    0    1   
 $EndComp
@@ -5095,7 +5111,7 @@ F 1 "470pF(C0G)" V 4350 6850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4625 6850 50  0001 C CNN
 F 3 "~" H 4625 6850 50  0001 C CNN
 F 4 "C525291" H 4625 6850 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4625 6850 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4625 6850 50  0001 C CNN "Description"
 	1    4625 6850
 	1    0    0    1   
 $EndComp
@@ -5111,7 +5127,7 @@ F 1 "470pF(C0G)" H 4550 8350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4675 8150 50  0001 C CNN
 F 3 "~" H 4675 8150 50  0001 C CNN
 F 4 "C525291" H 4675 8150 50  0001 C CNN "JLPCB#"
-F 5 "Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4675 8150 50  0001 C CNN "Description"
+F 5 "Better Use Audio-Grade or Film Cap (ie. PML, ECHU, etc..)" H 4675 8150 50  0001 C CNN "Description"
 	1    4675 8150
 	1    0    0    1   
 $EndComp
@@ -5206,7 +5222,7 @@ F 1 "NOP" V 4550 7550 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4725 7575 50  0001 C CNN
 F 3 "~" H 4725 7575 50  0001 C CNN
 F 4 "NOP" H 4725 7575 50  0001 C CNN "JLPCB#"
-F 5 "" H 4725 7575 50  0001 C CNN "Description"
+F 5 "Prepared for just in case" H 4725 7575 50  0001 C CNN "Description"
 	1    4725 7575
 	1    0    0    1   
 $EndComp
@@ -5527,4 +5543,14 @@ Connection ~ 4325 7775
 Connection ~ 4325 8400
 Wire Wire Line
 	4325 8400 3700 8400
+Text Notes 10600 6650 0    50   ~ 0
+fc=87kHz
+Text Notes 15050 6325 0    50   ~ 0
+CUI RCJ-2232(2233)
+Text Notes 14850 2300 0    50   ~ 0
+CUI RCJ-2232(2233)
+Text Notes 7250 2450 0    50   ~ 0
+CUI RCJ-2232(2233)
+Text Notes 7525 6400 0    50   ~ 0
+CUI RCJ-2232(2233)
 $EndSCHEMATC

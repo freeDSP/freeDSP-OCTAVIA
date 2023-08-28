@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
-Date "2023-07-25"
-Rev "0.32"
+Date "2023-08-22"
+Rev "0.33"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -219,6 +219,7 @@ F 1 "M3" H 14925 7250 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14825 7250 50  0001 C CNN
 F 3 "~" H 14825 7250 50  0001 C CNN
 F 4 "NOP" H 14825 7250 50  0001 C CNN "JLPCB#"
+F 5 "Mount-hole for Chassis GND" H 14825 7250 50  0001 C CNN "Description"
 	1    14825 7250
 	0    1    1    0   
 $EndComp
@@ -269,6 +270,7 @@ F 1 "SW_SPDT" H 2425 2025 50  0000 C CNN
 F 2 "Myfootprints:2MS1T1B4M7QES" H 2425 2250 50  0001 C CNN
 F 3 "" H 2425 2250 50  0001 C CNN
 F 4 "HAND" H 2425 2250 50  0001 C CNN "JLPCB#"
+F 5 "Mains Power Switch C&K 200MSP1T2B2M7RE, T105MH9AVBE" H 2425 2250 50  0001 C CNN "Description"
 	1    2425 2250
 	-1   0    0    -1  
 $EndComp
@@ -337,7 +339,7 @@ Wire Wire Line
 	11175 3225 11175 3175
 Connection ~ 11175 3175
 Wire Wire Line
-	11175 3425 11175 3625
+	11175 3425 11175 3675
 $Comp
 L Device:C_Small C?
 U 1 1 5E168058
@@ -363,6 +365,7 @@ F 1 "22uH(2A)" H 10475 2300 50  0000 C CNN
 F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx_HandSoldering" H 10475 2200 50  0001 C CNN
 F 3 "" H 10475 2200 50  0001 C CNN
 F 4 "C128694" H 10475 2200 50  0001 C CNN "JLPCB#"
+F 5 "Metal-Alloy Power Inductor" H 10475 2200 50  0001 C CNN "Description"
 	1    10475 2200
 	-1   0    0    1   
 $EndComp
@@ -442,15 +445,15 @@ F 4 "C17513" H 5225 5525 50  0001 C CNN "JLPCB#"
 	1    5225 5525
 	1    0    0    -1  
 $EndComp
-Connection ~ 11175 3625
+Connection ~ 11175 3675
 Wire Wire Line
 	11525 3300 11525 3175
 Wire Wire Line
 	11525 3175 11175 3175
 Wire Wire Line
-	11525 3500 11525 3625
+	11525 3500 11525 3675
 Wire Wire Line
-	11525 3625 11175 3625
+	11525 3675 11175 3675
 Text Notes 1350 3900 0    79   ~ 16
 RAS-Pi\nPOWER\nSWITCH
 $Comp
@@ -462,6 +465,7 @@ F 1 "LMC555CMX" H 6225 4650 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6575 5125 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc555.pdf" H 6575 5125 50  0001 C CNN
 F 4 "C90760" H 6575 5125 50  0001 C CNN "JLPCB#"
+F 5 "Timing Controller for RPI PSU" H 6575 5125 50  0001 C CNN "Description"
 	1    6575 5125
 	-1   0    0    -1  
 $EndComp
@@ -701,6 +705,7 @@ F 1 "SW_Push" V 2255 4752 50  0000 R CNN
 F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 2300 5000 50  0001 C CNN
 F 3 "" H 2300 5000 50  0001 C CNN
 F 4 "HAND" H 2300 4800 50  0001 C CNN "JLPCB#"
+F 5 "RPI Shutdown/Reboot switch" H 2300 4800 50  0001 C CNN "Description"
 	1    2300 4800
 	0    -1   -1   0   
 $EndComp
@@ -719,8 +724,8 @@ F 3 "" H 2300 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 4600 2300 4550
-Text Notes 1375 4875 0    79   ~ 16
-RAS-Pi\nRES/SHUT\nSWITCH
+Text Notes 1300 4875 0    79   ~ 16
+RAS-Pi\nSHUT/REBOOT\nSWITCH
 Wire Wire Line
 	2300 4550 2525 4550
 $Comp
@@ -801,7 +806,7 @@ F 1 "Header_01x06" H 1850 7600 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2125 8025 50  0001 C CNN
 F 3 "~" H 2125 8025 50  0001 C CNN
 F 4 "NOP" H 2125 8025 50  0001 C CNN "JLPCB#"
-F 5 "Optional Serial Cable Header for Raspberry-pi" H 2125 8025 50  0001 C CNN "Description"
+F 5 "Optional TTL-232R-3V3 Serial Cable Header for Raspberry-pi" H 2125 8025 50  0001 C CNN "Description"
 	1    2125 8025
 	-1   0    0    -1  
 $EndComp
@@ -848,19 +853,18 @@ Text Label 3025 8125 2    50   ~ 0
 GPIO15(RXD0)
 NoConn ~ 2325 8025
 $Comp
-L Regulator_Linear:AZ1117-ADJ U3
+L Regulator_Linear:LM317_TO-252 U3
 U 1 1 5D9A297C
 P 10600 3175
 F 0 "U3" H 10550 3375 50  0000 C CNN
-F 1 "AMS1117-5.0" H 10600 3300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 10600 3425 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 10600 3175 50  0001 C CNN
-F 4 "C6187" H 10600 3175 50  0001 C CNN "JLPCB#"
+F 1 "LM317AG-TN3-R" H 10600 3300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10600 3425 50  0001 C CIN
+F 3 "https://datasheet.lcsc.com/lcsc/2304140030_UTC-Unisonic-Tech-LM317AG-TN3-R_C75510.pdf" H 10600 3175 50  0001 C CNN
+F 4 "C75510" H 10600 3175 50  0001 C CNN "JLPCB#"
+F 5 "Voltage Regurator for Analog" H 10600 3175 50  0001 C CNN "Description"
 	1    10600 3175
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10100 3625 10600 3625
 Connection ~ 11525 3175
 Wire Wire Line
 	10100 3175 10300 3175
@@ -1234,7 +1238,7 @@ F 6 "Sensors, Transducers" H 3125 6500 60  0001 L CNN "Category"
 F 7 "Optical Sensors - Photo Detectors - Remote Receiver" H 3125 6600 60  0001 L CNN "Family"
 F 8 "http://www.vishay.com/docs/82491/tsop382.pdf" H 3125 6700 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/vishay-semiconductor-opto-division/TSOP38238/751-1227-ND/1681362" H 3125 6800 60  0001 L CNN "DK_Detail_Page"
-F 10 "SENSOR REMOTE REC 38.0KHZ 45M" H 3125 6900 60  0001 L CNN "Description"
+F 10 "Optional: Vishay TSOP38238 IR REMOTE SENSOR REC 38.0KHZ 45M" H 3125 6900 60  0001 L CNN "Description"
 F 11 "Vishay Semiconductor Opto Division" H 3125 7000 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3125 7100 60  0001 L CNN "Status"
 F 13 "HAND" H 2925 5900 50  0001 C CNN "JLPCB#"
@@ -1443,19 +1447,19 @@ Wire Wire Line
 $Comp
 L MW-ADAU1466BB-rescue:GNDA-CS5368TDM-rescue-RasPiAudioHat-rescue #PWR029
 U 1 1 5DF259D3
-P 11525 3675
+P 11525 3725
 AR Path="/5DF259D3" Ref="#PWR029"  Part="1" 
 AR Path="/5D67FDC6/5DF259D3" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/5DF259D3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR029" H 11525 3425 50  0001 C CNN
-F 1 "GNDA" H 11525 3525 50  0000 C CNN
-F 2 "" H 11525 3675 50  0001 C CNN
-F 3 "" H 11525 3675 50  0001 C CNN
-	1    11525 3675
+F 0 "#PWR029" H 11525 3475 50  0001 C CNN
+F 1 "GNDA" H 11525 3575 50  0000 C CNN
+F 2 "" H 11525 3725 50  0001 C CNN
+F 3 "" H 11525 3725 50  0001 C CNN
+	1    11525 3725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11525 3625 11525 3675
+	11525 3675 11525 3725
 Wire Wire Line
 	8450 2000 8325 2000
 Connection ~ 8325 2000
@@ -1491,11 +1495,12 @@ U 1 1 5E7559DF
 P 2550 3750
 AR Path="/5D67FDC6/5E7559DF" Ref="SW?"  Part="1" 
 AR Path="/5E7559DF" Ref="SW3"  Part="1" 
-F 0 "SW3" H 2550 3950 50  0000 C CNN
-F 1 "SW_SPDT" H 2500 3550 50  0000 C CNN
+F 0 "SW3" H 2550 3550 50  0000 C CNN
+F 1 "SW_SPDT" H 2475 4050 50  0000 C CNN
 F 2 "Myfootprints:2MS1T1B4M7QES" H 2550 3750 50  0001 C CNN
 F 3 "" H 2550 3750 50  0001 C CNN
 F 4 "HAND" H 2550 3750 50  0001 C CNN "JLPCB#"
+F 5 "RPI Power Sub-Switch C&K 200MSP1T2B2M7RE, T105MH9AVBE" H 2550 3750 50  0001 C CNN "Description"
 	1    2550 3750
 	-1   0    0    -1  
 $EndComp
@@ -1890,119 +1895,118 @@ Wire Wire Line
 Wire Wire Line
 	5750 4175 7075 4175
 Connection ~ 5750 4175
-Text Notes 12075 3975 0    50   ~ 0
+Text Notes 12075 4100 0    50   ~ 0
 (ADC/DAC/Line-Driver Power)
 $Comp
 L Device:C_Small C?
 U 1 1 64279A3B
-P 11500 4175
+P 11500 4300
 AR Path="/5D67FDC6/64279A3B" Ref="C?"  Part="1" 
 AR Path="/64279A3B" Ref="C44"  Part="1" 
-F 0 "C44" H 11250 4175 50  0000 L CNN
-F 1 "1uF" H 11250 4100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11500 4175 50  0001 C CNN
-F 3 "~" H 11500 4175 50  0001 C CNN
-F 4 "C28323" H 11500 4175 50  0001 C CNN "JLPCB#"
-	1    11500 4175
+F 0 "C44" H 11250 4300 50  0000 L CNN
+F 1 "1uF" H 11250 4225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11500 4300 50  0001 C CNN
+F 3 "~" H 11500 4300 50  0001 C CNN
+F 4 "C28323" H 11500 4300 50  0001 C CNN "JLPCB#"
+	1    11500 4300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	11500 4500 11500 4425
+	11500 4625 11500 4550
 Wire Wire Line
-	11500 4275 11500 4425
+	11500 4400 11500 4550
 Wire Wire Line
-	11500 3950 11625 3950
-Connection ~ 11500 3950
+	11500 4075 11625 4075
+Connection ~ 11500 4075
 Wire Wire Line
-	11500 4075 11500 3950
-Text Notes 10275 4000 2    100  ~ 0
+	11500 4200 11500 4075
+Text Notes 10275 4125 2    100  ~ 0
 >
-Connection ~ 11175 4425
+Connection ~ 11175 4550
 Wire Wire Line
-	11175 4425 11500 4425
+	11175 4550 11500 4550
 Wire Wire Line
-	11175 4425 10625 4425
+	11175 4375 11175 4550
 Wire Wire Line
-	11175 4250 11175 4425
+	11175 4075 11500 4075
+Connection ~ 11175 4075
 Wire Wire Line
-	11175 3950 11500 3950
-Connection ~ 11175 3950
-Wire Wire Line
-	11175 4050 11175 3950
+	11175 4175 11175 4075
 $Comp
 L Device:C_Small C?
 U 1 1 64279A1F
-P 11175 4150
+P 11175 4275
 AR Path="/5D67FDC6/64279A1F" Ref="C?"  Part="1" 
 AR Path="/64279A1F" Ref="C42"  Part="1" 
-F 0 "C42" H 10925 4150 50  0000 L CNN
-F 1 "0.1uF" H 10925 4075 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11175 4150 50  0001 C CNN
-F 3 "~" H 11175 4150 50  0001 C CNN
-F 4 "C49678" H 11175 4150 50  0001 C CNN "JLPCB#"
-	1    11175 4150
+F 0 "C42" H 10925 4275 50  0000 L CNN
+F 1 "0.1uF" H 10925 4200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11175 4275 50  0001 C CNN
+F 3 "~" H 11175 4275 50  0001 C CNN
+F 4 "C49678" H 11175 4275 50  0001 C CNN "JLPCB#"
+	1    11175 4275
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 4000 10100 3950
+	10100 4125 10100 4075
 $Comp
 L Device:C_Small C?
 U 1 1 64279A17
-P 10100 4100
+P 10100 4225
 AR Path="/5D67FDC6/64279A17" Ref="C?"  Part="1" 
 AR Path="/64279A17" Ref="C40"  Part="1" 
-F 0 "C40" H 9850 4100 50  0000 L CNN
-F 1 "0.1uF" H 9850 4025 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10100 4100 50  0001 C CNN
-F 3 "~" H 10100 4100 50  0001 C CNN
-F 4 "C49678" H 10100 4100 50  0001 C CNN "JLPCB#"
-	1    10100 4100
+F 0 "C40" H 9850 4225 50  0000 L CNN
+F 1 "0.1uF" H 9850 4150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10100 4225 50  0001 C CNN
+F 3 "~" H 10100 4225 50  0001 C CNN
+F 4 "C49678" H 10100 4225 50  0001 C CNN "JLPCB#"
+	1    10100 4225
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10325 3950 10100 3950
+	10325 4075 10100 4075
 $Comp
-L Regulator_Linear:AZ1117-ADJ U7
+L Regulator_Linear:LM317_TO-252 U7
 U 1 1 642799FA
-P 10625 3950
-F 0 "U7" H 10575 4150 50  0000 C CNN
-F 1 "AMS1117-3.3" H 10625 4075 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 10625 4200 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 10625 3950 50  0001 C CNN
-F 4 "C6186" H 10625 3950 50  0001 C CNN "JLPCB#"
-	1    10625 3950
+P 10625 4075
+F 0 "U7" H 10575 4275 50  0000 C CNN
+F 1 "LM317AG-TN3-R" H 10625 4200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10625 4325 50  0001 C CIN
+F 3 "https://datasheet.lcsc.com/lcsc/2304140030_UTC-Unisonic-Tech-LM317AG-TN3-R_C75510.pdf" H 10625 4075 50  0001 C CNN
+F 4 "C75510" H 10625 4075 50  0001 C CNN "JLPCB#"
+F 5 "Voltage Regurator for Analog" H 10625 4075 50  0001 C CNN "Description"
+	1    10625 4075
 	1    0    0    -1  
 $EndComp
 $Comp
 L MW-ADAU1466BB-rescue:GNDA-CS5368TDM-rescue-RasPiAudioHat-rescue #PWR024
 U 1 1 6432DFBF
-P 11500 4500
+P 11500 4625
 AR Path="/6432DFBF" Ref="#PWR024"  Part="1" 
 AR Path="/5D67FDC6/6432DFBF" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/6432DFBF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR024" H 11500 4250 50  0001 C CNN
-F 1 "GNDA" H 11500 4350 50  0000 C CNN
-F 2 "" H 11500 4500 50  0001 C CNN
-F 3 "" H 11500 4500 50  0001 C CNN
-	1    11500 4500
+F 0 "#PWR024" H 11500 4375 50  0001 C CNN
+F 1 "GNDA" H 11500 4475 50  0000 C CNN
+F 2 "" H 11500 4625 50  0001 C CNN
+F 3 "" H 11500 4625 50  0001 C CNN
+	1    11500 4625
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VA #PWR092
 U 1 1 643302A4
-P 11625 3950
-F 0 "#PWR092" H 11625 3800 50  0001 C CNN
-F 1 "+3.3VA" V 11625 4100 50  0000 L CNN
-F 2 "" H 11625 3950 50  0001 C CNN
-F 3 "" H 11625 3950 50  0001 C CNN
-	1    11625 3950
+P 11625 4075
+F 0 "#PWR092" H 11625 3925 50  0001 C CNN
+F 1 "+3.3VA" V 11625 4225 50  0000 L CNN
+F 2 "" H 11625 4075 50  0001 C CNN
+F 3 "" H 11625 4075 50  0001 C CNN
+	1    11625 4075
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10100 3950 9950 3950
+	10100 4075 9950 4075
 Wire Wire Line
-	9950 3950 9950 3175
-Connection ~ 10100 3950
+	9950 4075 9950 3175
+Connection ~ 10100 4075
 Connection ~ 9950 3175
 Wire Wire Line
 	9950 3175 10100 3175
@@ -2015,6 +2019,7 @@ F 1 "TPS5430DDA" H 9700 2550 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 9575 1850 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 9525 2200 50  0001 C CNN
 F 4 "C9864" H 9525 2200 50  0001 C CNN "JLPCB#"
+F 5 "SMPS for digital part" H 9525 2200 50  0001 C CNN "Description"
 	1    9525 2200
 	1    0    0    -1  
 $EndComp
@@ -2131,6 +2136,7 @@ F 1 "22uH(3A)" H 10450 5700 50  0000 C CNN
 F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx_HandSoldering" H 10450 5600 50  0001 C CNN
 F 3 "" H 10450 5600 50  0001 C CNN
 F 4 "C128694" H 10450 5600 50  0001 C CNN "JLPCB#"
+F 5 "Metal-Alloy Power Inductor" H 10450 5600 50  0001 C CNN "Description"
 	1    10450 5600
 	-1   0    0    1   
 $EndComp
@@ -2259,6 +2265,7 @@ F 1 "TPS5430DDA" H 9675 5950 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 9550 5250 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 9500 5600 50  0001 C CNN
 F 4 "C9864" H 9500 5600 50  0001 C CNN "JLPCB#"
+F 5 "SMPS for digital part" H 9500 5600 50  0001 C CNN "Description"
 	1    9500 5600
 	1    0    0    -1  
 $EndComp
@@ -2385,6 +2392,7 @@ F 1 "ACM9070" H 2725 1500 50  0000 C CNN
 F 2 "MyLibrary:ACM9070" V 2425 1365 50  0001 C CNN
 F 3 "~" V 2425 1365 50  0000 C CNN
 F 4 "C908578" H 2425 1325 50  0001 C CNN "JLPCB#"
+F 5 "Common mode choke for mains" H 2425 1325 50  0001 C CNN "Description"
 	1    2425 1325
 	1    0    0    -1  
 $EndComp
@@ -2427,7 +2435,7 @@ F 1 "DC7.5V-9V IN" H 1825 1575 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1950 1335 50  0001 C CNN
 F 3 "~" H 1950 1335 50  0001 C CNN
 F 4 "HAND" H 1900 1375 50  0001 C CNN "JLPCB#"
-F 5 "for 2.1mm wall Power Supply (DC6.5V to 12V)" H 1900 1375 50  0001 C CNN "Description"
+F 5 "for 2.1mm wall Power Supply (DC6.5V to 9V)" H 1900 1375 50  0001 C CNN "Description"
 	1    1900 1375
 	1    0    0    -1  
 $EndComp
@@ -2863,23 +2871,9 @@ Wire Wire Line
 	8925 3725 8975 3725
 Connection ~ 8975 3725
 Wire Wire Line
-	10925 3950 11175 3950
+	10100 4325 10100 4550
 Wire Wire Line
-	10100 4200 10100 4425
-Wire Wire Line
-	10625 4250 10625 4425
-Connection ~ 10625 4425
-Wire Wire Line
-	10625 4425 10100 4425
-Wire Wire Line
-	10900 3175 11175 3175
-Wire Wire Line
-	10100 3450 10100 3625
-Wire Wire Line
-	10600 3475 10600 3625
-Connection ~ 10600 3625
-Wire Wire Line
-	10600 3625 11175 3625
+	10100 3450 10100 3675
 Text Notes 8100 2900 1    50   ~ 0
 1.6V min.
 Connection ~ 6575 4050
@@ -3002,6 +2996,7 @@ F 1 "Combo384" H 8700 9200 50  0000 C CNN
 F 2 "MyLibrary:Combo384" H 8975 8075 50  0001 C CNN
 F 3 "" H 8975 8075 50  0001 C CNN
 F 4 "HAND" H 9175 8125 50  0001 C CNN "JLPCB#"
+F 5 "Amanero or Compatible USB to I2S  I/F Board Slot" H 9175 8125 50  0001 C CNN "Description"
 	1    9175 8125
 	1    0    0    -1  
 $EndComp
@@ -3381,7 +3376,7 @@ F 1 "LED_BLUE" H 9625 8025 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 9625 8125 60  0001 C CNN
 F 3 "" V 9625 8125 60  0000 C CNN
 F 4 "C72041" H 9625 8125 50  0001 C CNN "JLPCB#"
-F 5 "Just for check the PC status" H 9625 8125 50  0001 C CNN "Description"
+F 5 "Just for check the PC VBUS status" H 9625 8125 50  0001 C CNN "Description"
 	1    9625 8125
 	-1   0    0    1   
 $EndComp
@@ -3474,6 +3469,7 @@ F 1 "LM2611AMFX" H 13375 2375 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 13400 1875 50  0001 L CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm2611.pdf" H 11500 3375 50  0001 C CNN
 F 4 "C2072505" H 13350 2125 50  0001 C CNN "JLPCB#"
+F 5 "Negativer 3MHz SMPS" H 13350 2125 50  0001 C CNN "Description"
 	1    13350 2125
 	1    0    0    -1  
 $EndComp
@@ -3556,6 +3552,7 @@ F 1 "22uH(2A)" H 13375 1625 50  0000 C CNN
 F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx_HandSoldering" H 13375 1675 50  0001 C CNN
 F 3 "" H 13375 1675 50  0001 C CNN
 F 4 "C128694" H 13375 1675 50  0001 C CNN "JLPCB#"
+F 5 "Metal-Alloy Power Inductor" H 13375 1675 50  0001 C CNN "Description"
 	1    13375 1675
 	-1   0    0    1   
 $EndComp
@@ -3612,6 +3609,7 @@ F 1 "22uH(2A)" H 14250 1625 50  0000 C CNN
 F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx_HandSoldering" H 14250 1675 50  0001 C CNN
 F 3 "" H 14250 1675 50  0001 C CNN
 F 4 "C128694" H 14250 1675 50  0001 C CNN "JLPCB#"
+F 5 "Metal-Alloy Power Inductor" H 14250 1675 50  0001 C CNN "Description"
 	1    14250 1675
 	-1   0    0    1   
 $EndComp
@@ -3780,8 +3778,8 @@ Connection ~ 15325 1675
 Wire Wire Line
 	12300 2025 12300 1125
 Connection ~ 12300 2025
-Connection ~ 11500 4425
-Connection ~ 11525 3625
+Connection ~ 11500 4550
+Connection ~ 11525 3675
 $Comp
 L power:-5VA #PWR065
 U 1 1 657F5951
@@ -4255,20 +4253,6 @@ Wire Wire Line
 Connection ~ 6950 2450
 Wire Wire Line
 	6950 2450 6650 2450
-$Comp
-L power:GND #PWR0213
-U 1 1 6701AC6C
-P 6950 2750
-AR Path="/6701AC6C" Ref="#PWR0213"  Part="1" 
-AR Path="/5CC0C02C/6701AC6C" Ref="#PWR?"  Part="1" 
-AR Path="/5D60B524/6701AC6C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0213" H 6950 2500 50  0001 C CNN
-F 1 "GND" H 6950 2600 50  0000 C CNN
-F 2 "" H 6950 2750 50  0001 C CNN
-F 3 "" H 6950 2750 50  0001 C CNN
-	1    6950 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 2700 6950 2750
 Wire Wire Line
@@ -4331,7 +4315,7 @@ F 1 "LED_ABGR" H 12950 6625 50  0000 R CNN
 F 2 "MyLED:LED_0603_ABGR" H 12775 6950 50  0001 C CNN
 F 3 "~" H 12775 6950 50  0001 C CNN
 F 4 "C965848" H 12775 7000 50  0001 C CNN "JLPCB#"
-F 5 "Remove this if you use extension header" H 12775 7000 50  0001 C CNN "Description"
+F 5 "Remove this if you use the Power Status LED extension header" H 12775 7000 50  0001 C CNN "Description"
 	1    12775 7000
 	0    -1   -1   0   
 $EndComp
@@ -4366,13 +4350,14 @@ BLUE\nGREEN\nANODE\nRED
 $Comp
 L Connector:TestPoint_Alt TP1
 U 1 1 64AC1064
-P 11525 3625
-F 0 "TP1" V 11475 3875 50  0001 L CNN
-F 1 "TestPoint_GNDA" V 11525 3825 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 11725 3625 50  0001 C CNN
-F 3 "~" H 11725 3625 50  0001 C CNN
-F 4 "NOP" H 11525 3625 50  0001 C CNN "JLPCB#"
-	1    11525 3625
+P 11525 3675
+F 0 "TP1" V 11475 3925 50  0001 L CNN
+F 1 "TestPoint_GNDA" V 11525 3875 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 11725 3675 50  0001 C CNN
+F 3 "~" H 11725 3675 50  0001 C CNN
+F 4 "NOP" H 11525 3675 50  0001 C CNN "JLPCB#"
+F 5 "TP for Analog Measurement" H 11525 3675 50  0001 C CNN "Description"
+	1    11525 3675
 	0    1    1    0   
 $EndComp
 $Comp
@@ -4384,6 +4369,7 @@ F 1 "TestPoint_GND" V 11275 2950 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 11475 2775 50  0001 C CNN
 F 3 "~" H 11475 2775 50  0001 C CNN
 F 4 "NOP" H 11275 2775 50  0001 C CNN "JLPCB#"
+F 5 "for Chassis GND Connection" H 11275 2775 50  0001 C CNN "Description"
 	1    11275 2775
 	0    1    1    0   
 $EndComp
@@ -4472,4 +4458,132 @@ Text Notes 4675 11150 0    50   ~ 0
 * USB Position has Changed
 Text Notes 3750 10700 0    50   ~ 0
 *
+Wire Wire Line
+	10100 4550 10625 4550
+$Comp
+L Device:R R58
+U 1 1 64E2251D
+P 10375 3550
+F 0 "R58" V 10300 3500 50  0000 L CNN
+F 1 "330R" V 10375 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10305 3550 50  0001 C CNN
+F 3 "~" H 10375 3550 50  0001 C CNN
+F 4 "C23138" H 10375 3550 50  0001 C CNN "JLPCB#"
+	1    10375 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R56
+U 1 1 64E76531
+P 10800 3550
+F 0 "R56" V 10875 3475 50  0000 L CNN
+F 1 "100R" V 10800 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10730 3550 50  0001 C CNN
+F 3 "~" H 10800 3550 50  0001 C CNN
+F 4 "C22775 " H 10800 3550 50  0001 C CNN "JLPCB#"
+	1    10800 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R59
+U 1 1 64F0500C
+P 10850 4450
+F 0 "R59" V 10775 4375 50  0000 L CNN
+F 1 "200R" V 10850 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10780 4450 50  0001 C CNN
+F 3 "~" H 10850 4450 50  0001 C CNN
+F 4 "C22962" H 10850 4450 50  0001 C CNN "JLPCB#"
+	1    10850 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10625 4375 11000 4375
+$Comp
+L Device:R R57
+U 1 1 64F05018
+P 11000 4225
+F 0 "R57" V 10925 4150 50  0000 L CNN
+F 1 "120R" V 11000 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10930 4225 50  0001 C CNN
+F 3 "~" H 11000 4225 50  0001 C CNN
+F 4 "C22787" H 11000 4225 50  0001 C CNN "JLPCB#"
+	1    11000 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 4450 11000 4375
+Wire Wire Line
+	10700 4450 10625 4450
+Wire Wire Line
+	10625 4450 10625 4550
+Connection ~ 10625 4550
+Wire Wire Line
+	10625 4550 11175 4550
+Text Notes 10475 3650 0    50   ~ 0
+3.75V
+Text Notes 10950 4525 0    50   ~ 0
+2.08V
+$Comp
+L Device:R R60
+U 1 1 64E29B38
+P 10975 3325
+F 0 "R60" V 11050 3250 50  0000 L CNN
+F 1 "10R" V 10975 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10905 3325 50  0001 C CNN
+F 3 "~" H 10975 3325 50  0001 C CNN
+F 4 "C22859" H 10975 3325 50  0001 C CNN "JLPCB#"
+	1    10975 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10225 3550 10225 3675
+$Comp
+L MW-ADAU1466BB-rescue:GNDA-CS5368TDM-rescue-RasPiAudioHat-rescue #PWR0153
+U 1 1 64ED5DE6
+P 6950 2750
+AR Path="/64ED5DE6" Ref="#PWR0153"  Part="1" 
+AR Path="/5D67FDC6/64ED5DE6" Ref="#PWR?"  Part="1" 
+AR Path="/5D902CF8/64ED5DE6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0153" H 6950 2500 50  0001 C CNN
+F 1 "GNDA" H 6950 2600 50  0000 C CNN
+F 2 "" H 6950 2750 50  0001 C CNN
+F 3 "" H 6950 2750 50  0001 C CNN
+	1    6950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 3175 10975 3175
+Connection ~ 10975 3175
+Wire Wire Line
+	10975 3175 11175 3175
+Wire Wire Line
+	10100 3675 10225 3675
+Connection ~ 10225 3675
+Wire Wire Line
+	10225 3675 11175 3675
+Wire Wire Line
+	10525 3550 10600 3550
+Wire Wire Line
+	10600 3475 10600 3550
+Connection ~ 10600 3550
+Wire Wire Line
+	10600 3550 10650 3550
+Wire Wire Line
+	10950 3550 10975 3550
+Wire Wire Line
+	10975 3550 10975 3475
+Wire Wire Line
+	10925 4075 11000 4075
+Connection ~ 11000 4075
+Wire Wire Line
+	11000 4075 11175 4075
+Connection ~ 11000 4375
+Text Notes 12875 2600 0    50   ~ 0
+1.4MHz Invert SMPS
+Text Notes 2250 2600 0    50   ~ 0
+C&K 200MSP1T2B2M7RE, T105MH9AVBE
+Text Notes 2475 3575 0    50   ~ 0
+C&K 200MSP1T2B2M7RE, T105MH9AVBE
+Text Notes 2350 4975 0    50   ~ 0
+C&K PTS645VL39-2 LFS
 $EndSCHEMATC
