@@ -3,7 +3,7 @@
 
 ![Image of FreeDSP OCTAVIA](https://github.com/freeDSP/freeDSP-OCTAVIA/blob/main/SOURCES/IMAGES/FreeDSP_OCTAVIA_0v32_TopView.jpg)
 
-Version 0.32 is the latest release.  
+Version 0.33 is the latest commit, but it has not been built yet.  
 version 0.1 board is worked, but it requires some workarounds.  I recommend building the latest version.
 https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 
