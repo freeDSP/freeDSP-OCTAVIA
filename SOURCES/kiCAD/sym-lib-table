@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MW-ADAU1466BB-rescue)(type Legacy)(uri /Users/HILO/Documents/KICAD_DATA/FreeDSP-OCTAVIA/Trial/MW-ADAU1466BB-rescue.lib)(options "")(descr ""))
+  (lib (name FreeDSP_OCTAVIA-rescue)(type Legacy)(uri ${KIPRJMOD}/FreeDSP_OCTAVIA-rescue.lib)(options "")(descr ""))
 )

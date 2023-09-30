@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
-Date "2023-08-22"
-Rev "0.33"
+Date "2023-09-30"
+Rev "1.00"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -164,6 +164,7 @@ F 1 "M2.5" V 14825 8625 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm" H 14825 8500 60  0001 C CNN
 F 3 "" H 14825 8500 60  0001 C CNN
 F 4 "NOP" H 14825 8500 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole for Rspberry-pi" H 14825 8500 50  0001 C CNN "Description"
 	1    14825 8500
 	0    1    1    0   
 $EndComp
@@ -176,6 +177,7 @@ F 1 "M2.5" V 14825 8825 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.5mm" H 14825 8700 60  0001 C CNN
 F 3 "" H 14825 8700 60  0001 C CNN
 F 4 "NOP" H 14825 8700 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole for Rspberry-pi" H 14825 8700 50  0001 C CNN "Description"
 	1    14825 8700
 	0    1    1    0   
 $EndComp
@@ -190,7 +192,7 @@ F 1 "Conn_02x20_Odd_Even" H 5800 8950 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 900 6900 50  0001 C CNN
 F 3 "" H 900 6900 50  0001 C CNN
 F 4 "HAND" H 5750 7850 50  0001 C CNN "JLPCB#"
-F 5 "for Rapberry-pi" H 5750 7850 50  0001 C CNN "Description"
+F 5 "for Rapberry-pi Slot" H 5750 7850 50  0001 C CNN "Description"
 	1    5750 7850
 	1    0    0    -1  
 $EndComp
@@ -232,6 +234,7 @@ F 1 "M3" H 14975 7600 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopOnly" H 14875 7600 50  0001 C CNN
 F 3 "~" H 14875 7600 50  0001 C CNN
 F 4 "NOP" H 14875 7600 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole" H 14875 7600 50  0001 C CNN "Description"
 	1    14875 7600
 	0    1    1    0   
 $EndComp
@@ -244,6 +247,7 @@ F 1 "M3" H 14975 7800 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopOnly" H 14875 7800 50  0001 C CNN
 F 3 "~" H 14875 7800 50  0001 C CNN
 F 4 "NOP" H 14875 7800 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole" H 14875 7800 50  0001 C CNN "Description"
 	1    14875 7800
 	0    1    1    0   
 $EndComp
@@ -256,6 +260,7 @@ F 1 "M3" H 14975 7425 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopOnly" H 14875 7425 50  0001 C CNN
 F 3 "~" H 14875 7425 50  0001 C CNN
 F 4 "NOP" H 14875 7425 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole" H 14875 7425 50  0001 C CNN "Description"
 	1    14875 7425
 	0    1    1    0   
 $EndComp
@@ -452,8 +457,6 @@ Wire Wire Line
 	11525 3175 11175 3175
 Wire Wire Line
 	11525 3500 11525 3675
-Wire Wire Line
-	11525 3675 11175 3675
 Text Notes 1350 3900 0    79   ~ 16
 RAS-Pi\nPOWER\nSWITCH
 $Comp
@@ -497,6 +500,7 @@ F 1 "1uF/50V" H 6018 5530 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 5938 5425 50  0001 C CNN
 F 3 "~" H 5900 5575 50  0001 C CNN
 F 4 "C28323" H 5900 5575 50  0001 C CNN "JLPCB#"
+F 5 "Time-Constant Cap for RPI delay-ON" H 5900 5575 50  0001 C CNN "Description"
 	1    5900 5575
 	1    0    0    -1  
 $EndComp
@@ -509,7 +513,7 @@ F 1 "33uF/16V" V 5900 4075 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5788 4175 50  0001 C CNN
 F 3 "~" H 5750 4325 50  0001 C CNN
 F 4 "HAND" H 5750 4325 50  0001 C CNN "JLPCB#"
-F 5 "for the Raspberry-pi Shutdown-Time constant " H 5750 4325 50  0001 C CNN "Description"
+F 5 "Time-Constant Cap for RPI delay-Shutdown" H 5750 4325 50  0001 C CNN "Description"
 	1    5750 4325
 	1    0    0    -1  
 $EndComp
@@ -679,6 +683,7 @@ F 1 "1N4148W" H 2950 3975 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2925 4075 50  0001 C CNN
 F 3 "" H 2925 4075 50  0001 C CNN
 F 4 "C81598 " H 2925 4075 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 2925 4075 50  0001 C CNN "Description"
 	1    2925 4075
 	0    -1   1    0   
 $EndComp
@@ -693,6 +698,7 @@ F 1 "1N4148W" H 2700 4725 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2675 4550 50  0001 C CNN
 F 3 "" H 2675 4550 50  0001 C CNN
 F 4 "C81598 " H 2675 4550 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 2675 4550 50  0001 C CNN "Description"
 	1    2675 4550
 	1    0    0    1   
 $EndComp
@@ -959,6 +965,7 @@ F 1 "MMBT5401" H 6075 2000 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6750 2150 50  0001 C CNN
 F 3 "~" H 6550 2050 50  0001 C CNN
 F 4 "C8326" H 6550 2050 50  0001 C CNN "JLPCB#"
+F 5 "PNP Transistor for anti-pop muting" H 6550 2050 50  0001 C CNN "Description"
 	1    6550 2050
 	1    0    0    1   
 $EndComp
@@ -973,6 +980,7 @@ F 1 "MMBT5401" H 6050 2500 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6400 2350 50  0001 C CNN
 F 3 "~" H 6200 2250 50  0001 C CNN
 F 4 "C8326" H 6200 2250 50  0001 C CNN "JLPCB#"
+F 5 "PNP Transistor for anti-pop muting" H 6200 2250 50  0001 C CNN "Description"
 	1    6200 2250
 	1    0    0    1   
 $EndComp
@@ -1029,6 +1037,7 @@ F 1 "SS2040FL" H 6575 1750 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6500 1475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 6500 1650 50  0001 C CNN
 F 4 "C8598" H 6500 1650 50  0001 C CNN "JLPCB#"
+F 5 "SBD for charging C32" H 6500 1650 50  0001 C CNN "Description"
 	1    6500 1650
 	-1   0    0    1   
 $EndComp
@@ -1081,6 +1090,7 @@ F 1 "1N4148W" H 5275 1825 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 5400 1900 50  0001 C CNN
 F 3 "~" H 5400 1900 50  0001 C CNN
 F 4 "C81598 " H 5400 1900 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 5400 1900 50  0001 C CNN "Description"
 	1    5400 1900
 	0    1    1    0   
 $EndComp
@@ -1170,6 +1180,7 @@ F 1 "NOP" V 3725 4875 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3655 4950 50  0001 C CNN
 F 3 "~" H 3725 4950 50  0001 C CNN
 F 4 "NOP" H 3725 4950 50  0001 C CNN "JLPCB#"
+F 5 "Selectable Exclusive Mount Jumper R" H 3725 4950 50  0001 C CNN "Description"
 	1    3725 4950
 	0    -1   -1   0   
 $EndComp
@@ -1188,6 +1199,7 @@ F 1 "1N4148W" H 3650 4475 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 3775 4550 50  0001 C CNN
 F 3 "~" H 3775 4550 50  0001 C CNN
 F 4 "C81598 " H 3775 4550 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 3775 4550 50  0001 C CNN "Description"
 	1    3775 4550
 	1    0    0    -1  
 $EndComp
@@ -1238,7 +1250,7 @@ F 6 "Sensors, Transducers" H 3125 6500 60  0001 L CNN "Category"
 F 7 "Optical Sensors - Photo Detectors - Remote Receiver" H 3125 6600 60  0001 L CNN "Family"
 F 8 "http://www.vishay.com/docs/82491/tsop382.pdf" H 3125 6700 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/vishay-semiconductor-opto-division/TSOP38238/751-1227-ND/1681362" H 3125 6800 60  0001 L CNN "DK_Detail_Page"
-F 10 "Optional: Vishay TSOP38238 IR REMOTE SENSOR REC 38.0KHZ 45M" H 3125 6900 60  0001 L CNN "Description"
+F 10 "Optional:  IR REMOTE SENSOR Vishay TSOP38238 38.0KHZ 45M" H 3125 6900 60  0001 L CNN "Description"
 F 11 "Vishay Semiconductor Opto Division" H 3125 7000 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3125 7100 60  0001 L CNN "Status"
 F 13 "HAND" H 2925 5900 50  0001 C CNN "JLPCB#"
@@ -1339,6 +1351,7 @@ F 1 "2N7002" H 8900 3900 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9400 3650 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9200 3725 50  0001 L CNN
 F 4 "C8545" H 9200 3725 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 9200 3725 50  0001 C CNN "Description"
 	1    9200 3725
 	1    0    0    -1  
 $EndComp
@@ -1559,6 +1572,7 @@ F 1 "SS2040FL" H 6575 1500 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6500 1225 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 6500 1400 50  0001 C CNN
 F 4 "C8598" H 6500 1400 50  0001 C CNN "JLPCB#"
+F 5 "SBD for charging C32" H 6500 1400 50  0001 C CNN "Description"
 	1    6500 1400
 	-1   0    0    1   
 $EndComp
@@ -1581,6 +1595,7 @@ F 1 "1N4148W" H 5050 2175 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 5175 2250 50  0001 C CNN
 F 3 "~" H 5175 2250 50  0001 C CNN
 F 4 "C81598 " H 5175 2250 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 5175 2250 50  0001 C CNN "Description"
 	1    5175 2250
 	1    0    0    -1  
 $EndComp
@@ -1603,6 +1618,7 @@ F 1 "1N4148W" H 5275 5000 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 5400 5075 50  0001 C CNN
 F 3 "~" H 5400 5075 50  0001 C CNN
 F 4 "C81598 " H 5400 5075 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 5400 5075 50  0001 C CNN "Description"
 	1    5400 5075
 	1    0    0    -1  
 $EndComp
@@ -1617,6 +1633,7 @@ F 1 "1N4148W" H 5150 4075 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 5375 4175 50  0001 C CNN
 F 3 "~" H 5375 4175 50  0001 C CNN
 F 4 "C81598 " H 5375 4175 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 5375 4175 50  0001 C CNN "Description"
 	1    5375 4175
 	-1   0    0    1   
 $EndComp
@@ -1758,6 +1775,7 @@ F 1 "2N7002" H 11475 9075 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 11500 9075 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 11300 9150 50  0001 L CNN
 F 4 "C8545" H 11300 9150 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 11300 9150 50  0001 C CNN "Description"
 	1    11300 9150
 	1    0    0    -1  
 $EndComp
@@ -1874,6 +1892,7 @@ F 1 "NOP" V 3525 5975 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3455 6050 50  0001 C CNN
 F 3 "~" H 3525 6050 50  0001 C CNN
 F 4 "NOP" H 3525 6050 50  0001 C CNN "JLPCB#"
+F 5 "Selectable  Exclusive Mount Jumper R" H 3525 6050 50  0001 C CNN "Description"
 	1    3525 6050
 	0    -1   -1   0   
 $EndComp
@@ -2032,6 +2051,7 @@ F 1 "D_Schottky_5A" V 10300 2550 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" V 10125 2525 50  0001 C CNN
 F 3 "~" V 10125 2525 50  0001 C CNN
 F 4 "C22452" H 10125 2525 50  0001 C CNN "JLPCB#"
+F 5 "SBD 40V 550mV@5A" H 10125 2525 50  0001 C CNN "Description"
 	1    10125 2525
 	0    1    1    0   
 $EndComp
@@ -2278,6 +2298,7 @@ F 1 "D_Schottky_5A" V 10275 5950 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" V 10100 5925 50  0001 C CNN
 F 3 "~" V 10100 5925 50  0001 C CNN
 F 4 "C22452" H 10100 5925 50  0001 C CNN "JLPCB#"
+F 5 "SBD 40V 550mV@5A" H 10100 5925 50  0001 C CNN "Description"
 	1    10100 5925
 	0    1    1    0   
 $EndComp
@@ -2601,6 +2622,7 @@ F 1 "1N4148W" H 8925 1475 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 9000 1650 50  0001 C CNN
 F 3 "~" H 9000 1650 50  0001 C CNN
 F 4 "C81598 " H 9000 1650 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 9000 1650 50  0001 C CNN "Description"
 	1    9000 1650
 	0    -1   -1   0   
 $EndComp
@@ -2906,6 +2928,7 @@ F 1 "1N4148W" H 10525 7700 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 10500 7525 50  0001 C CNN
 F 3 "" H 10500 7525 50  0001 C CNN
 F 4 "C81598 " H 10500 7525 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 10500 7525 50  0001 C CNN "Description"
 	1    10500 7525
 	-1   0    0    -1  
 $EndComp
@@ -2924,6 +2947,7 @@ F 1 "1N4148W" H 10475 8575 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 10450 8750 50  0001 C CNN
 F 3 "" H 10450 8750 50  0001 C CNN
 F 4 "C81598 " H 10450 8750 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 10450 8750 50  0001 C CNN "Description"
 	1    10450 8750
 	-1   0    0    1   
 $EndComp
@@ -2991,8 +3015,8 @@ U 1 1 6517C675
 P 9175 8125
 AR Path="/6517C675" Ref="A1"  Part="1" 
 AR Path="/5D902CF8/6517C675" Ref="A?"  Part="1" 
-F 0 "A1" H 8425 9200 50  0000 C CNN
-F 1 "Combo384" H 8700 9200 50  0000 C CNN
+F 0 "A1" H 8700 9350 50  0000 C CNN
+F 1 "Combo384-Combo384" H 8700 9250 50  0000 C CNN
 F 2 "MyLibrary:Combo384" H 8975 8075 50  0001 C CNN
 F 3 "" H 8975 8075 50  0001 C CNN
 F 4 "HAND" H 9175 8125 50  0001 C CNN "JLPCB#"
@@ -3048,6 +3072,7 @@ F 1 "NOP" V 4150 8375 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 8450 50  0001 C CNN
 F 3 "~" H 4150 8450 50  0001 C CNN
 F 4 "NOP" H 4150 8450 50  0001 C CNN "JLPCB#"
+F 5 "Selectable  Exclusive Mount Jumper for RESET by RPI feature" H 4150 8450 50  0001 C CNN "Description"
 	1    4150 8450
 	0    -1   -1   0   
 $EndComp
@@ -3405,6 +3430,7 @@ F 1 "M3" H 14975 7975 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopOnly" H 14875 7975 50  0001 C CNN
 F 3 "~" H 14875 7975 50  0001 C CNN
 F 4 "NOP" H 14875 7975 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole" H 14875 7975 50  0001 C CNN "Description"
 	1    14875 7975
 	0    1    1    0   
 $EndComp
@@ -3417,6 +3443,7 @@ F 1 "M3" H 14975 8150 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopOnly" H 14875 8150 50  0001 C CNN
 F 3 "~" H 14875 8150 50  0001 C CNN
 F 4 "NOP" H 14875 8150 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole" H 14875 8150 50  0001 C CNN "Description"
 	1    14875 8150
 	0    1    1    0   
 $EndComp
@@ -3455,6 +3482,7 @@ F 1 "M3" H 14975 8325 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopOnly" H 14875 8325 50  0001 C CNN
 F 3 "~" H 14875 8325 50  0001 C CNN
 F 4 "NOP" H 14875 8325 50  0001 C CNN "JLPCB#"
+F 5 "Mount hole" H 14875 8325 50  0001 C CNN "Description"
 	1    14875 8325
 	0    1    1    0   
 $EndComp
@@ -3752,7 +3780,7 @@ F 6 "Filters" H 15325 2275 60  0001 L CNN "Category"
 F 7 "Ferrite Beads and Chips" H 15325 2375 60  0001 L CNN "Family"
 F 8 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 15325 2475 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/murata-electronics-north-america/BLM18AG601SN1D/490-1014-1-ND/584462" H 15325 2575 60  0001 L CNN "DK_Detail_Page"
-F 10 "FERRITE BEAD 600 OHM 0603 1LN" H 15325 2675 60  0001 L CNN "Description"
+F 10 "Bead for Analog -VEE rail" H 15325 2675 60  0001 L CNN "Description"
 F 11 "Murata Electronics North America" H 15325 2775 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 15325 2875 60  0001 L CNN "Status"
 F 13 "C1017" H 15125 1675 50  0001 C CNN "JLPCB#"
@@ -3929,15 +3957,15 @@ $EndComp
 $Comp
 L Device:R R49
 U 1 1 6488D00D
-P 10125 8575
+P 10125 8925
 AR Path="/6488D00D" Ref="R49"  Part="1" 
 AR Path="/5D902CF8/6488D00D" Ref="R?"  Part="1" 
-F 0 "R49" V 10200 8525 50  0000 L CNN
-F 1 "3.3k" V 10125 8500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10055 8575 50  0001 C CNN
-F 3 "~" H 10125 8575 50  0001 C CNN
-F 4 "C22978" H 10125 8575 50  0001 C CNN "JLPCB#"
-	1    10125 8575
+F 0 "R49" V 10200 8875 50  0000 L CNN
+F 1 "10k" V 10125 8850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10055 8925 50  0001 C CNN
+F 3 "~" H 10125 8925 50  0001 C CNN
+F 4 "C25804" H 10125 8925 50  0001 C CNN "JLPCB#"
+	1    10125 8925
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -3954,20 +3982,6 @@ F 4 "C17414" H 3900 10500 50  0001 C CNN "JLPCB#"
 	1    3900 10500
 	0    1    1    0   
 $EndComp
-$Comp
-L Transistor_FET:2N7002 Q14
-U 1 1 642FBE43
-P 10025 8975
-AR Path="/642FBE43" Ref="Q14"  Part="1" 
-AR Path="/5D902CF8/642FBE43" Ref="Q?"  Part="1" 
-F 0 "Q14" H 9925 9125 50  0000 L CNN
-F 1 "2N7002" V 10250 8825 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10225 8900 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10025 8975 50  0001 L CNN
-F 4 "C8545" H 10025 8975 50  0001 C CNN "JLPCB#"
-	1    10025 8975
-	1    0    0    -1  
-$EndComp
 Text Notes 11375 7300 0    79   ~ 16
 Power Status LED
 Wire Wire Line
@@ -3981,40 +3995,21 @@ Wire Wire Line
 	3725 11075 3775 11075
 Text GLabel 9975 9375 0    50   Input ~ 0
 ~SEL_USB
-$Comp
-L MW-ADAU1466BB-rescue:+3.3V-CS5368TDM-rescue-RasPiAudioHat-rescue #PWR?
-U 1 1 651B1300
-P 10125 8400
-AR Path="/5CC0C02C/651B1300" Ref="#PWR?"  Part="1" 
-AR Path="/651B1300" Ref="#PWR0209"  Part="1" 
-AR Path="/5D67FDC6/651B1300" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0209" H 10125 8250 50  0001 C CNN
-F 1 "+3.3V" H 10150 8550 50  0000 C CNN
-F 2 "" H 10125 8400 50  0001 C CNN
-F 3 "" H 10125 8400 50  0001 C CNN
-	1    10125 8400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10125 8400 10125 8425
-Wire Wire Line
-	10125 8725 10125 8750
 Wire Wire Line
 	10300 8750 10125 8750
-Connection ~ 10125 8750
 Wire Wire Line
 	10125 8750 10125 8775
 $Comp
 L power:GND #PWR0210
 U 1 1 6551D2A5
-P 10125 9175
+P 10125 9075
 AR Path="/6551D2A5" Ref="#PWR0210"  Part="1" 
 AR Path="/5D902CF8/6551D2A5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0210" H 10125 8925 50  0001 C CNN
-F 1 "GND" H 10125 9025 50  0000 C CNN
-F 2 "" H 10125 9175 50  0000 C CNN
-F 3 "" H 10125 9175 50  0000 C CNN
-	1    10125 9175
+F 0 "#PWR0210" H 10125 8825 50  0001 C CNN
+F 1 "GND" H 10125 8925 50  0000 C CNN
+F 2 "" H 10125 9075 50  0000 C CNN
+F 3 "" H 10125 9075 50  0000 C CNN
+	1    10125 9075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4045,6 +4040,7 @@ F 1 "1N4148W" H 10675 7000 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 10650 6825 50  0001 C CNN
 F 3 "" H 10650 6825 50  0001 C CNN
 F 4 "C81598 " H 10650 6825 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 10650 6825 50  0001 C CNN "Description"
 	1    10650 6825
 	-1   0    0    -1  
 $EndComp
@@ -4086,6 +4082,7 @@ F 1 "2N7002" H 10725 9300 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10750 9300 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10550 9375 50  0001 L CNN
 F 4 "C8545" H 10550 9375 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 10550 9375 50  0001 C CNN "Description"
 	1    10550 9375
 	1    0    0    -1  
 $EndComp
@@ -4115,6 +4112,7 @@ F 1 "1N4148W" H 10800 9075 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 10825 9150 50  0001 C CNN
 F 3 "" H 10825 9150 50  0001 C CNN
 F 4 "C81598 " H 10825 9150 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 10825 9150 50  0001 C CNN "Description"
 	1    10825 9150
 	-1   0    0    -1  
 $EndComp
@@ -4170,6 +4168,7 @@ F 1 "2N7002" H 12250 8300 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12675 8000 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 12475 8075 50  0001 L CNN
 F 4 "C8545" H 12475 8075 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 12475 8075 50  0001 C CNN "Description"
 	1    12475 8075
 	1    0    0    -1  
 $EndComp
@@ -4202,6 +4201,7 @@ F 1 "2N7002" H 12625 8225 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 13075 8000 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 12875 8075 50  0001 L CNN
 F 4 "C8545" H 12875 8075 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 12875 8075 50  0001 C CNN "Description"
 	1    12875 8075
 	-1   0    0    -1  
 $EndComp
@@ -4350,14 +4350,14 @@ BLUE\nGREEN\nANODE\nRED
 $Comp
 L Connector:TestPoint_Alt TP1
 U 1 1 64AC1064
-P 11525 3675
-F 0 "TP1" V 11475 3925 50  0001 L CNN
-F 1 "TestPoint_GNDA" V 11525 3875 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 11725 3675 50  0001 C CNN
-F 3 "~" H 11725 3675 50  0001 C CNN
-F 4 "NOP" H 11525 3675 50  0001 C CNN "JLPCB#"
-F 5 "TP for Analog Measurement" H 11525 3675 50  0001 C CNN "Description"
-	1    11525 3675
+P 11500 4550
+F 0 "TP1" V 11450 4800 50  0001 L CNN
+F 1 "TestPoint_GNDA" V 11500 4750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 11700 4550 50  0001 C CNN
+F 3 "~" H 11700 4550 50  0001 C CNN
+F 4 "NOP" H 11500 4550 50  0001 C CNN "JLPCB#"
+F 5 "TP for Analog Measurement and  Chassis GND Connection" H 11500 4550 50  0001 C CNN "Description"
+	1    11500 4550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -4369,7 +4369,7 @@ F 1 "TestPoint_GND" V 11275 2950 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 11475 2775 50  0001 C CNN
 F 3 "~" H 11475 2775 50  0001 C CNN
 F 4 "NOP" H 11275 2775 50  0001 C CNN "JLPCB#"
-F 5 "for Chassis GND Connection" H 11275 2775 50  0001 C CNN "Description"
+F 5 "TP for Digital Measurement" H 11275 2775 50  0001 C CNN "Description"
 	1    11275 2775
 	0    1    1    0   
 $EndComp
@@ -4489,7 +4489,7 @@ L Device:R R59
 U 1 1 64F0500C
 P 10850 4450
 F 0 "R59" V 10775 4375 50  0000 L CNN
-F 1 "200R" V 10850 4350 50  0000 L CNN
+F 1 "270R" V 10850 4350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10780 4450 50  0001 C CNN
 F 3 "~" H 10850 4450 50  0001 C CNN
 F 4 "C22962" H 10850 4450 50  0001 C CNN "JLPCB#"
@@ -4503,7 +4503,7 @@ L Device:R R57
 U 1 1 64F05018
 P 11000 4225
 F 0 "R57" V 10925 4150 50  0000 L CNN
-F 1 "120R" V 11000 4125 50  0000 L CNN
+F 1 "180R" V 11000 4125 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10930 4225 50  0001 C CNN
 F 3 "~" H 11000 4225 50  0001 C CNN
 F 4 "C22787" H 11000 4225 50  0001 C CNN "JLPCB#"
@@ -4522,7 +4522,7 @@ Wire Wire Line
 Text Notes 10475 3650 0    50   ~ 0
 3.75V
 Text Notes 10950 4525 0    50   ~ 0
-2.08V
+2.05V
 $Comp
 L Device:R R60
 U 1 1 64E29B38
@@ -4586,4 +4586,48 @@ Text Notes 2475 3575 0    50   ~ 0
 C&K 200MSP1T2B2M7RE, T105MH9AVBE
 Text Notes 2350 4975 0    50   ~ 0
 C&K PTS645VL39-2 LFS
+Wire Wire Line
+	10125 8750 9825 8750
+Wire Wire Line
+	9825 8750 9825 8975
+Connection ~ 10125 8750
+$Comp
+L Device:R R?
+U 1 1 65DECACA
+P 11750 3675
+AR Path="/5D67FDC6/65DECACA" Ref="R?"  Part="1" 
+AR Path="/65DECACA" Ref="R61"  Part="1" 
+AR Path="/5D902CF8/65DECACA" Ref="R?"  Part="1" 
+F 0 "R61" V 11825 3625 50  0000 L CNN
+F 1 "0R" V 11750 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11680 3675 50  0001 C CNN
+F 3 "~" H 11750 3675 50  0001 C CNN
+F 4 "C21189" H 11750 3675 50  0001 C CNN "JLPCB#"
+F 5 "Tightly Connecting Jumper for AnalogGND and Digital GND" H 11750 3675 50  0001 C CNN "Description"
+	1    11750 3675
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR078
+U 1 1 65EC41ED
+P 11975 3725
+AR Path="/65EC41ED" Ref="#PWR078"  Part="1" 
+AR Path="/5CC0C02C/65EC41ED" Ref="#PWR?"  Part="1" 
+AR Path="/5D60B524/65EC41ED" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF3C17/65EC41ED" Ref="#PWR?"  Part="1" 
+F 0 "#PWR078" H 11975 3475 50  0001 C CNN
+F 1 "GND" H 11975 3575 50  0000 C CNN
+F 2 "" H 11975 3725 50  0001 C CNN
+F 3 "" H 11975 3725 50  0001 C CNN
+	1    11975 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11525 3675 11175 3675
+Wire Wire Line
+	11600 3675 11525 3675
+Wire Wire Line
+	11975 3725 11975 3675
+Wire Wire Line
+	11975 3675 11900 3675
 $EndSCHEMATC

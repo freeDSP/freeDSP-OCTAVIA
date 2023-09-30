@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 3
 Title "FreeDSP OCTAVIA DAC part"
-Date "2023-08-27"
-Rev "0.33"
+Date "2023-09-30"
+Rev "1.00"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -249,11 +249,11 @@ L VH_to_SPEAKON:Conn_Coaxial_x2 J21
 U 1 1 65DBAE20
 P 14900 2650
 F 0 "J21" H 14850 2875 50  0000 L CNN
-F 1 "MJ-519" H 14850 2950 50  0000 L CNN
-F 2 "MyJacks:MJ-519" H 14900 2550 50  0001 C CNN
+F 1 "RCJ-2223" H 14850 2950 50  0000 L CNN
+F 2 "MyJacks:RCJ-2223" H 14900 2550 50  0001 C CNN
 F 3 " ~" H 14900 2550 50  0001 C CNN
 F 4 "HAND" H 14900 2650 50  0001 C CNN "JLPCB#"
-F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 14900 2650 50  0001 C CNN "Description"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Right, Lower=Left) RCJ-2223" H 14900 2650 50  0001 C CNN "Description"
 	1    14900 2650
 	1    0    0    -1  
 $EndComp
@@ -465,11 +465,11 @@ L VH_to_SPEAKON:Conn_Coaxial_x2 J16
 U 1 1 65DC6BAF
 P 7750 6800
 F 0 "J16" H 7700 7025 50  0000 L CNN
-F 1 "MJ-519" H 7525 7150 50  0000 L CNN
-F 2 "MyJacks:MJ-519" H 7750 6700 50  0001 C CNN
+F 1 "RCJ-2223" H 7525 7150 50  0000 L CNN
+F 2 "MyJacks:RCJ-2223" H 7750 6700 50  0001 C CNN
 F 3 " ~" H 7750 6700 50  0001 C CNN
 F 4 "HAND" H 7750 6800 50  0001 C CNN "JLPCB#"
-F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 7750 6800 50  0001 C CNN "Description"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Right, Lower=Left) RCJ-2223" H 7750 6800 50  0001 C CNN "Description"
 	1    7750 6800
 	1    0    0    -1  
 $EndComp
@@ -518,11 +518,11 @@ L VH_to_SPEAKON:Conn_Coaxial_x2 J20
 U 1 1 65DDD7F6
 P 15100 6675
 F 0 "J20" H 15050 6900 50  0000 L CNN
-F 1 "MJ-519" H 15050 6975 50  0000 L CNN
-F 2 "MyJacks:MJ-519" H 15100 6575 50  0001 C CNN
+F 1 "RCJ-2223" H 15050 6975 50  0000 L CNN
+F 2 "MyJacks:RCJ-2223" H 15100 6575 50  0001 C CNN
 F 3 " ~" H 15100 6575 50  0001 C CNN
 F 4 "HAND" H 15100 6675 50  0001 C CNN "JLPCB#"
-F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 15100 6675 50  0001 C CNN "Description"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Right, Lower=Left) RCJ-2223" H 15100 6675 50  0001 C CNN "Description"
 	1    15100 6675
 	1    0    0    -1  
 $EndComp
@@ -634,6 +634,7 @@ F 1 "NOP" V 14700 3525 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14630 3600 50  0001 C CNN
 F 3 "~" H 14700 3600 50  0001 C CNN
 F 4 "NOP" H 14700 3600 50  0001 C CNN "JLPCB#"
+F 5 "Nount Zero-R when Non-Lifting GND RCA-pin Output" H 14700 3600 50  0001 C CNN "Description"
 	1    14700 3600
 	-1   0    0    1   
 $EndComp
@@ -1310,6 +1311,7 @@ F 1 "NOP" V 7525 7625 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7455 7700 50  0001 C CNN
 F 3 "~" H 7525 7700 50  0001 C CNN
 F 4 "NOP" H 7525 7700 50  0001 C CNN "JLPCB#"
+F 5 "Nount Zero-R when Non-Lifting GND RCA-pin Output" H 7525 7700 50  0001 C CNN "Description"
 	1    7525 7700
 	1    0    0    -1  
 $EndComp
@@ -1816,6 +1818,7 @@ F 1 "0R" V 6125 4325 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6055 4375 50  0001 C CNN
 F 3 "~" H 6125 4375 50  0001 C CNN
 F 4 "C21189" H 6125 4375 50  0001 C CNN "JLPCB#"
+F 5 "Move to R171 when never use of XLR" H 6125 4375 50  0001 C CNN "Description"
 	1    6125 4375
 	0    -1   -1   0   
 $EndComp
@@ -1881,6 +1884,7 @@ F 1 "NOP" V 7075 3500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7005 3575 50  0001 C CNN
 F 3 "~" H 7075 3575 50  0001 C CNN
 F 4 "NOP" H 7075 3575 50  0001 C CNN "JLPCB#"
+F 5 "Nount Zero-R when Non-Lifting GND RCA-pin Output" H 7075 3575 50  0001 C CNN "Description"
 	1    7075 3575
 	1    0    0    -1  
 $EndComp
@@ -2233,6 +2237,7 @@ F 1 "GZ2012D601TF" V 10150 5525 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10005 5800 50  0001 C CNN
 F 3 "~" H 10075 5800 50  0001 C CNN
 F 4 "C1017" H 10075 5800 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 10075 5800 50  0001 C CNN "Description"
 	1    10075 5800
 	-1   0    0    1   
 $EndComp
@@ -2245,6 +2250,7 @@ F 1 "GZ2012D601TF" V 10350 5525 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10205 5800 50  0001 C CNN
 F 3 "~" H 10275 5800 50  0001 C CNN
 F 4 "C1017" H 10275 5800 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 10275 5800 50  0001 C CNN "Description"
 	1    10275 5800
 	1    0    0    -1  
 $EndComp
@@ -2469,6 +2475,7 @@ F 1 "GZ2012D601TF" V 2500 5625 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2355 5900 50  0001 C CNN
 F 3 "~" H 2425 5900 50  0001 C CNN
 F 4 "C1017" H 2425 5900 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 2425 5900 50  0001 C CNN "Description"
 	1    2425 5900
 	-1   0    0    1   
 $EndComp
@@ -2481,6 +2488,7 @@ F 1 "GZ2012D601TF" V 2700 5625 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2555 5900 50  0001 C CNN
 F 3 "~" H 2625 5900 50  0001 C CNN
 F 4 "C1017" H 2625 5900 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 2625 5900 50  0001 C CNN "Description"
 	1    2625 5900
 	1    0    0    -1  
 $EndComp
@@ -2658,6 +2666,7 @@ F 1 "GZ2012D601TF" V 10050 1600 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9905 1875 50  0001 C CNN
 F 3 "~" H 9975 1875 50  0001 C CNN
 F 4 "C1017" H 9975 1875 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 9975 1875 50  0001 C CNN "Description"
 	1    9975 1875
 	-1   0    0    1   
 $EndComp
@@ -2670,6 +2679,7 @@ F 1 "GZ2012D601TF" V 10250 1600 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10105 1875 50  0001 C CNN
 F 3 "~" H 10175 1875 50  0001 C CNN
 F 4 "C1017" H 10175 1875 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 10175 1875 50  0001 C CNN "Description"
 	1    10175 1875
 	1    0    0    -1  
 $EndComp
@@ -2711,11 +2721,11 @@ L VH_to_SPEAKON:Conn_Coaxial_x2 J17
 U 1 1 65D99AA6
 P 7375 2875
 F 0 "J17" H 7300 3125 50  0000 L CNN
-F 1 "MJ-519" H 7250 3275 50  0000 L CNN
-F 2 "MyJacks:MJ-519" H 7375 2775 50  0001 C CNN
+F 1 "RCJ-2223" H 7250 3275 50  0000 L CNN
+F 2 "MyJacks:RCJ-2223" H 7375 2775 50  0001 C CNN
 F 3 " ~" H 7375 2775 50  0001 C CNN
 F 4 "HAND" H 7375 2875 50  0001 C CNN "JLPCB#"
-F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 7375 2875 50  0001 C CNN "Description"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Right, Lower=Left) RCJ-2223" H 7375 2875 50  0001 C CNN "Description"
 	1    7375 2875
 	1    0    0    -1  
 $EndComp
@@ -2980,6 +2990,7 @@ F 1 "GZ2012D601TF" V 2275 1700 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2130 1975 50  0001 C CNN
 F 3 "~" H 2200 1975 50  0001 C CNN
 F 4 "C1017" H 2200 1975 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 2200 1975 50  0001 C CNN "Description"
 	1    2200 1975
 	-1   0    0    1   
 $EndComp
@@ -2992,6 +3003,7 @@ F 1 "GZ2012D601TF" V 2475 1700 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 1975 50  0001 C CNN
 F 3 "~" H 2400 1975 50  0001 C CNN
 F 4 "C1017" H 2400 1975 50  0001 C CNN "JLPCB#"
+F 5 "Filter for DAC Power Rail" H 2400 1975 50  0001 C CNN "Description"
 	1    2400 1975
 	1    0    0    -1  
 $EndComp
@@ -3127,6 +3139,7 @@ F 1 "0R" V 6550 8350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6480 8400 50  0001 C CNN
 F 3 "~" H 6550 8400 50  0001 C CNN
 F 4 "C21189" H 6550 8400 50  0001 C CNN "JLPCB#"
+F 5 "Move to R213 when never use of XLR" H 6550 8400 50  0001 C CNN "Description"
 	1    6550 8400
 	0    1    1    0   
 $EndComp
@@ -3165,11 +3178,11 @@ DAC3_L
 Text Label 11325 6525 0    50   ~ 0
 DAC3_R
 Text Notes 15000 2875 0    63   ~ 0
-OUT-32\n(RIGHT)\nOUT-33\n(LEFT)
+OUT-33\n(RIGHT)\nOUT-32\n(LEFT)\n
 Text Notes 15200 6900 0    63   ~ 0
-OUT-40\n(RIGHT)\nOUT-41\n(LEFT)
-Text Notes 7850 6900 0    63   ~ 0
-OUT-16\n(RIGHT)\nOUT-17\n(LEFT)
+OUT-41\n(RIGHT)\nOUT-40\n(LEFT)\n
+Text Notes 7850 7000 0    63   ~ 0
+OUT-17\n(RIGHT)\nOUT-16\n(LEFT)
 Wire Wire Line
 	7075 4075 7125 4075
 Wire Wire Line
@@ -3978,6 +3991,7 @@ F 1 "0R" V 14175 8100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14105 8150 50  0001 C CNN
 F 3 "~" H 14175 8150 50  0001 C CNN
 F 4 "C21189" H 14175 8150 50  0001 C CNN "JLPCB#"
+F 5 "Move to R212 when never use of XLR" H 14175 8150 50  0001 C CNN "Description"
 	1    14175 8150
 	0    -1   -1   0   
 $EndComp
@@ -4072,7 +4086,7 @@ P 12425 7375
 AR Path="/6687663F" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/6687663F" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/65D81CA2/6687663F" Ref="C147"  Part="1" 
-F 0 "C147" V 12375 7275 50  0000 C CNN
+F 0 "C147" V 12250 7350 50  0000 C CNN
 F 1 "NOP" V 12325 7375 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12425 7375 50  0001 C CNN
 F 3 "~" H 12425 7375 50  0001 C CNN
@@ -4198,6 +4212,7 @@ F 1 "NOP" V 14875 7350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 14805 7425 50  0001 C CNN
 F 3 "~" H 14875 7425 50  0001 C CNN
 F 4 "NOP" H 14875 7425 50  0001 C CNN "JLPCB#"
+F 5 "Nount Zero-R when Non-Lifting GND RCA-pin Output" H 14875 7425 50  0001 C CNN "Description"
 	1    14875 7425
 	1    0    0    -1  
 $EndComp
@@ -4481,6 +4496,7 @@ F 1 "0R" V 14025 4250 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13955 4300 50  0001 C CNN
 F 3 "~" H 14025 4300 50  0001 C CNN
 F 4 "C21189" H 14025 4300 50  0001 C CNN "JLPCB#"
+F 5 "Move to R172 when never use of XLR" H 14025 4300 50  0001 C CNN "Description"
 	1    14025 4300
 	0    -1   -1   0   
 $EndComp
@@ -4647,8 +4663,8 @@ Wire Wire Line
 Wire Wire Line
 	11025 4300 11175 4300
 Connection ~ 14275 3225
-Text Notes 7475 3025 0    63   ~ 0
-OUT-0\n(RIGHT)\nOUT-1\n(LEFT)
+Text Notes 7475 3075 0    63   ~ 0
+OUT-1\n(RIGHT)\nOUT-0\n(LEFT)\n
 $Comp
 L Device:C_Small C?
 U 1 1 65D8DF2E
@@ -4914,10 +4930,6 @@ Text Label 3725 6550 0    50   ~ 0
 DAC1_L
 Text Label 3725 6650 0    50   ~ 0
 DAC1_R
-Text Label 6850 2775 0    50   ~ 0
-OUT0_P
-Text Label 6850 2975 0    50   ~ 0
-OUT1_P
 Text Label 6900 3225 0    50   ~ 0
 DIFF_GND0
 Text Label 6600 4375 0    50   ~ 0
@@ -5442,17 +5454,6 @@ Wire Wire Line
 Wire Wire Line
 	6275 4375 6350 4375
 Wire Wire Line
-	6750 2175 6750 2975
-Connection ~ 6750 2975
-Wire Wire Line
-	6750 2975 6750 3875
-Wire Wire Line
-	6450 2775 6450 3325
-Wire Wire Line
-	6750 2975 7175 2975
-Wire Wire Line
-	6450 2775 7175 2775
-Wire Wire Line
 	3200 2725 3675 2725
 Connection ~ 3200 2725
 Wire Wire Line
@@ -5483,17 +5484,6 @@ Wire Wire Line
 	4200 6650 4200 6550
 Wire Wire Line
 	3700 6550 4200 6550
-Wire Wire Line
-	14575 2750 14700 2750
-Connection ~ 14575 2750
-Wire Wire Line
-	14575 2750 14575 3800
-Wire Wire Line
-	14575 1950 14575 2750
-Wire Wire Line
-	14700 2550 14650 2550
-Wire Wire Line
-	14650 2550 14650 3225
 Wire Wire Line
 	14650 3225 14275 3225
 Wire Wire Line
@@ -5529,8 +5519,6 @@ Connection ~ 6350 4375
 Wire Wire Line
 	6350 4375 7075 4375
 Wire Wire Line
-	6550 2650 6550 4075
-Wire Wire Line
 	6550 4075 7075 4075
 Wire Wire Line
 	7075 3725 7075 4075
@@ -5546,11 +5534,39 @@ Wire Wire Line
 Text Notes 10600 6650 0    50   ~ 0
 fc=87kHz
 Text Notes 15050 6325 0    50   ~ 0
-CUI RCJ-2232(2233)
+CUI
 Text Notes 14850 2300 0    50   ~ 0
-CUI RCJ-2232(2233)
+CUI
 Text Notes 7250 2450 0    50   ~ 0
-CUI RCJ-2232(2233)
+CUI
 Text Notes 7525 6400 0    50   ~ 0
-CUI RCJ-2232(2233)
+CUI
+Wire Wire Line
+	6550 2650 6550 4075
+Wire Wire Line
+	6750 2975 7175 2975
+Text Label 6825 2975 0    50   ~ 0
+OUT0_P
+Text Label 6825 2775 0    50   ~ 0
+OUT1_P
+Connection ~ 6750 2975
+Wire Wire Line
+	6750 2975 6750 3875
+Wire Wire Line
+	6750 2175 6750 2975
+Wire Wire Line
+	7175 2775 6450 2775
+Wire Wire Line
+	6450 2775 6450 3325
+Wire Wire Line
+	14575 1950 14575 2750
+Wire Wire Line
+	14700 2750 14575 2750
+Connection ~ 14575 2750
+Wire Wire Line
+	14575 2750 14575 3800
+Wire Wire Line
+	14700 2550 14650 2550
+Wire Wire Line
+	14650 3225 14650 2550
 $EndSCHEMATC

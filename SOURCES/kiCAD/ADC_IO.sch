@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
-Date "2023-08-14"
-Rev "0.33"
+Date "2023-09-30"
+Rev "1.00"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -16,17 +16,17 @@ $EndDescr
 $Comp
 L Connector:Conn_Coaxial_x2 J?
 U 1 1 5D9089EA
-P 1425 1750
+P 1425 1575
 AR Path="/5D9089EA" Ref="J?"  Part="1" 
 AR Path="/5D67FDC6/5D9089EA" Ref="J?"  Part="1" 
 AR Path="/5D902CF8/5D9089EA" Ref="J5"  Part="1" 
-F 0 "J5" H 1355 2088 50  0000 C CNN
-F 1 "MJ-519" H 1355 1997 50  0000 C CNN
-F 2 "MyJacks:MJ-519" H 1425 1650 50  0001 C CNN
-F 3 " ~" H 1425 1650 50  0001 C CNN
-F 4 "HAND" H 1425 1750 50  0001 C CNN "JLPCB#"
-F 5 "Vertical Stereo RCA-pin Jack (Upper=Left, Lower=Right) RCJ-2232,RCJ-2233" H 1425 1750 50  0001 C CNN "Description"
-	1    1425 1750
+F 0 "J5" H 1355 1913 50  0000 C CNN
+F 1 "RCJ-2223" H 1355 1822 50  0000 C CNN
+F 2 "MyJacks:RCJ-2223" H 1425 1475 50  0001 C CNN
+F 3 " ~" H 1425 1475 50  0001 C CNN
+F 4 "HAND" H 1425 1575 50  0001 C CNN "JLPCB#"
+F 5 "Vertical Stereo RCA-pin Jack (Upper=Right, Lower=Left) RCJ-2223" H 1425 1575 50  0001 C CNN "Description"
+	1    1425 1575
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -85,63 +85,63 @@ $EndComp
 $Comp
 L MW-ADAU1466BB-rescue:R-CS5368TDM-rescue-RasPiAudioHat-rescue R?
 U 1 1 5D9089EE
-P 2700 1425
+P 2700 1475
 AR Path="/5D9089EE" Ref="R?"  Part="1" 
 AR Path="/5D67FDC6/5D9089EE" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/5D9089EE" Ref="R24"  Part="1" 
-F 0 "R24" V 2780 1425 50  0000 C CNN
-F 1 "18k" V 2700 1425 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 1425 50  0001 C CNN
-F 3 "" H 2700 1425 50  0001 C CNN
-F 4 "C17506" H 2700 1425 50  0001 C CNN "JLPCB#"
-	1    2700 1425
+F 0 "R24" V 2780 1475 50  0000 C CNN
+F 1 "18k" V 2700 1475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 1475 50  0001 C CNN
+F 3 "" H 2700 1475 50  0001 C CNN
+F 4 "C17506" H 2700 1475 50  0001 C CNN "JLPCB#"
+	1    2700 1475
 	0    -1   1    0   
 $EndComp
 $Comp
 L MW-ADAU1466BB-rescue:R-CS5368TDM-rescue-RasPiAudioHat-rescue R?
 U 1 1 5D9089EF
-P 2700 1625
+P 2700 1675
 AR Path="/5D9089EF" Ref="R?"  Part="1" 
 AR Path="/5D67FDC6/5D9089EF" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/5D9089EF" Ref="R25"  Part="1" 
-F 0 "R25" V 2780 1625 50  0000 C CNN
-F 1 "18k" V 2700 1625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 1625 50  0001 C CNN
-F 3 "" H 2700 1625 50  0001 C CNN
-F 4 "C17506" H 2700 1625 50  0001 C CNN "JLPCB#"
-	1    2700 1625
+F 0 "R25" V 2780 1675 50  0000 C CNN
+F 1 "18k" V 2700 1675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 1675 50  0001 C CNN
+F 3 "" H 2700 1675 50  0001 C CNN
+F 4 "C17506" H 2700 1675 50  0001 C CNN "JLPCB#"
+	1    2700 1675
 	0    -1   1    0   
 $EndComp
 $Comp
 L MW-ADAU1466BB-rescue:CP1_Small-CS5368TDM-rescue-RasPiAudioHat-rescue C?
 U 1 1 5D9089F0
-P 3325 1425
+P 3325 1475
 AR Path="/5D9089F0" Ref="C?"  Part="1" 
 AR Path="/5D67FDC6/5D9089F0" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/5D9089F0" Ref="C27"  Part="1" 
-F 0 "C27" V 3475 1225 50  0000 L CNN
-F 1 "2.2uF" V 3375 1125 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3325 1425 50  0001 C CNN
-F 3 "" H 3325 1425 50  0001 C CNN
-F 4 "HAND" H 3325 1425 50  0001 C CNN "JLPCB#"
-F 5 "Audio Grade Cap Recommended" H 3325 1425 50  0001 C CNN "Description"
-	1    3325 1425
+F 0 "C27" V 3475 1275 50  0000 L CNN
+F 1 "2.2uF" V 3375 1175 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3325 1475 50  0001 C CNN
+F 3 "" H 3325 1475 50  0001 C CNN
+F 4 "HAND" H 3325 1475 50  0001 C CNN "JLPCB#"
+F 5 "Audio Grade Ele-Cap or WIMA Recommended" H 3325 1475 50  0001 C CNN "Description"
+	1    3325 1475
 	0    1    -1   0   
 $EndComp
 $Comp
 L MW-ADAU1466BB-rescue:CP1_Small-CS5368TDM-rescue-RasPiAudioHat-rescue C?
 U 1 1 5D9089F1
-P 3325 1625
+P 3325 1675
 AR Path="/5D9089F1" Ref="C?"  Part="1" 
 AR Path="/5D67FDC6/5D9089F1" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/5D9089F1" Ref="C28"  Part="1" 
-F 0 "C28" V 3200 1550 50  0000 L CNN
-F 1 "2.2uF" V 3125 1500 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3325 1625 50  0001 C CNN
-F 3 "" H 3325 1625 50  0001 C CNN
-F 4 "HAND" H 3325 1625 50  0001 C CNN "JLPCB#"
-F 5 "Audio Grade Cap Recommended" H 3325 1625 50  0001 C CNN "Description"
-	1    3325 1625
+F 0 "C28" V 3200 1600 50  0000 L CNN
+F 1 "2.2uF" V 3125 1550 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3325 1675 50  0001 C CNN
+F 3 "" H 3325 1675 50  0001 C CNN
+F 4 "HAND" H 3325 1675 50  0001 C CNN "JLPCB#"
+F 5 "Audio Grade Ele-Cap or WIMA Recommended" H 3325 1675 50  0001 C CNN "Description"
+	1    3325 1675
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -156,6 +156,7 @@ F 1 "100pF" V 3750 1675 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3800 1925 50  0001 C CNN
 F 3 "" H 3800 1925 50  0001 C CNN
 F 4 "C1790" H 3800 1925 50  0001 C CNN "JLPCB#"
+F 5 "C0G or ECHU(FilmCap) Recommended" H 3800 1925 50  0001 C CNN "Description"
 	1    3800 1925
 	-1   0    0    -1  
 $EndComp
@@ -171,6 +172,7 @@ F 1 "100pF" V 3550 1675 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3600 1925 50  0001 C CNN
 F 3 "" H 3600 1925 50  0001 C CNN
 F 4 "C1790" H 3600 1925 50  0001 C CNN "JLPCB#"
+F 5 "C0G or ECHU(FilmCap) Recommended" H 3600 1925 50  0001 C CNN "Description"
 	1    3600 1925
 	-1   0    0    -1  
 $EndComp
@@ -322,16 +324,11 @@ I2S2_LRCK
 Text Label 7775 2825 2    49   ~ 0
 I2S2_DIN
 Wire Wire Line
-	3150 1425 3150 1825
-Wire Wire Line
-	3225 1425 3150 1425
-Wire Wire Line
 	3150 2325 3150 2125
 Connection ~ 3150 2325
 Wire Wire Line
 	2950 2125 2950 2325
 Connection ~ 2950 2325
-Connection ~ 3150 1425
 Wire Wire Line
 	3600 2325 3600 2025
 Wire Wire Line
@@ -374,10 +371,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1975 4700 1975
 Wire Wire Line
-	3225 1625 2950 1625
-Wire Wire Line
-	2950 1625 2950 1825
-Connection ~ 2950 1625
+	3225 1675 2950 1675
 Connection ~ 6300 1675
 Wire Wire Line
 	6300 1425 6050 1425
@@ -412,7 +406,7 @@ Text Notes 975  2350 0    50   ~ 0
 Wire Wire Line
 	3150 2325 2950 2325
 Wire Wire Line
-	3150 1425 2850 1425
+	3150 1475 2850 1475
 Wire Wire Line
 	3600 2325 3150 2325
 Wire Wire Line
@@ -432,62 +426,45 @@ Wire Wire Line
 Wire Wire Line
 	6050 1675 5850 1675
 Wire Wire Line
-	2950 1625 2850 1625
+	2950 1675 2850 1675
 Wire Wire Line
 	6300 1675 6050 1675
 Text Label 7750 2700 2    50   ~ 0
 I2S2_BCLK
-Wire Wire Line
-	1850 1650 1850 1425
-Wire Wire Line
-	1850 1425 2125 1425
 $Comp
 L Device:C_Small C?
 U 1 1 5D9089FF
-P 2125 1650
+P 2150 1900
 AR Path="/5D9089FF" Ref="C?"  Part="1" 
 AR Path="/5D67FDC6/5D9089FF" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/5D9089FF" Ref="C26"  Part="1" 
-F 0 "C26" H 2225 1675 50  0000 L CNN
-F 1 "100pF" H 2175 1575 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2125 1650 50  0001 C CNN
-F 3 "~" H 2125 1650 50  0001 C CNN
-F 4 "C1790" H 2125 1650 50  0001 C CNN "JLPCB#"
-	1    2125 1650
+F 0 "C26" H 2250 1925 50  0000 L CNN
+F 1 "100pF" H 2200 1825 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2150 1900 50  0001 C CNN
+F 3 "~" H 2150 1900 50  0001 C CNN
+F 4 "C1790" H 2150 1900 50  0001 C CNN "JLPCB#"
+F 5 "C0G or ECHU(FilmCap) Recommended" H 2150 1900 50  0001 C CNN "Description"
+	1    2150 1900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5D908A00
-P 1875 1950
+P 2550 1900
 AR Path="/5D908A00" Ref="C?"  Part="1" 
 AR Path="/5D67FDC6/5D908A00" Ref="C?"  Part="1" 
 AR Path="/5D902CF8/5D908A00" Ref="C25"  Part="1" 
-F 0 "C25" H 1875 1750 50  0000 L CNN
-F 1 "100pF" H 1875 1675 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1875 1950 50  0001 C CNN
-F 3 "~" H 1875 1950 50  0001 C CNN
-F 4 "C1790" H 1875 1950 50  0001 C CNN "JLPCB#"
-	1    1875 1950
+F 0 "C25" H 2650 1900 50  0000 L CNN
+F 1 "100pF" H 2575 1825 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2550 1900 50  0001 C CNN
+F 3 "~" H 2550 1900 50  0001 C CNN
+F 4 "C1790" H 2550 1900 50  0001 C CNN "JLPCB#"
+F 5 "C0G or ECHU(FilmCap) Recommended" H 2550 1900 50  0001 C CNN "Description"
+	1    2550 1900
 	-1   0    0    -1  
 $EndComp
-Connection ~ 1875 1850
 Wire Wire Line
-	1875 2050 1875 2075
-Connection ~ 1875 2075
-Wire Wire Line
-	1875 2075 2125 2075
-Wire Wire Line
-	2125 1425 2125 1550
-Wire Wire Line
-	2125 1750 2125 2075
-Connection ~ 2125 2075
-Wire Wire Line
-	1850 1650 1625 1650
-Wire Wire Line
-	1875 1850 1625 1850
-Wire Wire Line
-	2550 1625 2550 1850
+	2150 2000 2150 2075
 Wire Wire Line
 	6850 1875 6400 1875
 Connection ~ 6400 1875
@@ -509,10 +486,7 @@ F 4 "C22859" H 6600 1675 50  0001 C CNN "JLPCB#"
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	2125 2075 2550 2075
-Wire Wire Line
 	2550 2325 2550 2075
-Connection ~ 2125 1425
 $Comp
 L power:GND #PWR?
 U 1 1 5D908A03
@@ -543,10 +517,6 @@ F 3 "" H 4600 1925 50  0001 C CNN
 	1    4600 1925
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1875 1850 2550 1850
-Wire Wire Line
-	2125 1425 2550 1425
 $Comp
 L MW-ADAU1466BB-rescue:GNDA-CS5368TDM-rescue-RasPiAudioHat-rescue #PWR?
 U 1 1 5D908A05
@@ -569,10 +539,6 @@ Wire Wire Line
 	2550 2325 2950 2325
 Text Label 7475 1975 2    50   ~ 0
 ADC_MCLK
-Wire Wire Line
-	1425 2050 1425 2075
-Wire Wire Line
-	1425 2075 1875 2075
 Text GLabel 7775 1975 2    50   Input ~ 0
 MCLK
 Text GLabel 7750 2700 2    50   Output ~ 0
@@ -598,7 +564,7 @@ F 6 "Filters" H 6375 2925 60  0001 L CNN "Category"
 F 7 "Ferrite Beads and Chips" H 6375 3025 60  0001 L CNN "Family"
 F 8 "https://www.murata.com/en-us/products/productdata/8796738977822/ENFA0005.pdf" H 6375 3125 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/murata-electronics-north-america/BLM21PG331SN1D/490-5988-1-ND/3845188" H 6375 3225 60  0001 L CNN "DK_Detail_Page"
-F 10 "FERRITE BEAD 330 OHM 0805 1LN" H 6375 3325 60  0001 L CNN "Description"
+F 10 "Bead for connecting AnalogGND and DigitalGND" H 6375 3325 60  0001 L CNN "Description"
 F 11 "Murata Electronics North America" H 6375 3425 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 6375 3525 60  0001 L CNN "Status"
 F 13 "C1017" H 6175 2325 50  0001 C CNN "JLPCB#"
@@ -618,7 +584,7 @@ Text Notes 4350 1375 0    50   ~ 0
 3.0Vpp max.
 Text Notes 4350 1450 0    50   ~ 0
 Zin=60kΩ
-Text Notes 1925 1375 0    50   ~ 0
+Text Notes 1925 1425 0    50   ~ 0
 2.09Vrms max.
 $Comp
 L power:+3.3V #PWR?
@@ -918,6 +884,7 @@ F 1 "0R" V 2125 9500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2055 9575 50  0001 C CNN
 F 3 "~" H 2125 9575 50  0001 C CNN
 F 4 "C21189" H 2125 9575 50  0001 C CNN "JLPCB#"
+F 5 "Prepared for Damping Control" H 2125 9575 50  0001 C CNN "Description"
 	1    2125 9575
 	0    1    -1   0   
 $EndComp
@@ -1191,7 +1158,7 @@ F 5 "for manual reset button for DSP" H 13750 7400 50  0001 C CNN "Description"
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	13300 7125 13750 7125
+	12850 7125 13125 7125
 Text GLabel 3500 7500 0    50   Input ~ 0
 ~DSP-RESET
 Wire Wire Line
@@ -1201,16 +1168,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 1575 4850 1575
 Wire Wire Line
-	3600 1575 3600 1625
+	3425 1675 3600 1675
 Wire Wire Line
-	3425 1625 3600 1625
-Connection ~ 3600 1625
-Wire Wire Line
-	3600 1625 3600 1825
-Wire Wire Line
-	3800 1425 3800 1475
-Wire Wire Line
-	3425 1425 3800 1425
+	3425 1475 3800 1475
 Connection ~ 3800 1475
 $Comp
 L SigmaDSP_LOGO:LOGO Z1
@@ -1371,7 +1331,7 @@ F 6 "Filters" H 3800 4200 60  0001 L CNN "Category"
 F 7 "Ferrite Beads and Chips" H 3800 4300 60  0001 L CNN "Family"
 F 8 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 3800 4400 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/murata-electronics-north-america/BLM18AG601SN1D/490-1014-1-ND/584462" H 3800 4500 60  0001 L CNN "DK_Detail_Page"
-F 10 "FERRITE BEAD 600 OHM" H 3800 4600 60  0001 L CNN "Description"
+F 10 "Bead for Analog Core" H 3800 4600 60  0001 L CNN "Description"
 F 11 "Murata Electronics North America" H 3800 4700 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3800 4800 60  0001 L CNN "Status"
 F 13 "C1017" H 3600 3600 50  0001 C CNN "JLPCB#"
@@ -1471,6 +1431,7 @@ F 1 "MJD45H11T4" V 2575 4825 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 2500 4900 50  0001 C CNN
 F 3 "~" H 2300 4800 50  0001 C CNN
 F 4 "C138783" H 2300 4800 50  0001 C CNN "JLPCB#"
+F 5 "PNP Transistor for 1.2V Power Rail" H 2300 4800 50  0001 C CNN "Description"
 	1    2300 4800
 	0    1    1    0   
 $EndComp
@@ -1808,7 +1769,7 @@ F 6 "Filters" H 2275 7250 60  0001 L CNN "Category"
 F 7 "Ferrite Beads and Chips" H 2275 7350 60  0001 L CNN "Family"
 F 8 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 2275 7450 60  0001 L CNN "DK_Datasheet_Link"
 F 9 "/product-detail/en/murata-electronics-north-america/BLM18AG601SN1D/490-1014-1-ND/584462" H 2275 7550 60  0001 L CNN "DK_Detail_Page"
-F 10 "FERRITE BEAD 600 OHM" H 2275 7650 60  0001 L CNN "Description"
+F 10 "Bead for PLL Power Rail" H 2275 7650 60  0001 L CNN "Description"
 F 11 "Murata Electronics North America" H 2275 7750 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 2275 7850 60  0001 L CNN "Status"
 F 13 "C1017" H 2075 6650 50  0001 C CNN "JLPCB#"
@@ -2349,7 +2310,7 @@ F 1 "IDC_2x5" H 7150 9750 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" H 7150 10000 60  0001 C CNN
 F 3 "" H 7175 8850 60  0000 C CNN
 F 4 "HAND" H 7175 10050 50  0001 C CNN "JLPCB#"
-F 5 "10pin IDC header for USBi" H 7175 10050 50  0001 C CNN "Description"
+F 5 "Angled 10pin IDC header for USBi" H 7175 10050 50  0001 C CNN "Description"
 	1    7175 10050
 	1    0    0    -1  
 $EndComp
@@ -2636,20 +2597,6 @@ F 3 "" H 2950 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2950 4125
-$Comp
-L Device:C_Small C?
-U 1 1 66BAD98B
-P 2050 4000
-AR Path="/66BAD98B" Ref="C?"  Part="1" 
-AR Path="/5D902CF8/66BAD98B" Ref="C50"  Part="1" 
-F 0 "C50" V 2100 3900 50  0000 C CNN
-F 1 "10uF" V 1950 3975 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 4000 50  0001 C CNN
-F 3 "~" H 2050 4000 50  0001 C CNN
-F 4 "C96446" H 2050 4000 50  0001 C CNN "JLPCB#"
-	1    2050 4000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2050 3900 2050 3800
 Wire Wire Line
@@ -2897,10 +2844,10 @@ AR Path="/5D67FDC6/682A532D" Ref="R?"  Part="1"
 AR Path="/682A532D" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/682A532D" Ref="R74"  Part="1" 
 F 0 "R74" V 2700 10525 50  0000 L CNN
-F 1 "4.7k" V 2800 10550 50  0000 L CNN
+F 1 "100k" V 2800 10525 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 10625 50  0001 C CNN
 F 3 "~" H 2800 10625 50  0001 C CNN
-F 4 "C23162" H 2800 10625 50  0001 C CNN "JLPCB#"
+F 4 "C25803" H 2800 10625 50  0001 C CNN "JLPCB#"
 	1    2800 10625
 	-1   0    0    -1  
 $EndComp
@@ -2977,10 +2924,10 @@ AR Path="/5D67FDC6/686BEDBF" Ref="R?"  Part="1"
 AR Path="/686BEDBF" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/686BEDBF" Ref="R76"  Part="1" 
 F 0 "R76" V 3525 10750 50  0000 L CNN
-F 1 "560R" V 3450 10700 50  0000 L CNN
+F 1 "1.2k" V 3450 10700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 10800 50  0001 C CNN
 F 3 "~" H 3450 10800 50  0001 C CNN
-F 4 "C23204" H 3450 10800 50  0001 C CNN "JLPCB#"
+F 4 "C22765" H 3450 10800 50  0001 C CNN "JLPCB#"
 	1    3450 10800
 	0    -1   1    0   
 $EndComp
@@ -3281,6 +3228,7 @@ F 1 "B10K" V 9175 5375 50  0000 R CNN
 F 2 "Myfootprints:RK09L12B0A31" H 9200 5475 60  0001 C CNN
 F 3 "" H 9200 5475 60  0000 C CNN
 F 4 "HAND" H 9200 5475 50  0001 C CNN "JLPCB#"
+F 5 "Potentiometer for AUX Voltage Control" H 9200 5475 50  0001 C CNN "Description"
 	1    9200 5475
 	0    -1   -1   0   
 $EndComp
@@ -3389,6 +3337,7 @@ F 1 "B10K" V 11025 5350 50  0000 R CNN
 F 2 "Myfootprints:RK09L12B0A31" H 11050 5450 60  0001 C CNN
 F 3 "" H 11050 5450 60  0000 C CNN
 F 4 "HAND" H 11050 5450 50  0001 C CNN "JLPCB#"
+F 5 "Potentiometer for AUX Voltage Control" H 11050 5450 50  0001 C CNN "Description"
 	1    11050 5450
 	0    -1   -1   0   
 $EndComp
@@ -3432,6 +3381,7 @@ F 1 "B10K" V 11575 5350 50  0000 R CNN
 F 2 "Myfootprints:RK09L12B0A31" H 11600 5450 60  0001 C CNN
 F 3 "" H 11600 5450 60  0000 C CNN
 F 4 "HAND" H 11600 5450 50  0001 C CNN "JLPCB#"
+F 5 "Potentiometer for AUX Voltage Control" H 11600 5450 50  0001 C CNN "Description"
 	1    11600 5450
 	0    -1   -1   0   
 $EndComp
@@ -3444,6 +3394,7 @@ F 1 "B10K" V 12125 5350 50  0000 R CNN
 F 2 "Myfootprints:RK09L12B0A31" H 12150 5450 60  0001 C CNN
 F 3 "" H 12150 5450 60  0000 C CNN
 F 4 "HAND" H 12150 5450 50  0001 C CNN "JLPCB#"
+F 5 "Potentiometer for AUX Voltage Control" H 12150 5450 50  0001 C CNN "Description"
 	1    12150 5450
 	0    -1   -1   0   
 $EndComp
@@ -3456,6 +3407,7 @@ F 1 "B10K" V 12700 5350 50  0000 R CNN
 F 2 "Myfootprints:RK09L12B0A31" H 12725 5450 60  0001 C CNN
 F 3 "" H 12725 5450 60  0000 C CNN
 F 4 "HAND" H 12725 5450 50  0001 C CNN "JLPCB#"
+F 5 "Potentiometer for AUX Voltage Control" H 12725 5450 50  0001 C CNN "Description"
 	1    12725 5450
 	0    -1   -1   0   
 $EndComp
@@ -3574,91 +3526,92 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 6B992D1C
-P 13300 6975
+P 12850 6975
 AR Path="/6B992D1C" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/6B992D1C" Ref="R86"  Part="1" 
-F 0 "R86" V 13200 6925 50  0000 L CNN
-F 1 "2.2k" V 13300 6900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 13230 6975 50  0001 C CNN
-F 3 "~" H 13300 6975 50  0001 C CNN
-F 4 "C4190" H 13300 6975 50  0001 C CNN "JLPCB#"
-	1    13300 6975
+F 0 "R86" V 12750 6925 50  0000 L CNN
+F 1 "2.2k" V 12850 6900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12780 6975 50  0001 C CNN
+F 3 "~" H 12850 6975 50  0001 C CNN
+F 4 "C4190" H 12850 6975 50  0001 C CNN "JLPCB#"
+	1    12850 6975
 	-1   0    0    1   
 $EndComp
 $Comp
 L MW-ADAU1466BB-rescue:+3.3V-CS5368TDM-rescue-RasPiAudioHat-rescue #PWR?
 U 1 1 6B9FEC39
-P 13300 6600
+P 12850 6600
 AR Path="/5CC0C02C/6B9FEC39" Ref="#PWR?"  Part="1" 
 AR Path="/6B9FEC39" Ref="#PWR?"  Part="1" 
 AR Path="/5D67FDC6/6B9FEC39" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/6B9FEC39" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 13300 6450 50  0001 C CNN
-F 1 "+3.3V" H 13300 6740 50  0000 C CNN
-F 2 "" H 13300 6600 50  0001 C CNN
-F 3 "" H 13300 6600 50  0001 C CNN
-	1    13300 6600
+F 0 "#PWR0111" H 12850 6450 50  0001 C CNN
+F 1 "+3.3V" H 12850 6740 50  0000 C CNN
+F 2 "" H 12850 6600 50  0001 C CNN
+F 3 "" H 12850 6600 50  0001 C CNN
+	1    12850 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 6BAF40A6
-P 13200 7325
+P 12750 7325
 AR Path="/6BAF40A6" Ref="Q?"  Part="1" 
 AR Path="/5CC0C02C/6BAF40A6" Ref="Q?"  Part="1" 
 AR Path="/5D60B524/6BAF40A6" Ref="Q?"  Part="1" 
 AR Path="/5DEF3C17/6BAF40A6" Ref="Q?"  Part="1" 
 AR Path="/5D902CF8/6BAF40A6" Ref="Q13"  Part="1" 
-F 0 "Q13" H 13050 7425 50  0000 L CNN
-F 1 "2N7002" H 12900 7500 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 13400 7250 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 13200 7325 50  0001 L CNN
-F 4 "C8545" H 13200 7325 50  0001 C CNN "JLPCB#"
-	1    13200 7325
+F 0 "Q13" H 12600 7425 50  0000 L CNN
+F 1 "2N7002" H 12450 7500 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12950 7250 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 12750 7325 50  0001 L CNN
+F 4 "C8545" H 12750 7325 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 12750 7325 50  0001 C CNN "Description"
+	1    12750 7325
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6BAF40AC
-P 13300 7625
+P 12850 7625
 AR Path="/6BAF40AC" Ref="#PWR?"  Part="1" 
 AR Path="/5CC0C02C/6BAF40AC" Ref="#PWR?"  Part="1" 
 AR Path="/5D60B524/6BAF40AC" Ref="#PWR?"  Part="1" 
 AR Path="/5DEF3C17/6BAF40AC" Ref="#PWR?"  Part="1" 
 AR Path="/5D902CF8/6BAF40AC" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 13300 7375 50  0001 C CNN
-F 1 "GND" H 13300 7475 50  0000 C CNN
-F 2 "" H 13300 7625 50  0001 C CNN
-F 3 "" H 13300 7625 50  0001 C CNN
-	1    13300 7625
+F 0 "#PWR0112" H 12850 7375 50  0001 C CNN
+F 1 "GND" H 12850 7475 50  0000 C CNN
+F 2 "" H 12850 7625 50  0001 C CNN
+F 3 "" H 12850 7625 50  0001 C CNN
+	1    12850 7625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13300 7525 13300 7625
+	12850 7525 12850 7625
 $Comp
 L MW-ADAU1466BB-rescue:R-CS5368TDM-rescue-RasPiAudioHat-rescue R?
 U 1 1 6BAF40B3
-P 12975 7475
+P 12525 7475
 AR Path="/5DEF3C17/6BAF40B3" Ref="R?"  Part="1" 
 AR Path="/6BAF40B3" Ref="R?"  Part="1" 
 AR Path="/5D902CF8/6BAF40B3" Ref="R85"  Part="1" 
-F 0 "R85" V 13055 7475 50  0000 C CNN
-F 1 "10k" V 12975 7475 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 12905 7475 50  0001 C CNN
-F 3 "" H 12975 7475 50  0001 C CNN
-F 4 "C25804" H 12975 7475 50  0001 C CNN "JLPCB#"
-	1    12975 7475
+F 0 "R85" V 12605 7475 50  0000 C CNN
+F 1 "10k" V 12525 7475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12455 7475 50  0001 C CNN
+F 3 "" H 12525 7475 50  0001 C CNN
+F 4 "C25804" H 12525 7475 50  0001 C CNN "JLPCB#"
+	1    12525 7475
 	1    0    0    -1  
 $EndComp
-Connection ~ 13300 7625
+Connection ~ 12850 7625
 Wire Wire Line
-	12975 7625 13300 7625
+	12525 7625 12850 7625
 Wire Wire Line
-	12975 7325 13000 7325
+	12525 7325 12550 7325
 Wire Wire Line
-	12750 7325 12975 7325
-Connection ~ 12975 7325
-Connection ~ 13300 7125
+	12300 7325 12525 7325
+Connection ~ 12525 7325
+Connection ~ 12850 7125
 Wire Wire Line
 	13750 7200 13750 7125
 Connection ~ 13750 7125
@@ -3667,8 +3620,8 @@ Wire Wire Line
 Wire Wire Line
 	13750 7600 13750 7625
 Wire Wire Line
-	13750 7625 13300 7625
-Text GLabel 12750 7325 0    50   Input ~ 0
+	13750 7625 13125 7625
+Text GLabel 12300 7325 0    50   Input ~ 0
 DSP_RES
 Text Notes 13975 7525 0    79   ~ 16
 DSP RESET\nBUTTON
@@ -3950,7 +3903,7 @@ F 1 "8P_DIP_SOCKET" H 10475 7825 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10350 7600 50  0001 C CNN
 F 3 "~" H 10350 7600 50  0001 C CNN
 F 4 "NOP" H 10350 7600 50  0001 C CNN "JLPCB#"
-F 5 "Just Prepared for the Altanative choice of EEPROM package" H 10350 7600 50  0001 C CNN "Description"
+F 5 "Optional Sockt for substitute package of SPI-EEPROM" H 10350 7600 50  0001 C CNN "Description"
 	1    10350 7600
 	1    0    0    -1  
 $EndComp
@@ -4121,6 +4074,7 @@ F 1 "0R" V 9325 6800 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9255 6850 50  0001 C CNN
 F 3 "~" H 9325 6850 50  0001 C CNN
 F 4 "C17477" H 9325 6850 50  0001 C CNN "JLPCB#"
+F 5 "Remove this when Using SW4" H 9325 6850 50  0001 C CNN "Description"
 	1    9325 6850
 	0    -1   -1   0   
 $EndComp
@@ -4174,6 +4128,7 @@ F 1 "1N4148W" H 13575 7000 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 13750 6900 50  0001 C CNN
 F 3 "~" H 13750 6900 50  0001 C CNN
 F 4 "C81598 " H 13750 6900 50  0001 C CNN "JLPCB#"
+F 5 "Si Switching Diode" H 13750 6900 50  0001 C CNN "Description"
 	1    13750 6900
 	0    -1   -1   0   
 $EndComp
@@ -4464,6 +4419,7 @@ F 1 "2N7002" V 9375 9200 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9350 9275 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9150 9350 50  0001 L CNN
 F 4 "C8545" H 9150 9350 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 9150 9350 50  0001 C CNN "Description"
 	1    9150 9350
 	0    -1   -1   0   
 $EndComp
@@ -4485,6 +4441,7 @@ F 1 "2N7002" V 9375 9925 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9350 10025 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9150 10100 50  0001 L CNN
 F 4 "C8545" H 9150 10100 50  0001 C CNN "JLPCB#"
+F 5 "N-CHANNEL ENHANCEMENT MODE MOSFET" H 9150 10100 50  0001 C CNN "Description"
 	1    9150 10100
 	0    -1   1    0   
 $EndComp
@@ -4638,7 +4595,7 @@ EXT
 Text Notes 2950 5675 0    79   ~ 0
 RCA
 Wire Wire Line
-	13300 6600 13300 6825
+	12850 6600 12850 6825
 Wire Wire Line
 	13750 7050 13750 7125
 Wire Wire Line
@@ -4711,9 +4668,9 @@ Text Notes 14275 8950 0    63   ~ 0
 ANODE\nCATHODE
 Text Notes 12525 8925 2    63   ~ 0
 ANODE\nCATHODE
-Text Notes 1125 1700 0    50   ~ 0
+Text Notes 1100 1500 0    50   ~ 0
 RIGHT
-Text Notes 1175 1875 0    50   ~ 0
+Text Notes 1125 1725 0    50   ~ 0
 LEFT
 $Comp
 L Device:C_Small C?
@@ -4791,6 +4748,7 @@ F 1 "SS2040FL" H 4000 9700 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 4050 9625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 4050 9800 50  0001 C CNN
 F 4 "C8598" H 4050 9800 50  0001 C CNN "JLPCB#"
+F 5 "SBDfor Level Clampling" H 4050 9800 50  0001 C CNN "Description"
 	1    4050 9800
 	0    1    1    0   
 $EndComp
@@ -4826,6 +4784,7 @@ F 1 "SS2040FL" H 4275 10575 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 4225 10300 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 4225 10475 50  0001 C CNN
 F 4 "C8598" H 4225 10475 50  0001 C CNN "JLPCB#"
+F 5 "SBD for Level Clampling" H 4225 10475 50  0001 C CNN "Description"
 	1    4225 10475
 	1    0    0    -1  
 $EndComp
@@ -4895,4 +4854,77 @@ Wire Wire Line
 	4250 9975 4050 9975
 Text Notes 13550 7750 0    50   ~ 0
 C&K PTS645VL39-2 LFS
+Wire Wire Line
+	2550 2000 2550 2075
+Connection ~ 2550 2075
+Wire Wire Line
+	2150 1475 2550 1475
+Connection ~ 2150 2075
+Wire Wire Line
+	2150 2075 2550 2075
+Wire Wire Line
+	1425 2075 2150 2075
+Connection ~ 2150 1475
+Wire Wire Line
+	2150 1475 2150 1800
+Wire Wire Line
+	3150 1475 3150 1825
+Wire Wire Line
+	3150 1475 3225 1475
+Connection ~ 3150 1475
+Wire Wire Line
+	1425 1875 1425 2075
+Wire Wire Line
+	1625 1475 2150 1475
+Wire Wire Line
+	1625 1675 2550 1675
+Connection ~ 2550 1675
+Wire Wire Line
+	2550 1675 2550 1800
+Connection ~ 2950 1675
+Wire Wire Line
+	2950 1675 2950 1825
+Connection ~ 3600 1675
+Wire Wire Line
+	3600 1675 3600 1825
+Wire Wire Line
+	3600 1575 3600 1675
+$Comp
+L Device:C_Small C?
+U 1 1 66BAD98B
+P 2050 4000
+AR Path="/66BAD98B" Ref="C?"  Part="1" 
+AR Path="/5D902CF8/66BAD98B" Ref="C50"  Part="1" 
+F 0 "C50" V 2100 3900 50  0000 C CNN
+F 1 "10uF" V 1950 3975 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 4000 50  0001 C CNN
+F 3 "~" H 2050 4000 50  0001 C CNN
+F 4 "C96446" H 2050 4000 50  0001 C CNN "JLPCB#"
+	1    2050 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 660F3325
+P 13125 7375
+AR Path="/660F3325" Ref="C?"  Part="1" 
+AR Path="/5D902CF8/660F3325" Ref="C168"  Part="1" 
+F 0 "C168" V 13225 7375 50  0000 C CNN
+F 1 "10uF" V 13025 7350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 13125 7375 50  0001 C CNN
+F 3 "~" H 13125 7375 50  0001 C CNN
+F 4 "C440198" H 13125 7375 50  0001 C CNN "JLPCB#"
+	1    13125 7375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13125 7275 13125 7125
+Connection ~ 13125 7125
+Wire Wire Line
+	13125 7125 13750 7125
+Wire Wire Line
+	13125 7475 13125 7625
+Connection ~ 13125 7625
+Wire Wire Line
+	13125 7625 12850 7625
 $EndSCHEMATC
