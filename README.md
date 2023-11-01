@@ -4,7 +4,7 @@
 ![Image of FreeDSP OCTAVIA](https://raw.githubusercontent.com/freeDSP/freeDSP-OCTAVIA/main/SOURCES/IMAGES/FreeDSP_OCTAVIA_withRPi.jpg)
 
 Version 1.01 is the latest commit.  
-version 0.33j board is evaluated and it worked, but it requires some workarounds. 0.33j_Fixed is a fixed design of 0.33j, but I recommend building the latest version.
+version 0.33j board is evaluated and it worked, but it requires some workarounds. 0.33j_Fixed is a fixed design of 0.33j, but I recommend building the latest version1.01.
 https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 
 ----
@@ -36,7 +36,7 @@ https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 * 2 LED indicators controlled by MP6 and MP7
 * DSP Reset button
 * Optional simple Unblanced RCA-pin output implementation capability
-* Optional Quad DAC Stereo implementation capability
+
 
 ----
 ## LINKS:<br />
