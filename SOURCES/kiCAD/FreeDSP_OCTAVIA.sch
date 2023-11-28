@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
-Date "2023-10-07"
-Rev "1.01"
+Date "2023-11-29"
+Rev "1.02"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -2410,7 +2410,7 @@ AR Path="/5D67FDC6/5E168013" Ref="FL?"  Part="1"
 AR Path="/5E168013" Ref="FL1"  Part="1" 
 F 0 "FL1" H 2650 1575 50  0000 C CNN
 F 1 "ACM9070" H 2725 1500 50  0000 C CNN
-F 2 "MyLibrary:ACM9070" V 2425 1365 50  0001 C CNN
+F 2 "MyLibrary:ACM9070F" V 2425 1365 50  0001 C CNN
 F 3 "~" V 2425 1365 50  0000 C CNN
 F 4 "C908578" H 2425 1325 50  0001 C CNN "JLPCB#"
 F 5 "Common mode choke for mains" H 2425 1325 50  0001 C CNN "Description"
