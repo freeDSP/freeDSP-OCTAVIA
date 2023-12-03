@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
 Title "FreeDSP OVTAVIA Main Board"
-Date "2023-11-29"
-Rev "1.02"
+Date "2023-12-03"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -801,7 +801,7 @@ Wire Wire Line
 	8450 2325 8450 2775
 Wire Wire Line
 	10100 3175 10100 3250
-Text Notes 5275 9325 0    79   ~ 16
+Text Notes 5300 9300 0    79   ~ 16
 Raspberry-Pi Slot
 $Comp
 L Connector_Generic:Conn_01x06 J4
@@ -1694,30 +1694,6 @@ Wire Wire Line
 Text GLabel 3650 7325 0    50   BiDi ~ 0
 RP_SDA
 $Comp
-L Device:R R67
-U 1 1 5E003EE5
-P 3775 6850
-F 0 "R67" V 3850 6775 50  0000 L CNN
-F 1 "2.2k" V 3775 6775 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3705 6850 50  0001 C CNN
-F 3 "~" H 3775 6850 50  0001 C CNN
-F 4 "C4190" H 3775 6850 50  0001 C CNN "JLPCB#"
-	1    3775 6850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R68
-U 1 1 5E024BBA
-P 3975 6850
-F 0 "R68" V 4050 6775 50  0000 L CNN
-F 1 "2.2k" V 3975 6775 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3905 6850 50  0001 C CNN
-F 3 "~" H 3975 6850 50  0001 C CNN
-F 4 "C4190" H 3975 6850 50  0001 C CNN "JLPCB#"
-	1    3975 6850
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J8
 U 1 1 5DB14FD9
 P 2100 7250
@@ -1860,7 +1836,7 @@ F 4 "NOP" H 5900 9875 50  0001 C CNN "JLPCB#"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7525 9950 3450 725 
+S 9350 10000 2200 775 
 U 5D902CF8
 F0 "ADC_IO Part" 50
 F1 "ADC_IO.sch" 50
@@ -3031,8 +3007,6 @@ NoConn ~ 8175 7325
 NoConn ~ 8175 7425
 NoConn ~ 8175 7525
 NoConn ~ 8175 7625
-NoConn ~ 9175 8025
-NoConn ~ 8175 8025
 $Comp
 L AmaneoLogo:LOGO Z?
 U 1 1 6517C69C
@@ -3397,7 +3371,7 @@ P 9625 8125
 AR Path="/5D902CF8/651AEBA8" Ref="D?"  Part="1" 
 AR Path="/651AEBA8" Ref="D19"  Part="1" 
 F 0 "D19" H 9625 8250 50  0000 C CNN
-F 1 "LED_BLUE" H 9625 8025 50  0000 C CNN
+F 1 "LED_BLUE" H 9600 8075 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 9625 8125 60  0001 C CNN
 F 3 "" V 9625 8125 60  0000 C CNN
 F 4 "C72041" H 9625 8125 50  0001 C CNN "JLPCB#"
@@ -3882,20 +3856,12 @@ Wire Wire Line
 	4675 8050 5550 8050
 Wire Wire Line
 	7000 8050 6050 8050
-Wire Wire Line
-	3775 7000 3775 7050
 Connection ~ 3775 7050
 Wire Wire Line
 	3775 7050 5550 7050
-Wire Wire Line
-	3975 7000 3975 7150
 Connection ~ 3975 7150
 Wire Wire Line
 	3975 7150 5550 7150
-Wire Wire Line
-	3775 6700 3775 6650
-Wire Wire Line
-	3975 6650 3975 6700
 Wire Wire Line
 	3975 7450 3975 7150
 Wire Wire Line
@@ -3904,22 +3870,6 @@ Wire Wire Line
 	3650 7325 3775 7325
 Wire Wire Line
 	3775 7325 3775 7050
-$Comp
-L power:+3.3VP #PWR0204
-U 1 1 66B0497D
-P 3875 6650
-F 0 "#PWR0204" H 4025 6600 50  0001 C CNN
-F 1 "+3.3VP" H 3895 6793 50  0000 C CNN
-F 2 "" H 3875 6650 50  0001 C CNN
-F 3 "" H 3875 6650 50  0001 C CNN
-	1    3875 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3775 6650 3875 6650
-Connection ~ 3875 6650
-Wire Wire Line
-	3875 6650 3975 6650
 NoConn ~ 7000 8750
 NoConn ~ 4675 8050
 NoConn ~ 4675 7850
@@ -4632,4 +4582,214 @@ Wire Wire Line
 	11975 3675 11900 3675
 Text Notes 9950 4700 0    50   Italic 0
 * R57, R59 Value Changed (ver1.01)
+Text GLabel 10000 8025 2    50   Output ~ 0
+AMA_SCL
+Wire Wire Line
+	9175 8025 10000 8025
+Text GLabel 7875 8025 0    50   BiDi ~ 0
+AMA_SDA
+Wire Wire Line
+	7875 8025 8175 8025
+Text GLabel 7400 9300 0    50   BiDi ~ 0
+AMA_SDA
+Text GLabel 7375 9925 0    50   Input ~ 0
+AMA_SCL
+Text GLabel 7400 9700 0    50   BiDi ~ 0
+RP_SDA
+Text GLabel 7375 10325 0    50   Input ~ 0
+RP_SCL
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP4
+U 1 1 65B1C7A7
+P 8300 9500
+F 0 "JP4" V 8425 9250 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 8025 9275 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels" H 8300 9500 50  0001 C CNN
+F 3 "~" H 8300 9500 50  0001 C CNN
+	1    8300 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP5
+U 1 1 65B211AB
+P 8300 10125
+F 0 "JP5" V 8425 9875 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 8050 9925 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels" H 8300 10125 50  0001 C CNN
+F 3 "~" H 8300 10125 50  0001 C CNN
+	1    8300 10125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 9700 8300 9700
+Wire Wire Line
+	7375 10325 8300 10325
+Text GLabel 8475 9500 2    50   BiDi ~ 0
+EX_SDA
+Text GLabel 8500 10125 2    50   Output ~ 0
+EX_SCL
+Wire Wire Line
+	3875 6625 3975 6625
+Wire Wire Line
+	3775 6625 3875 6625
+Connection ~ 3875 6625
+$Comp
+L power:+3.3VP #PWR0204
+U 1 1 66B0497D
+P 3875 6625
+F 0 "#PWR0204" H 4025 6575 50  0001 C CNN
+F 1 "+3.3VP" H 3895 6768 50  0000 C CNN
+F 2 "" H 3875 6625 50  0001 C CNN
+F 3 "" H 3875 6625 50  0001 C CNN
+	1    3875 6625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 6625 3975 6675
+Wire Wire Line
+	3775 6675 3775 6625
+$Comp
+L Device:R R68
+U 1 1 5E024BBA
+P 3975 6825
+F 0 "R68" V 4050 6750 50  0000 L CNN
+F 1 "2.2k" V 3975 6750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3905 6825 50  0001 C CNN
+F 3 "~" H 3975 6825 50  0001 C CNN
+F 4 "C4190" H 3975 6825 50  0001 C CNN "JLPCB#"
+	1    3975 6825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R67
+U 1 1 5E003EE5
+P 3775 6825
+F 0 "R67" V 3850 6750 50  0000 L CNN
+F 1 "2.2k" V 3775 6750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3705 6825 50  0001 C CNN
+F 3 "~" H 3775 6825 50  0001 C CNN
+F 4 "C4190" H 3775 6825 50  0001 C CNN "JLPCB#"
+	1    3775 6825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3775 6975 3775 7050
+Wire Wire Line
+	3975 6975 3975 7150
+Wire Wire Line
+	7700 8875 7700 8925
+Wire Wire Line
+	7500 8925 7500 8875
+$Comp
+L Device:R R63
+U 1 1 65B96867
+P 7700 9075
+F 0 "R63" V 7775 9000 50  0000 L CNN
+F 1 "2.2k" V 7700 9000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 9075 50  0001 C CNN
+F 3 "~" H 7700 9075 50  0001 C CNN
+F 4 "C4190" H 7700 9075 50  0001 C CNN "JLPCB#"
+	1    7700 9075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 65B9686E
+P 7500 9075
+F 0 "R62" V 7575 9000 50  0000 L CNN
+F 1 "2.2k" V 7500 9000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 9075 50  0001 C CNN
+F 3 "~" H 7500 9075 50  0001 C CNN
+F 4 "C4190" H 7500 9075 50  0001 C CNN "JLPCB#"
+	1    7500 9075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8450 9500 8475 9500
+Wire Wire Line
+	8450 10125 8500 10125
+Wire Wire Line
+	7375 9925 7500 9925
+Wire Wire Line
+	7400 9300 7700 9300
+Wire Wire Line
+	7500 9225 7500 9925
+Connection ~ 7500 9925
+Wire Wire Line
+	7500 9925 8300 9925
+Wire Wire Line
+	7700 9225 7700 9300
+Connection ~ 7700 9300
+Wire Wire Line
+	7700 9300 8300 9300
+Wire Wire Line
+	9250 7225 9425 7225
+Connection ~ 9250 7225
+$Comp
+L power:+VSW #PWR0154
+U 1 1 6604037A
+P 7600 8875
+F 0 "#PWR0154" H 7600 8725 50  0001 C CNN
+F 1 "+VSW" H 7600 9000 50  0000 C CNN
+F 2 "" H 7600 8875 50  0001 C CNN
+F 3 "" H 7600 8875 50  0001 C CNN
+	1    7600 8875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR0155
+U 1 1 66043AE6
+P 9425 7225
+F 0 "#PWR0155" H 9425 7075 50  0001 C CNN
+F 1 "+VSW" H 9425 7350 50  0000 C CNN
+F 2 "" H 9425 7225 50  0001 C CNN
+F 3 "" H 9425 7225 50  0001 C CNN
+	1    9425 7225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 8875 7600 8875
+Connection ~ 7600 8875
+Wire Wire Line
+	7600 8875 7700 8875
+Text Notes 6475 11150 0    50   Italic 0
+Default: DSP’s I2C slave port is connectied to the Raspberry-pi.\n\n(Optional modification features for the YORK users)  \nYou can change that connection to the “York” interface’s I2C port.\nFirst you need Cut the pattern between pin-1 and pin-2 of JP4/JP5\nthen solder jumper between pin-2 and pin-3. \nAfter this modification the “York” interface’s I2C SCL/SDA will be \nconnceted to the DSP instead of Raspberry-pi.
+Text Notes 6375 10575 0    79   ~ 0
+※  
+Text Notes 8325 9500 0    79   ~ 0
+※  
+Text Notes 8325 10125 0    79   ~ 0
+※  
+Wire Notes Line style solid
+	8225 9400 8200 9400
+Wire Notes Line style solid
+	8200 9400 8200 9475
+Wire Notes Line style solid
+	8200 9475 8225 9475
+Wire Notes Line style solid
+	8225 9525 8200 9525
+Wire Notes Line style solid
+	8200 9525 8200 9600
+Wire Notes Line style solid
+	8200 9600 8225 9600
+Text Notes 7975 9475 0    49   ~ 0
+YORK
+Text Notes 8050 9600 0    49   ~ 0
+RPi
+Wire Notes Line style solid
+	8225 10025 8200 10025
+Wire Notes Line style solid
+	8200 10025 8200 10100
+Wire Notes Line style solid
+	8200 10100 8225 10100
+Wire Notes Line style solid
+	8225 10150 8200 10150
+Wire Notes Line style solid
+	8200 10150 8200 10225
+Wire Notes Line style solid
+	8200 10225 8225 10225
+Text Notes 7975 10100 0    49   ~ 0
+YORK
+Text Notes 8050 10225 0    49   ~ 0
+RPi
 $EndSCHEMATC

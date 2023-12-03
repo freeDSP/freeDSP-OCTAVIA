@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
 Date "2023-09-30"
-Rev "1.00"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -4398,9 +4398,9 @@ Connection ~ 6600 9450
 Wire Wire Line
 	6600 9450 6675 9450
 Text GLabel 9425 9250 2    50   BiDi ~ 0
-RP_SDA
+EX_SDA
 Text GLabel 9425 10200 2    50   Output ~ 0
-RP_SCL
+EX_SCL
 Text GLabel 8900 10200 0    50   Input ~ 0
 I2C_SCL
 Text GLabel 8875 9250 0    50   BiDi ~ 0
@@ -4617,8 +4617,8 @@ Wire Wire Line
 	12950 8950 12950 8975
 Wire Wire Line
 	13650 8950 13650 9000
-Text Notes 9100 9000 0    50   ~ 0
-NOTE:\nRemove U13 when use a J6 DIP package instead of SOIC package EEPROM.\nRemove R43 when you install the SW4 for selectable dual EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM which contained in the following lists, but you need to change the writting parameters…\n\n    25AA1024-I/SM (Microchip, Total=1048576, PageSize=256, N=3)\n    25AA512-I/SN (Microchip, Total=524288, PageSize=128, N=2)\n    M95M01-DWMN3TP/K (STM, Total=262144, PageSize=64, N=2)\n    BR25G1MF-3GE2 (ROHM)\n    CAT25M01VI-GT3 (OnSemi)\n    S-25CM01A0I-J8T1U4 (ablic)\n
+Text Notes 8975 8875 0    50   ~ 0
+NOTE:\nRemove SOIC U13 when you use a J6 (for the DIP package) .\nOr Remove R43 and install the SW4 for selectable dual boot EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM which contained in the following lists, \nbut you need to change the writting parameters…\n\n    25AA1024-I/SM (Microchip, Total=1048576, PageSize=256, N=3)\n    25AA512-I/SN (Microchip, Total=524288, PageSize=128, N=2)\n    M95M01-DWMN3TP/K (STM, Total=262144, PageSize=64, N=2)\n\n
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 67B4E3B1

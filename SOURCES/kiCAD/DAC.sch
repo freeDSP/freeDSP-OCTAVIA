@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 3 3
 Title "FreeDSP OCTAVIA DAC part"
 Date "2023-09-30"
-Rev "1.00"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
