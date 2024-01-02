@@ -1,7 +1,7 @@
 # freeDSP-OCTAVIA
 8ch Output ADAU1452/1466 DSP Board with Analog/COAX/OPT/USB/Raspberry-Pi Input
 
-![Image of FreeDSP OCTAVIA]([https://raw.githubusercontent.com/freeDSP/freeDSP-OCTAVIA/main/SOURCES/IMAGES/FreeDSP_OCTAVIA_withRPi.jpg](https://github.com/freeDSP/freeDSP-OCTAVIA/blob/main/SOURCES/kiCAD/FreeDSP_OCTAVIA_withRPi.jpg))
+![Image of FreeDSP OCTAVIA](https://github.com/freeDSP/freeDSP-OCTAVIA/blob/main/SOURCES/kiCAD/FreeDSP_OCTAVIA_withRPi.jpg)
 
 Version 1.2 is the latest commit.  
 version 0.33j board is evaluated and it worked, but it requires some workarounds. 0.33j_Fixed is a fixed design of 0.33j, So I recommend you build the latest version 1.2 or 1.1  
