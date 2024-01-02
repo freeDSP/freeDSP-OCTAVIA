@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 3
 Title "FreeDSP OCTAVIA ADC/DSP Part"
-Date "2023-09-30"
-Rev "1.1"
+Date "2024-01-01"
+Rev "1.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -4617,8 +4617,8 @@ Wire Wire Line
 	12950 8950 12950 8975
 Wire Wire Line
 	13650 8950 13650 9000
-Text Notes 8975 8875 0    50   ~ 0
-NOTE:\nRemove SOIC U13 when you use a J6 (for the DIP package) .\nOr Remove R43 and install the SW4 for selectable dual boot EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM which contained in the following lists, \nbut you need to change the writting parameters…\n\n    25AA1024-I/SM (Microchip, Total=1048576, PageSize=256, N=3)\n    25AA512-I/SN (Microchip, Total=524288, PageSize=128, N=2)\n    M95M01-DWMN3TP/K (STM, Total=262144, PageSize=64, N=2)\n\n
+Text Notes 9000 8950 0    50   ~ 0
+NOTE:\nIf you use DIP package EEPROM (J6) instead of SOIC package, do not populate U13.\nOr Remove R43 and install the SW4 for selectable dual boot EEPROMs.\n\nSPI EEPROM should be organized by 8 (128kx8, 64kx8, 32kx8, etc.. )\nThe maximum valid memory space is limited up to 512Mbits.\nMaybe you can replace U13 EEPROM which contained in the following lists, \nbut you need to change the configuration EEPROM writting parameters…\n\n    25AA1024-I/SM (Microchip, Total=1048576, PageSize=256, N=3)\n    25AA512-I/SN (Microchip, Total=524288, PageSize=128, N=2)\n    M95M01-DWMN3TP/K (STM, Total=262144, PageSize=64, N=2)\n\n
 $Comp
 L Connector_Generic:Conn_01x02 J10
 U 1 1 67B4E3B1
