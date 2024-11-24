@@ -7,7 +7,7 @@ Version 1.2 is the latest commit.
 version 1.0 is evaluated and it worked.  
 version 0.33j board requires some workarounds.  
 version 0.33j_Fixed is a fixed design of 0.33j, But I recommend you build the latest version 1.2 or 1.1  
-I've described the detailed information below...  
+The errata information is detailed below...  
 https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 
 ----
