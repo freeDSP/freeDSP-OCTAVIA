@@ -4,7 +4,10 @@
 ![Image of FreeDSP OCTAVIA](https://github.com/freeDSP/freeDSP-OCTAVIA/blob/main/SOURCES/kiCAD/FreeDSP_OCTAVIA_withRPi.jpg)
 
 Version 1.2 is the latest commit.  
-version 0.33j board is evaluated and it worked, but it requires some workarounds. 0.33j_Fixed is a fixed design of 0.33j, So I recommend you build the latest version 1.2 or 1.1  
+version 1.0 is evaluated and it worked.  
+version 0.33j board requires some workarounds.  
+version 0.33j_Fixed is a fixed design of 0.33j, But I recommend you build the latest version 1.2 or 1.1  
+I've described the detailed information below...  
 https://github.com/freeDSP/freeDSP-OCTAVIA/wiki/Errata-and-Workarounds
 
 ----
